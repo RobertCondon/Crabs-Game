@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "26df1885-b02a-4f16-8411-9775e5d01223",
+            "Value": {
+                "id": "3b6c5aaa-511c-4dda-abbb-196c5ba55772",
+                "resourcePath": "objects\\obj_Pickle\\obj_Pickle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "273f05bf-1559-4b3e-a020-088355efce98",
             "Value": {
                 "id": "7a49867d-d965-4380-9834-d744cb625f33",
@@ -479,6 +487,14 @@
             }
         },
         {
+            "Key": "4a1b4748-c5d0-4425-84f7-6885efda2a58",
+            "Value": {
+                "id": "bf7fc032-767c-4c5d-a705-5a746a265de8",
+                "resourcePath": "sprites\\spr_pickle3\\spr_pickle3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4bc4e027-014c-4391-8e50-64e7428228a4",
             "Value": {
                 "id": "5414f4e7-cb02-4996-a0af-6fb1d8737bab",
@@ -674,7 +690,7 @@
             "Key": "6db475b2-67b4-4737-85ed-3fc7b0c13eaa",
             "Value": {
                 "id": "387da411-9361-4c3e-9212-0f6b5cc3a5cd",
-                "resourcePath": "sprites\\spr_pufferNormal\\spr_pufferNormal.yy",
+                "resourcePath": "sprites\\spr_pufferMove\\spr_pufferMove.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -732,6 +748,14 @@
                 "id": "b74f21fa-6aad-4f06-9fc7-78e78639b439",
                 "resourcePath": "sprites\\spr_waves_and_ocean\\spr_waves_and_ocean.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "764d42a1-e067-4920-ac35-eac6a39d5611",
+            "Value": {
+                "id": "6f830da0-eabb-4858-a109-991b2659f591",
+                "resourcePath": "fonts\\fnt_Enter\\fnt_Enter.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -804,6 +828,14 @@
                 "id": "b59bd106-8b5c-487f-98d4-e04ec817622c",
                 "resourcePath": "fonts\\fnt_Score\\fnt_Score.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "841f1484-162d-4152-b75e-c7f916b64f9d",
+            "Value": {
+                "id": "2cf53c4f-a885-43bf-8235-198205650492",
+                "resourcePath": "sprites\\spr_pickle4\\spr_pickle4.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1007,6 +1039,14 @@
             }
         },
         {
+            "Key": "9b3d91a4-31f6-4347-a1ab-af26e85ec230",
+            "Value": {
+                "id": "172d2492-00d2-4f0e-8411-98a495e94033",
+                "resourcePath": "sprites\\lobster_enemy\\lobster_enemy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9d5f1f9e-822a-4051-a902-0cf21b54d6e7",
             "Value": {
                 "id": "859eea3d-077b-437a-a9fa-eb282be33c6c",
@@ -1114,7 +1154,7 @@
             "Key": "ab6f664a-619a-4fb0-bced-03b5771b3b2b",
             "Value": {
                 "id": "29361d87-2d99-44e7-bf67-0507dec74dd6",
-                "resourcePath": "sprites\\sprite31\\sprite31.yy",
+                "resourcePath": "sprites\\spr_Staisfying_Itch\\spr_Staisfying_Itch.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1239,6 +1279,14 @@
             }
         },
         {
+            "Key": "c0a5ae65-4b75-4eba-8afa-768a53b2d43e",
+            "Value": {
+                "id": "8685833a-402c-47f7-8184-dd02c6cde13b",
+                "resourcePath": "sprites\\spr_pickle1\\spr_pickle1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c0e06846-698a-47f3-9a3c-a68eac57084f",
             "Value": {
                 "id": "efe0506f-e587-4c22-b338-77019bfc3da4",
@@ -1354,7 +1402,7 @@
             "Key": "ce7575e9-37e7-4d13-b4cc-83f4a6e39096",
             "Value": {
                 "id": "479758c8-2c36-42fd-87b9-dc953762174e",
-                "resourcePath": "sprites\\puffer\\puffer.yy",
+                "resourcePath": "sprites\\spr_PufferBang\\spr_PufferBang.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1372,6 +1420,14 @@
                 "id": "cb92ec06-506f-4950-aca0-d6f71ad644e8",
                 "resourcePath": "views\\cfa6cc70-cee5-4924-ab29-0b82619212e2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d6f14933-4d2a-4031-bcc4-4af922486b6e",
+            "Value": {
+                "id": "49c7f18f-3e88-4a56-baaa-4d19cb259ce5",
+                "resourcePath": "sprites\\spr_pickle2\\spr_pickle2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1503,6 +1559,14 @@
             }
         },
         {
+            "Key": "eba3211e-05fb-4838-8dd4-af818fe87339",
+            "Value": {
+                "id": "cedb0a30-0e1a-497f-8f8e-54b213bc2ef5",
+                "resourcePath": "rooms\\Tutorial\\Tutorial.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ed005a3c-74a5-4b0a-be28-1895670e9858",
             "Value": {
                 "id": "cde3cd8c-2530-4d26-bafa-0e21641f13f8",
@@ -1540,14 +1604,6 @@
                 "id": "83fccc8e-57c2-4c48-84c1-fa458fad1e4f",
                 "resourcePath": "objects\\obj_WhiteCoin\\obj_WhiteCoin.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "f186284a-e63d-44e7-8ac2-9b2fc7e91a6f",
-            "Value": {
-                "id": "9fc44973-5806-4ed1-92b1-39215b01a2d4",
-                "resourcePath": "rooms\\TestLevel\\TestLevel.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

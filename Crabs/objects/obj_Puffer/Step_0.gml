@@ -14,17 +14,32 @@ if (place_meeting(x+hsp, y, o_Wall))
 		Has_Hit = 1
 	}
 }
-if (Has_Hit = 1)
-{
-	walksp = 0.5
+if(BigBang == false){
+	if (Has_Hit = 1)
+	{
+		image_xscale = -1
+		if walksp == -0.5{
+			x = self.x + 35
+		}
+		walksp = 0.5
+	}else{
+		image_xscale = 1
+		if walksp == 0.5{
+			x = self.x - 35
+		}
+		walksp = -0.5
+	}
 }else{
-	walksp = -0.5
+	walksp = 0
 }
 x = x + hsp
 //Has hit bullet
 if (place_meeting(x+hsp, y, o_Wand_bullet))
 {
-	alarm[0] = 1
+	alarm[0] = 12
+	alarm[1] = 11
+	BigBang = true
+	sprite_index = spr_PufferBang
+	image_speed = 1.2
 
 }
-x = x

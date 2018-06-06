@@ -4,6 +4,8 @@ draw_self()
 distance_player = distance_to_object(o_Player);
 if (distance_player <= los)
 {
+	draw_set_font(fnt_Enter);
+	draw_text(self.x+50, self.y-20, "Press enter to keep going")
 	if change = 0{
 		
 		draw_set_halign(fa_center);
