@@ -118,6 +118,7 @@ if global.stop == false{
 		hsp = 0;
 		walksp = 0;
 	}
+	
 
 	x = x + hsp
 
