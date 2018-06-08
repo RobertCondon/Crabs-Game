@@ -12,7 +12,7 @@ if( x-494<= 0){
 y += (yTo - y)/15;
 
 if(follow != noone){
-	xTo = follow.x;
+	xTo = follow.x + 250;
 	yTo = follow.y;
 }
 
