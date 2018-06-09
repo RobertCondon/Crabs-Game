@@ -24,31 +24,11 @@ if global.stop == false{
 	}
 	//Movement
 	//So that if you press both keys it negates both.
-	var movement = key_right - key_left;
+	
 	//ShockWave form Barrel
 	stop -= 1
 	//acceleration and deceleration
-	slow_move = movement /10
-	if (key_left = 0)
-	{
-		while walksp < 0
-		{
-			walksp = walksp + 0.02
-		}
-	}
-	if (key_right = 0)
-	{
-		while walksp > 0
-		{
-			walksp = walksp - 0.02
-		}
-	}
-
-	if (walksp <= 0.6) or (walksp >= -0.6)
-	{
-		walksp += slow_move;
-		image_speed += 0.01;
-	}
+	
 	//Slows the movement down
 	if (bang > -0.2) and (bang < 0.2)
 	{
@@ -96,8 +76,13 @@ if global.stop == false{
 		grav = 0.01
 	}
 	//It's times so it can also work with a negtive
-	hsp = (movement *0.8) + walksp + bang;
+	hsp_move = Approach(hsp_move, (key_right - key_left)*walksp, 0.7);
+	if(bang != 0) hsp_move = 0;
+	hsp = hsp_move + bang;
 	vsp = vsp + grv + Vbang
+	
+	var Stringer = ("Movement "+  string(hsp_move))
+	show_debug_message(Stringer)
 
 	if (place_meeting(x, y+1, o_Wall)) and (key_up)
 	{
@@ -116,7 +101,7 @@ if global.stop == false{
 			x = x + sign(hsp);	
 		}	
 		hsp = 0;
-		walksp = 0;
+		
 	}
 	
 
@@ -182,8 +167,6 @@ if global.stop == false{
 			alarm[0] = 200
 		}
 		alarmActive = false
-		show_debug_message(hp)
-		show_debug_message(visableness)
 	}else if hp == 0{
 		show_debug_message("You lose")
 		game_restart()
