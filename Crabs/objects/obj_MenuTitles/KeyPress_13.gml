@@ -5,7 +5,7 @@ switch(menu_index){
 		room_goto(Tutorial);
 		break
 	case 1:
-		show_message("Work in Progress")
+		room_goto(Test_Zone);
 		break;
 	case 2:
 		room_goto(Credits);
