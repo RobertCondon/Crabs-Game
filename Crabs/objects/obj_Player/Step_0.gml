@@ -4,7 +4,7 @@
 // You can write your code in this editor
 
 // Starting veriables
-show_debug_message(global.stop)
+
 if global.stop == false{
 	if global.Invert = false{
 		key_right = keyboard_check(ord("D"));
@@ -23,6 +23,13 @@ if global.stop == false{
 		game_restart()
 	}
 	//Movement
+	if keyboard_check(ord("P")){
+		if (TestSpeed == true){
+			TestSpeed = false
+		}else{
+			TestSpeed = true
+		}
+	}
 	//So that if you press both keys it negates both.
 	
 	//ShockWave form Barrel
@@ -46,7 +53,7 @@ if global.stop == false{
 
 	}
 	if stop < 0{
-		grv = 0.15
+		grv = 0.2
 		if (Vbang > -0.2) and (Vbang < 0.2)
 		{
 			Vbang = 0
@@ -76,18 +83,15 @@ if global.stop == false{
 		grav = 0.01
 	}
 	//It's times so it can also work with a negtive
-	hsp_move = Approach(hsp_move, (key_right - key_left)*walksp, 0.7);
-	if(bang != 0) hsp_move = 0;
+	hsp_move = Approach(hsp_move, (key_right - key_left)*walksp, 0.5);
 	hsp = hsp_move + bang;
 	vsp = vsp + grv + Vbang
 	
-	var Stringer = ("Movement "+  string(hsp_move))
-	show_debug_message(Stringer)
 
 	if (place_meeting(x, y+1, o_Wall)) and (key_up)
 	{
 	
-		vsp = -2.5
+		vsp = JumpHight
 	
 	}
 
@@ -99,11 +103,14 @@ if global.stop == false{
 		while (!place_meeting(x + sign(hsp), y, o_Wall))
 		{
 			x = x + sign(hsp);	
+			
 		}	
 		hsp = 0;
-		
+		if(TestSpeed = true){
+			//hsp_move = 0;
+		}
 	}
-	
+	//show_debug_message(point_direction(obj_Player.x, obj_Player.y, o_Turret.x, o_Turret.y))	
 
 	x = x + hsp
 

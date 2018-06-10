@@ -8,3 +8,6 @@ image_speed = 1
 left = false
 down = false
 right = false
+Vbang = 0;
+DownForce = false
+WasDown = false

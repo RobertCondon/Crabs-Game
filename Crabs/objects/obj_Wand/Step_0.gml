@@ -8,15 +8,18 @@ if global.stop == false{
 	if global.Invert = true{
 		Right_Key = keyboard_check_pressed(ord("D"));
 		Left_Key = keyboard_check_pressed(ord("A"));
-		Down_Key = keyboard_check_pressed(ord("S"));
+		Down_Key = keyboard_key_press(ord("S"));
+		Down_Key_LetGo = keyboard_check_released(ord("S"))
 	
 	}else{
 		Left_Key = keyboard_check_pressed(vk_left)
 		Right_Key = keyboard_check_pressed(vk_right)
-		Down_Key = keyboard_check_pressed(vk_down)
+		Down_Key = keyboard_check(vk_down)
+		Down_Key_LetGo = keyboard_check_released(vk_down)
 	}
 
 	image_speed= 0.8
+
 
 	Firing_Delay = Firing_Delay - 1
 	if Firing_Delay < 0{
@@ -45,25 +48,35 @@ if global.stop == false{
 		image_angle = 300
 		o_Player.bang += -3
 		o_Player.Vbang -= 1.5
+		o_Player.vsp = -1
 		left = false
 		down = true
 		right = true
 	
 	}
-	if ((Down_Key) and (Firing_Delay < 0)){
-	
-		Firing_Delay = 60;
-		o_Player.Vbang -= 3
-		image_angle = -90
-		left = false
-		down = true
-		right = false
+	if (Firing_Delay < 0){
+		if(Down_Key){
+			if(Vbang <= 5)Vbang += 0.1;
+		}if(Down_Key_LetGo){
+			Firing_Delay = 60;
+			o_Player.Vbang -= Vbang
+			o_Player.vsp = -1
+			image_angle = -90
+			left = false
+			down = true
+			right = false
+			Vbang = 0;
+			DownForce = false
+			
+		}
+		
 	}
 
 	if ((Right_Key) and (Firing_Delay < 0)){
 		Firing_Delay = 60;
 		image_angle = 0
 		o_Player.bang -= 4
+		o_Player.vsp = -1
 		left = false
 		down = false
 		right = true
