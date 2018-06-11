@@ -56,16 +56,41 @@ if global.stop == false{
 	}
 	if (Firing_Delay < 0){
 		if(Down_Key){
-			if(Vbang <= 5)Vbang += 0.1;
+			if(BangCharge  <= MaxWandCharge){
+				BangCharge += 0.02;
+				show_debug_message(BangCharge)
+			}
+			if(BangCharge  >= MaxWandCharge){
+					ChargeState = 3
+					image_angle = 230
+				}else if((BangCharge  >= MediumWandCharge) and (BangCharge  < MaxWandCharge)){
+					image_angle = 240
+					ChargeState = 2
+				}else{
+					image_angle = 250
+					ChargeState = 1
+				}
+			
 		}if(Down_Key_LetGo){
-			Firing_Delay = 60;
-			o_Player.Vbang -= Vbang
-			o_Player.vsp = -1
+			if(ChargeState == 1){
+				Vbang = MinWandCharge
+				Firing_Delay = 60
+			}else if(ChargeState == 2){
+				Vbang = MediumWandCharge
+				Firing_Delay = 100
+			} else if(ChargeState == 3){
+				obj_Player.hp -= 1
+				obj_Player.alarmActive = true
+				Vbang = MaxWandCharge
+				Firing_Delay = 150
+			}
+			obj_Player.Vbang -= Vbang
+			obj_Player.vsp = -1
 			image_angle = -90
 			left = false
 			down = true
 			right = false
-			Vbang = 0;
+			BangCharge = 2.5;
 			DownForce = false
 			
 		}
@@ -108,7 +133,7 @@ if global.stop == false{
 
 	//Emiter pratcial effect stuff
 	if particalAction == true {
-		if (Firing_Delay <= 60) and (Firing_Delay > 0){
+		if (Firing_Delay > 0){
 			part_type_color2(obj_Part_MagicOrb.PartMagic, c_red, c_white);
 			part_type_life(obj_Part_MagicOrb.PartMagic, 0.2,room_speed/3);
 			if left = true and down = false and right = false{

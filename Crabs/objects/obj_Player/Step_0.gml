@@ -168,14 +168,14 @@ if global.stop == false{
  
 
 	//Damdge management
-	if hp == 1{
+	if(hp == 1){
 		if alarmActive == true{
 			alarm[1] = 2
 			alarm[0] = 200
 		}
 		alarmActive = false
 	}else if hp == 0{
-		show_debug_message("You lose")
+		show_message("You lose")
 		game_restart()
 	}
 	if visableness == false{
