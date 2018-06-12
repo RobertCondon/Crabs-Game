@@ -19,11 +19,12 @@ if global.stop == false{
 	}
 
 	image_speed= 0.8
-
+	//Set particals
+	DownSmall = part_emitter_region(obj_Part_MagicOrb.partMagic_sys, obj_Part_MagicOrb.PartMagic_emit, obj_Wand.x+WandEffectMinX, obj_Wand.x+WandEffectMaxX , obj_Wand.y+WandEffectMinY, obj_Wand.y+WandEffectMaxY, ps_shape_ellipse, ps_distr_gaussian)
 
 	Firing_Delay = Firing_Delay - 1
 	if Firing_Delay < 0{
-		sprite_index = spr_NewWand
+		sprite_index = spr_WandNormal
 		image_angle = 90
 		if particalAction == true{
 		
@@ -56,18 +57,19 @@ if global.stop == false{
 	}
 	if (Firing_Delay < 0){
 		if(Down_Key){
+			image_angle = -90
 			if(BangCharge  <= MaxWandCharge){
 				BangCharge += 0.02;
 				show_debug_message(BangCharge)
 			}
 			if(BangCharge  >= MaxWandCharge){
 					ChargeState = 3
-					image_angle = 230
+					sprite_index = spr_WandLarge
 				}else if((BangCharge  >= MediumWandCharge) and (BangCharge  < MaxWandCharge)){
-					image_angle = 240
+					sprite_index = spr_WandMedium
 					ChargeState = 2
 				}else{
-					image_angle = 250
+					sprite_index = spr_WandNormal
 					ChargeState = 1
 				}
 			
@@ -117,7 +119,7 @@ if global.stop == false{
 	if (Left_Key) or (Down_Key) or (Right_Key){
 		if (Firing_Delay = 60){
 
-			sprite_index = spr_NewWand1
+			sprite_index = spr_WandCD
 			if global.MusicPlay == true{
 				audio_play_sound(snd_WandSound, 4, false)
 			}

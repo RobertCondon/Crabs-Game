@@ -2,7 +2,7 @@
     "id": "0bf1c0e3-0893-4b04-84af-bd3f4e3877a5",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_NewWand",
+    "name": "spr_WandNormal",
     "For3D": false,
     "HTile": false,
     "VTile": false,
