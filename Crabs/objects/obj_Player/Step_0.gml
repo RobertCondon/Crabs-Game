@@ -17,7 +17,16 @@ if global.stop == false{
 		key_up = keyboard_check_pressed(vk_up)
 	
 	}
-
+	//wall bullshit
+	if(keyboard_key_press(vk_enter)){
+		Draw_Enter = true
+	}
+	SquareX = 26
+	collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
+	collisionLine = collision_line(x, y+31, x+Xline, y+31, o_Wall, false, false)
+	if(key_right)Xline = 27;
+	if(key_left)Xline = -26;
+	if((!key_right) and (!key_left))Xline = 0;
 	//Restart
 	if keyboard_check(ord("R")){
 		game_restart()
@@ -85,7 +94,7 @@ if global.stop == false{
 	//It's times so it can also work with a negtive
 	hsp_move = Approach(hsp_move, (key_right - key_left)*walksp, 0.5);
 	hsp = hsp_move + bang;
-	vsp = vsp + grv + Vbang
+	
 	
 
 	if (place_meeting(x, y+1, o_Wall)) and (key_up)
@@ -94,7 +103,15 @@ if global.stop == false{
 		vsp = JumpHight
 	
 	}
-
+	
+	if((!place_meeting(x, y+1, o_Wall)) and (collisionSquare)){
+		if(collisionLine){
+			if vsp > 0{
+				vsp = vsp*0.1
+			}
+		}
+	}
+	vsp = vsp + grv + Vbang
 	//X axies Collision
 	//Meaning if it meets o_Wall on hte x axies it will stop the movement
 	if (place_meeting(x+hsp, y, o_Wall))
@@ -103,8 +120,7 @@ if global.stop == false{
 		while (!place_meeting(x + sign(hsp), y, o_Wall))
 		{
 			x = x + sign(hsp);	
-			
-		}	
+		}
 		hsp = 0;
 		if(TestSpeed = true){
 			//hsp_move = 0;
@@ -121,7 +137,7 @@ if global.stop == false{
 		//This is always checking if you havn't hit the wall yet
 		while (!place_meeting(x, y+ sign(vsp), o_Wall))
 		{
-			y = y + sign(vsp);	
+			y = y + sign(vsp);
 		}	
 		vsp = 0;
 	}
@@ -183,6 +199,9 @@ if global.stop == false{
 	}else{
 		self.visible = true
 	}
+	
+	
+	
 }else{
 	sprite_index = spr_NewPlayer_idel
 }
