@@ -10,26 +10,36 @@ if global.stop == false{
 		key_right = keyboard_check(ord("D"));
 		key_left = keyboard_check(ord("A"));
 		key_up = keyboard_check_pressed(ord("W"));
-	
+		key_down = keyboard_check_pressed(ord("S"));
 	}else{
-		key_left = keyboard_check(vk_left)
-		key_right = keyboard_check(vk_right)
-		key_up = keyboard_check_pressed(vk_up)
+		key_left = keyboard_check(vk_left);
+		key_right = keyboard_check(vk_right);
+		key_up = keyboard_check_pressed(vk_up);
+		key_down = keyboard_check_pressed(vk_down);
 	
 	}
 	//wall bullshit
-	if(keyboard_key_press(vk_enter)){
-		Draw_Enter = true
-	}
+	//No wall bullshit during squish
 	SquareX = 26
-	collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
-	collisionLine = collision_line(x, y+31, x+Xline, y+31, o_Wall, false, false)
-	if(key_right)Xline = 27;
-	if(key_left)Xline = -26;
-	if((!key_right) and (!key_left))Xline = 0;
-	//Restart
-	if keyboard_check(ord("R")){
-		game_restart()
+	
+	
+	if(SpuishedOffOn == false){
+		collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
+		collisionLine = collision_line(x, y+Yline, x+Xline, y+Yline, o_Wall, false, false)
+		if(keyboard_key_press(vk_enter)){
+			Draw_Enter = true
+		}
+		Yline = 32
+		if(key_right)Xline = 27;
+		if(key_left)Xline = -26;
+		if((!key_right) and (!key_left))Xline = 0;
+		//Restart
+		if keyboard_check(ord("R")){
+			game_restart()
+		}
+	}else{
+		collisionLine = collision_line(x, y, x, y, o_Wall, false, false)
+		collisionSquare = collision_rectangle(x, y, x, y, o_Wall, false, false)
 	}
 	//Movement
 	if keyboard_check(ord("P")){
@@ -104,10 +114,31 @@ if global.stop == false{
 	
 	}
 	
+	if(key_down){
+		SpuishedOffOn = true
+		sprite_index = spr_NewPlayer_squish	
+		collisionLineTunnel = collision_line(x, y+Yline, x, y+Yline+5, obj_Tunnel, false, false)
+		if(collisionLineTunnel ){
+			path_start(pth_TunnelOne, 2, path_action_stop, false)
+			sprite_index = spr_NewPlayer_squishTunnel
+		}else{
+			sprite_index = spr_NewPlayer_squish	
+		}
+	}else if(key_up){
+		SpuishedOffOn = false	
+	}
+	
+	if((sprite_index == spr_NewPlayer_squishTunnel) and (path_index == -1)){
+		sprite_index = spr_NewPlayer_squish
+	}
+	
+	//Wall bullshit, slowdown
 	if((!place_meeting(x, y+1, o_Wall)) and (collisionSquare)){
 		if(collisionLine){
-			if vsp > 0{
-				vsp = vsp*0.1
+			if(SpuishedOffOn == false){
+				if vsp > 0{
+					vsp = vsp*0.1
+				}
 			}
 		}
 	}
@@ -145,33 +176,34 @@ if global.stop == false{
 	y = y + vsp;
 
 	//Animation
-
-	if (!place_meeting(x, y+1, o_Wall))
-	{
-		On_Wall = 0;
-		sprite_index = spr_NewPlayer_Jump;
-	}
-	else
-	{
-		On_Wall = 1;
-		if (hsp == 0)
+	if(SpuishedOffOn == false){
+		if (!place_meeting(x, y+1, o_Wall))
 		{
-			sprite_index = spr_NewPlayer_idel;
+			On_Wall = 0;
+			sprite_index = spr_NewPlayer_Jump;
 		}
 		else
 		{
-			if (hsp > 1)
+			On_Wall = 1;
+			if (hsp == 0)
 			{
-				sprite_index = spr_NewPlayer_RunLeft
-				image_speed = -2.5
+				sprite_index = spr_NewPlayer_idel;
 			}
 			else
 			{
-				sprite_index = spr_NewPlayer_RunLeft
-				image_speed = 2.5
+				if (hsp > 1)
+				{
+					sprite_index = spr_NewPlayer_RunLeft
+					image_speed = -2.5
+				}
+				else
+				{
+					sprite_index = spr_NewPlayer_RunLeft
+					image_speed = 2.5
+				}
 			}
 		}
-	}
+	}else
 
 	//Win
 	if (place_meeting(x, y+1, o_Win))

@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "4726729d-6659-4e3c-b293-35e7bb2104df",
+            "Value": {
+                "id": "b1eb0972-cee0-484b-8ed2-739bfef2ce46",
+                "resourcePath": "paths\\pth_TunnelOne\\pth_TunnelOne.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "48e407c9-842b-423c-8865-97f0a104d826",
             "Value": {
                 "id": "8ab96e5b-889c-41f8-8e55-294ffc8290f0",
@@ -676,6 +684,14 @@
                 "id": "6b1e9d5d-8393-4b04-aceb-a82474170147",
                 "resourcePath": "views\\5e119556-9a28-4846-b388-6b5512f4dda2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5f76965a-f0c5-4d10-9549-661df65092a3",
+            "Value": {
+                "id": "4af32e92-0560-4420-be4b-2fe2cd3b685c",
+                "resourcePath": "objects\\obj_Tunnel\\obj_Tunnel.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1159,6 +1175,14 @@
             }
         },
         {
+            "Key": "a6644192-6931-4222-8e84-ec53da04c36e",
+            "Value": {
+                "id": "a07c7af0-ea86-4158-83f4-6d1f406bcbd4",
+                "resourcePath": "sprites\\spr_NewPlayer_squish\\spr_NewPlayer_squish.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a7c63bee-868b-49fa-a8a5-dc121a962d07",
             "Value": {
                 "id": "f75bebda-d9e5-44fb-acb5-45c48c435e5c",
@@ -1243,6 +1267,14 @@
             "Value": {
                 "id": "b030cf34-912b-44b6-a320-fe996731e2fc",
                 "resourcePath": "sprites\\spr_SeaWeed\\spr_SeaWeed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b3fe3ec9-8166-4509-9e97-ff9508dae2b7",
+            "Value": {
+                "id": "b2fe1c63-36d1-4a64-b14a-5e6ee6358bff",
+                "resourcePath": "sprites\\spr_Tunnel\\spr_Tunnel.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1460,6 +1492,14 @@
                 "id": "cb92ec06-506f-4950-aca0-d6f71ad644e8",
                 "resourcePath": "views\\cfa6cc70-cee5-4924-ab29-0b82619212e2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d397a451-2220-4a18-90d8-6b0e5e226238",
+            "Value": {
+                "id": "e52da05c-ef45-4a30-9492-40d28467c334",
+                "resourcePath": "sprites\\spr_NewPlayer_squishTunnel\\spr_NewPlayer_squishTunnel.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
