@@ -21,10 +21,9 @@ if global.stop == false{
 	//wall bullshit
 	//No wall bullshit during squish
 	SquareX = 26
-	
+	collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
 	
 	if(SpuishedOffOn == false){
-		collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
 		collisionLine = collision_line(x, y+Yline, x+Xline, y+Yline, o_Wall, false, false)
 		if(keyboard_key_press(vk_enter)){
 			Draw_Enter = true
@@ -37,70 +36,15 @@ if global.stop == false{
 		if keyboard_check(ord("R")){
 			game_restart()
 		}
-	}else{
-		collisionLine = collision_line(x, y, x, y, o_Wall, false, false)
-		collisionSquare = collision_rectangle(x, y, x, y, o_Wall, false, false)
 	}
-	//Movement
-	if keyboard_check(ord("P")){
-		if (TestSpeed == true){
-			TestSpeed = false
-		}else{
-			TestSpeed = true
-		}
-	}
-	//So that if you press both keys it negates both.
+
 	
 	//ShockWave form Barrel
 	stop -= 1
 	//acceleration and deceleration
 	
 	//Slows the movement down
-	if (bang > -0.2) and (bang < 0.2)
-	{
-		bang = 0
-	}else{
-	
-		if (bang > 0)
-		{
-			bang -= 0.10;
-		}
-		if (bang < 0)
-		{
-			bang += 0.10;
-		}
-
-	}
-	if stop < 0{
-		grv = 0.2
-		if (Vbang > -0.2) and (Vbang < 0.2)
-		{
-			Vbang = 0
-		}else{
-			if (Vbang < -1) or (Vbang > 1)
-			{
-				if (Vbang > 0)
-				{
-					Vbang -= 0.9;
-				}
-				if (Vbang < 0)
-				{
-					Vbang += 0.9;
-				}
-			}else{
-				if (Vbang > 0)
-				{
-					Vbang -= 0.1;
-				}
-				if (Vbang < 0)
-				{
-					Vbang += 0.1;
-				}
-			}
-		}
-	}else{
-		grav = 0.01
-	}
+	script_execute(scr_Bang)
 	//It's times so it can also work with a negtive
 	hsp_move = Approach(hsp_move, (key_right - key_left)*walksp, 0.5);
 	hsp = hsp_move + bang;
@@ -114,19 +58,7 @@ if global.stop == false{
 	
 	}
 	
-	if(key_down){
-		SpuishedOffOn = true
-		sprite_index = spr_NewPlayer_squish	
-		collisionLineTunnel = collision_line(x, y+Yline, x, y+Yline+5, obj_Tunnel, false, false)
-		if(collisionLineTunnel ){
-			path_start(pth_TunnelOne, 2, path_action_stop, false)
-			sprite_index = spr_NewPlayer_squishTunnel
-		}else{
-			sprite_index = spr_NewPlayer_squish	
-		}
-	}else if(key_up){
-		SpuishedOffOn = false	
-	}
+	script_execute(scr_SquishCrab)
 	
 	if((sprite_index == spr_NewPlayer_squishTunnel) and (path_index == -1)){
 		sprite_index = spr_NewPlayer_squish
@@ -177,33 +109,8 @@ if global.stop == false{
 
 	//Animation
 	if(SpuishedOffOn == false){
-		if (!place_meeting(x, y+1, o_Wall))
-		{
-			On_Wall = 0;
-			sprite_index = spr_NewPlayer_Jump;
-		}
-		else
-		{
-			On_Wall = 1;
-			if (hsp == 0)
-			{
-				sprite_index = spr_NewPlayer_idel;
-			}
-			else
-			{
-				if (hsp > 1)
-				{
-					sprite_index = spr_NewPlayer_RunLeft
-					image_speed = -2.5
-				}
-				else
-				{
-					sprite_index = spr_NewPlayer_RunLeft
-					image_speed = 2.5
-				}
-			}
-		}
-	}else
+		script_execute(scr_AnimationCrab)
+	}
 
 	//Win
 	if (place_meeting(x, y+1, o_Win))
@@ -216,21 +123,7 @@ if global.stop == false{
  
 
 	//Damdge management
-	if(hp == 1){
-		if alarmActive == true{
-			alarm[1] = 2
-			alarm[0] = 200
-		}
-		alarmActive = false
-	}else if hp == 0{
-		show_message("You lose")
-		game_restart()
-	}
-	if visableness == false{
-		self.visible = false
-	}else{
-		self.visible = true
-	}
+	script_execute(scr_DamdgeControl)
 	
 	
 	

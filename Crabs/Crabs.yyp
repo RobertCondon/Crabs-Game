@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "07090baa-ec64-408e-a210-6d9991277e8c",
+            "Value": {
+                "id": "593257dc-a464-4f6b-902b-8588334ad183",
+                "resourcePath": "views\\07090baa-ec64-408e-a210-6d9991277e8c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "075e7a21-26af-4a1e-b9b0-2ac67bd89e99",
             "Value": {
                 "id": "ef2465ad-70de-4438-b855-a471b4a4dfff",
@@ -167,6 +175,14 @@
             }
         },
         {
+            "Key": "12508ae8-2cbe-47bb-ac8b-5be79b45504d",
+            "Value": {
+                "id": "d7b72b6e-879d-46eb-9204-fb7ad3d13f5f",
+                "resourcePath": "scripts\\scr_DamdgeControl\\scr_DamdgeControl.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "13fd67bd-3a23-4d7b-b68b-2c412ec81d52",
             "Value": {
                 "id": "00ea0a62-56ab-4767-a4f6-4b46a2c89cc8",
@@ -220,6 +236,14 @@
                 "id": "598bd6bc-929b-4f66-8a66-922bd44bcfc6",
                 "resourcePath": "sprites\\spr_rock_sparkly\\spr_rock_sparkly.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1a962cca-cf11-4c98-8599-8976668840f7",
+            "Value": {
+                "id": "2cf9a3da-e7d8-46b4-8b04-49c7de513d3c",
+                "resourcePath": "scripts\\scr_Bang\\scr_Bang.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -575,6 +599,14 @@
             }
         },
         {
+            "Key": "4fb65161-7812-4660-a15b-17f7c062ce8f",
+            "Value": {
+                "id": "a71ca6f8-eb3b-4a9a-ab1d-989818381c09",
+                "resourcePath": "scripts\\scr_AnimationCrab\\scr_AnimationCrab.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "513c5dae-388c-47f0-8a66-7c87a1db7e6c",
             "Value": {
                 "id": "fa171902-c97c-4780-ad26-4d461c094faf",
@@ -883,6 +915,14 @@
             "Value": {
                 "id": "5e1f4a5f-0099-41f7-9d24-b1f7cbeef3ae",
                 "resourcePath": "views\\80c72ece-d336-43c3-83be-42f0c6982a3f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "81a28781-6e79-4441-9eab-aeb5f19db1ad",
+            "Value": {
+                "id": "53b48646-3094-4e3e-8c33-0926146b4625",
+                "resourcePath": "views\\81a28781-6e79-4441-9eab-aeb5f19db1ad.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1687,6 +1727,14 @@
             }
         },
         {
+            "Key": "f08b156b-6198-4b4b-990c-9e830994ea1c",
+            "Value": {
+                "id": "097f4a55-a96c-4685-940a-d9602b829ed2",
+                "resourcePath": "scripts\\scr_SquishCrab\\scr_SquishCrab.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f2ef94c8-ec91-4ce5-8fe5-21307d73c1fa",
             "Value": {
                 "id": "a3b4001b-255c-4a21-bd85-d16e685645f5",
@@ -1753,7 +1801,11 @@
     ],
     "script_order": [
         "2297489e-0ace-40e6-b753-4a791ba343d9",
-        "21f29c31-af23-495a-84a5-f35b5e6d40de"
+        "21f29c31-af23-495a-84a5-f35b5e6d40de",
+        "1a962cca-cf11-4c98-8599-8976668840f7",
+        "4fb65161-7812-4660-a15b-17f7c062ce8f",
+        "12508ae8-2cbe-47bb-ac8b-5be79b45504d",
+        "f08b156b-6198-4b4b-990c-9e830994ea1c"
     ],
     "tutorial": ""
 }
