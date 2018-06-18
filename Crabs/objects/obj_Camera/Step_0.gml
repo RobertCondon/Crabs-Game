@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 xTo = max(xTo, 10);
-if( x-494<= 0){
+if( x - 494 <= 0){
 	if(xTo > x){
 		x += (xTo - x)/15;
 	}
@@ -12,7 +12,7 @@ if( x-494<= 0){
 y += (yTo - y)/15;
 
 if(follow != noone){
-	xTo = follow.x;
+	xTo = follow.x + 250;
 	yTo = follow.y;
 }
 
