@@ -4,51 +4,57 @@
 // You can write your code in this editor
 
 // Starting veriables
-show_debug_message(global.stop)
+
 if global.stop == false{
 	if global.Invert = false{
 		key_right = keyboard_check(ord("D"));
 		key_left = keyboard_check(ord("A"));
 		key_up = keyboard_check_pressed(ord("W"));
-	
+		key_down = keyboard_check_pressed(ord("S"));
 	}else{
-		key_left = keyboard_check(vk_left)
-		key_right = keyboard_check(vk_right)
-		key_up = keyboard_check_pressed(vk_up)
+		key_left = keyboard_check(vk_left);
+		key_right = keyboard_check(vk_right);
+		key_up = keyboard_check_pressed(vk_up);
+		key_down = keyboard_check_pressed(vk_down);
 	
 	}
-
-	//Restart
-	if keyboard_check(ord("R")){
-		game_restart()
+	//wall bullshit
+	//No wall bullshit during squish
+	SquareX = 26
+	
+	
+	if(SpuishedOffOn == false){
+		collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
+		collisionLine = collision_line(x, y+Yline, x+Xline, y+Yline, o_Wall, false, false)
+		if(keyboard_key_press(vk_enter)){
+			Draw_Enter = true
+		}
+		Yline = 32
+		if(key_right)Xline = 27;
+		if(key_left)Xline = -26;
+		if((!key_right) and (!key_left))Xline = 0;
+		//Restart
+		if keyboard_check(ord("R")){
+			game_restart()
+		}
+	}else{
+		collisionLine = collision_line(x, y, x, y, o_Wall, false, false)
+		collisionSquare = collision_rectangle(x, y, x, y, o_Wall, false, false)
 	}
 	//Movement
+	if keyboard_check(ord("P")){
+		if (TestSpeed == true){
+			TestSpeed = false
+		}else{
+			TestSpeed = true
+		}
+	}
 	//So that if you press both keys it negates both.
-	var movement = key_right - key_left;
+	
 	//ShockWave form Barrel
 	stop -= 1
 	//acceleration and deceleration
-	slow_move = movement /10
-	if (key_left = 0)
-	{
-		while walksp < 0
-		{
-			walksp = walksp + 0.02
-		}
-	}
-	if (key_right = 0)
-	{
-		while walksp > 0
-		{
-			walksp = walksp - 0.02
-		}
-	}
-
-	if (walksp <= 0.6) or (walksp >= -0.6)
-	{
-		walksp += slow_move;
-		image_speed += 0.01;
-	}
+	
 	//Slows the movement down
 	if (bang > -0.2) and (bang < 0.2)
 	{
@@ -66,7 +72,7 @@ if global.stop == false{
 
 	}
 	if stop < 0{
-		grv = 0.15
+		grv = 0.2
 		if (Vbang > -0.2) and (Vbang < 0.2)
 		{
 			Vbang = 0
@@ -96,16 +102,47 @@ if global.stop == false{
 		grav = 0.01
 	}
 	//It's times so it can also work with a negtive
-	hsp = (movement *0.8) + walksp + bang;
-	vsp = vsp + grv + Vbang
+	hsp_move = Approach(hsp_move, (key_right - key_left)*walksp, 0.5);
+	hsp = hsp_move + bang;
+	
+	
 
 	if (place_meeting(x, y+1, o_Wall)) and (key_up)
 	{
 	
-		vsp = -2.5
+		vsp = JumpHight
 	
 	}
-
+	
+	if(key_down){
+		SpuishedOffOn = true
+		sprite_index = spr_NewPlayer_squish	
+		collisionLineTunnel = collision_line(x, y+Yline, x, y+Yline+5, obj_Tunnel, false, false)
+		if(collisionLineTunnel ){
+			path_start(pth_TunnelOne, 2, path_action_stop, false)
+			sprite_index = spr_NewPlayer_squishTunnel
+		}else{
+			sprite_index = spr_NewPlayer_squish	
+		}
+	}else if(key_up){
+		SpuishedOffOn = false	
+	}
+	
+	if((sprite_index == spr_NewPlayer_squishTunnel) and (path_index == -1)){
+		sprite_index = spr_NewPlayer_squish
+	}
+	
+	//Wall bullshit, slowdown
+	if((!place_meeting(x, y+1, o_Wall)) and (collisionSquare)){
+		if(collisionLine){
+			if(SpuishedOffOn == false){
+				if vsp > 0{
+					vsp = vsp*0.1
+				}
+			}
+		}
+	}
+	vsp = vsp + grv + Vbang
 	//X axies Collision
 	//Meaning if it meets o_Wall on hte x axies it will stop the movement
 	if (place_meeting(x+hsp, y, o_Wall))
@@ -114,10 +151,13 @@ if global.stop == false{
 		while (!place_meeting(x + sign(hsp), y, o_Wall))
 		{
 			x = x + sign(hsp);	
-		}	
+		}
 		hsp = 0;
-		walksp = 0;
+		if(TestSpeed = true){
+			//hsp_move = 0;
+		}
 	}
+	//show_debug_message(point_direction(obj_Player.x, obj_Player.y, o_Turret.x, o_Turret.y))	
 
 	x = x + hsp
 
@@ -128,7 +168,7 @@ if global.stop == false{
 		//This is always checking if you havn't hit the wall yet
 		while (!place_meeting(x, y+ sign(vsp), o_Wall))
 		{
-			y = y + sign(vsp);	
+			y = y + sign(vsp);
 		}	
 		vsp = 0;
 	}
@@ -136,33 +176,34 @@ if global.stop == false{
 	y = y + vsp;
 
 	//Animation
-
-	if (!place_meeting(x, y+1, o_Wall))
-	{
-		On_Wall = 0;
-		sprite_index = spr_NewPlayer_Jump;
-	}
-	else
-	{
-		On_Wall = 1;
-		if (hsp == 0)
+	if(SpuishedOffOn == false){
+		if (!place_meeting(x, y+1, o_Wall))
 		{
-			sprite_index = spr_NewPlayer_idel;
+			On_Wall = 0;
+			sprite_index = spr_NewPlayer_Jump;
 		}
 		else
 		{
-			if (hsp > 1)
+			On_Wall = 1;
+			if (hsp == 0)
 			{
-				sprite_index = spr_NewPlayer_RunLeft
-				image_speed = -2.5
+				sprite_index = spr_NewPlayer_idel;
 			}
 			else
 			{
-				sprite_index = spr_NewPlayer_RunLeft
-				image_speed = 2.5
+				if (hsp > 1)
+				{
+					sprite_index = spr_NewPlayer_RunLeft
+					image_speed = -2.5
+				}
+				else
+				{
+					sprite_index = spr_NewPlayer_RunLeft
+					image_speed = 2.5
+				}
 			}
 		}
-	}
+	}else
 
 	//Win
 	if (place_meeting(x, y+1, o_Win))
@@ -175,16 +216,14 @@ if global.stop == false{
  
 
 	//Damdge management
-	if hp == 1{
+	if(hp == 1){
 		if alarmActive == true{
 			alarm[1] = 2
 			alarm[0] = 200
 		}
 		alarmActive = false
-		show_debug_message(hp)
-		show_debug_message(visableness)
 	}else if hp == 0{
-		show_debug_message("You lose")
+		show_message("You lose")
 		game_restart()
 	}
 	if visableness == false{
@@ -192,6 +231,9 @@ if global.stop == false{
 	}else{
 		self.visible = true
 	}
+	
+	
+	
 }else{
 	sprite_index = spr_NewPlayer_idel
 }
