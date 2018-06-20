@@ -1,3 +1,5 @@
+//The code for the squished version of the crab
+
 key_down = obj_Player.key_down
 key_up = obj_Player.key_up
 collisionLine = obj_Player.collisionLine

@@ -1,3 +1,5 @@
+//How the hp works in the game
+
 hp = obj_Player.hp
 alarmActive = obj_Player.alarmActive
 visableness = obj_Player.visableness

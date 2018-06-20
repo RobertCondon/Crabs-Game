@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-los = 15
-HasDone = false;
+los = 20
+Done = false;
 sTwo = false
 change = 0

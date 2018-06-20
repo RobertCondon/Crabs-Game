@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self()
-distance_player = distance_to_object(o_Player);
+distance_player = distance_to_object(obj_Player);
 if (distance_player <= los)
 {
 	draw_set_font(fnt_Enter);

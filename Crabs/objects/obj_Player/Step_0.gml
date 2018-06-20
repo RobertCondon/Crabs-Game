@@ -115,8 +115,6 @@ if global.stop == false{
 	//Win
 	if (place_meeting(x, y+1, o_Win))
 	{ 
-		show_message("YOU WIN");
-		show_message("You got "+ string(global.pickles) + " Outta 2 pickles");
 		room_goto(RoomGo);
 	}
 

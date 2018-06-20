@@ -1,4 +1,4 @@
-//On_Wall = obj_Player.On_Wall
+//The animation for the crab in crab form.
 hsp = obj_Player.hsp
 
 if (!place_meeting(obj_Player.x, obj_Player.y+1, o_Wall))
