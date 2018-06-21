@@ -5,7 +5,7 @@
     "name": "pth_TunnelOne",
     "closed": false,
     "hsnap": 0,
-    "kind": 1,
+    "kind": 0,
     "points": [
         {
             "id": "a713eb87-0bf1-490d-b4e3-0c5c544e5ce6",
@@ -24,6 +24,6 @@
             "speed": 100
         }
     ],
-    "precision": 10,
+    "precision": 1,
     "vsnap": 0
 }
