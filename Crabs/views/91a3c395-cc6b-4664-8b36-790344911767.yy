@@ -16,11 +16,7 @@
         "682329e6-3267-464e-9da2-4b11145a8d84",
         "273f05bf-1559-4b3e-a020-088355efce98",
         "4ee13bc7-954f-4eca-87a6-b3cd85f49f77",
-<<<<<<< HEAD
         "2ebd1bd9-8fd7-4e7a-9444-afa51c312d62"
-=======
-        "84eb78fe-76af-487e-973b-68c8f5b9603b"
->>>>>>> Cameron
     ],
     "filterType": "GMObject",
     "folderName": "objects",
