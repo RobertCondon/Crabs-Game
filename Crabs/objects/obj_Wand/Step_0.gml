@@ -60,7 +60,6 @@ if global.stop == false{
 			image_angle = -90
 			if(BangCharge  <= MaxWandCharge){
 				BangCharge += 0.02;
-				show_debug_message(BangCharge)
 			}
 			if(BangCharge  >= MaxWandCharge){
 					ChargeState = 3

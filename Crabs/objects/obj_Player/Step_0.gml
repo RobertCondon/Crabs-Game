@@ -9,12 +9,12 @@ if global.stop == false{
 	if global.Invert = false{
 		key_right = keyboard_check(ord("D"));
 		key_left = keyboard_check(ord("A"));
-		key_up = keyboard_check_pressed(ord("W"));
+		key_up = keyboard_check(ord("W"));
 		key_down = keyboard_check_pressed(ord("S"));
 	}else{
 		key_left = keyboard_check(vk_left);
 		key_right = keyboard_check(vk_right);
-		key_up = keyboard_check_pressed(vk_up);
+		key_up = keyboard_check(vk_up);
 		key_down = keyboard_check_pressed(vk_down);
 	
 	}

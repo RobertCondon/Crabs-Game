@@ -23,15 +23,21 @@ if (PlayerVision == true){
 }
 
 xTo = max(xTo, 10);
+
+
 if( x - 494 <= 0){
 	if(xTo > x){
-		x += (xTo - x)/15;
+		x += (round(xTo) - x)/15;
 	}
 }else{
-	x += (xTo - x)/15;
+	if((xTo - x)/15 >= 1) or ((xTo - x)/15 <= -1){
+		x += (xTo - x)/15;
+	}
+}
+if((yTo - y)/15 >= 1) or ((yTo - y)/15 <= -1){
+		y += ((yTo) - y)/15;
 }
 
-y += (yTo - y)/15;
 
 if(follow == obj_Player){
 	xTo = follow.x + 250;

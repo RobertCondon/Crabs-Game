@@ -543,14 +543,6 @@
             }
         },
         {
-            "Key": "460f5c22-e035-4785-9f3f-2f290e1e0ffb",
-            "Value": {
-                "id": "866672a8-1314-4373-9e6a-327f246a16c1",
-                "resourcePath": "paths\\path1\\path1.yy",
-                "resourceType": "GMPath"
-            }
-        },
-        {
             "Key": "4726729d-6659-4e3c-b293-35e7bb2104df",
             "Value": {
                 "id": "b1eb0972-cee0-484b-8ed2-739bfef2ce46",
@@ -836,6 +828,14 @@
                 "id": "03c8322c-309a-41e8-9f65-d85aec01791c",
                 "resourcePath": "sprites\\common_pearl\\common_pearl.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6f686a58-7d9c-46fe-bdcb-1d324ef73ede",
+            "Value": {
+                "id": "99ec52c0-be95-49f1-9a3c-c0befc34d07d",
+                "resourcePath": "views\\6f686a58-7d9c-46fe-bdcb-1d324ef73ede.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1828,6 +1828,14 @@
                 "id": "a684aa8e-f747-4606-9af1-c7f1ac7d504d",
                 "resourcePath": "sprites\\s_Sandstone_TRL\\s_Sandstone_TRL.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f7d55a5d-dd86-411c-a292-49c11cafc719",
+            "Value": {
+                "id": "75bf294a-d30e-4fd1-b34f-7aaf08fd2172",
+                "resourcePath": "fonts\\fnt_TextBox\\fnt_TextBox.yy",
+                "resourceType": "GMFont"
             }
         },
         {
