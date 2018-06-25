@@ -1,0 +1,1 @@
+script_say = "Test Zoom and textbox to see if it covers the whole width of the box. This will see if i can code correctly and if not i hope i am not to sleepy"
