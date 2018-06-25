@@ -21,7 +21,7 @@ if (distance_player <= los)
 		TextBox.InstanceThatMadeIt = self
 		TextBox.InstanceName = MyName
 		TextBox.page = 0
-		TextBox.Text = script_say
+		TextBox.Text = script
 	}
 	if Done == false{
 		global.stop = true
