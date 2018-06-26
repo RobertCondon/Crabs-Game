@@ -1383,6 +1383,14 @@
             }
         },
         {
+            "Key": "b6d54473-1dc3-421f-a00a-118305cfe919",
+            "Value": {
+                "id": "85211df0-c571-409c-b207-2e409ec06e7e",
+                "resourcePath": "sprites\\spr_testfont\\spr_testfont.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b70a86f1-4405-4555-ba0a-a7bc827dfdfb",
             "Value": {
                 "id": "5c6166b7-7a18-43b2-8245-c5f6030d25d3",

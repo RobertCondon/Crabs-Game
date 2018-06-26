@@ -4,9 +4,9 @@ distance_player = distance_to_object(obj_Player);
 if(ArrayDone == true){
 	//Seeing if the total number of texts are done on the
 	//ScrpitSay array
-	pass = keyboard_check_released(vk_enter);	
+	pass = keyboard_check_released(vk_space);	
 }else{
-	pass = 0	
+	pass = false	
 }
 if(pass){
 	if(global.stop = true){
@@ -17,11 +17,11 @@ if (distance_player <= los)
 {
 	sprite_index = spr_Hermy_Talk_Neutral
 	if TextBox == noone{
-		TextBox = instance_create_layer(self.x - 75, self.y-110, "TextLayer", obj_Textbox)
+		TextBox = instance_create_layer(self.x - 150, self.y-150, "TextLayer", obj_Textbox)
 		TextBox.InstanceThatMadeIt = self
 		TextBox.InstanceName = MyName
-		TextBox.page = 0
 		TextBox.Text = script
+		
 	}
 	if Done == false{
 		global.stop = true

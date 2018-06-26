@@ -15,9 +15,9 @@ if(IncrementStringAmount <= string_length(Text[page])){
 StringHeight = string_height(Text[page])
 textPart = string_copy(Text[page], 1, IncrementStringAmount)
 //Drawing the string
-draw_text_ext_transformed(self.x, self.y+20, textPart, StringHeight, BoxWidth, 0.2,0.2,0)
+draw_text_ext_transformed(self.x, self.y+20, textPart, StringHeight, BoxWidth, 0.75,0.75,0)
 
 //Draw Name
 draw_set_halign(fa_middle);
-draw_text_transformed_color(self.x+ HalfBoxWidth , self.y, InstanceName, 0.3,0.3,0, c_red, c_purple, c_purple, c_red, 1)
+draw_text_transformed_color(self.x+ HalfBoxWidth , self.y, InstanceName, 0.95,0.95,0, c_red, c_purple, c_purple, c_red, 1)
 

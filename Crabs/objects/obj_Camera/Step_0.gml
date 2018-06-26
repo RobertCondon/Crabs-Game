@@ -11,13 +11,13 @@ if (PlayerVision == true){
 	var pm = matrix_build_projection_ortho(min(WidthRoom, 960), min(HeightRoom, 540), 1, 10000000);
 	camera_set_proj_mat(camera, pm);
 }else{
-	if(WidthRoom > 480)	{
+	if(WidthRoom > 720)	{
 		WidthRoom -= 19.2;	
 	}
-	if(HeightRoom > 270)	{
+	if(HeightRoom > 405)	{
 		HeightRoom -= 10.8;	
 	}
-	var pm = matrix_build_projection_ortho(max(WidthRoom,480), max(HeightRoom,270), 1, 10000000);
+	var pm = matrix_build_projection_ortho(max(WidthRoom,720), max(HeightRoom,405), 1, 10000000);
 	camera_set_proj_mat(camera, pm);
 	
 }
