@@ -17,7 +17,7 @@ if (distance_player <= los)
 {
 	sprite_index = spr_Hermy_Talk_Neutral
 	if TextBox == noone{
-		TextBox = instance_create_layer(self.x - 150, self.y-150, "TextLayer", obj_Textbox)
+		TextBox = instance_create_layer(self.x - 150, self.y-150, "Textlayer", obj_Textbox)
 		TextBox.InstanceThatMadeIt = self
 		TextBox.InstanceName = MyName
 		TextBox.Text = script
