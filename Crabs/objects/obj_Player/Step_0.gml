@@ -122,7 +122,8 @@ if global.stop == false{
 
 	//Damdge management
 	script_execute(scr_DamdgeControl)
-	
+	//Damdge from fire
+	script_execute(scr_HitBounce, obj_fire, 2)
 	
 	
 }else{
