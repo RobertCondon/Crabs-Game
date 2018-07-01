@@ -783,6 +783,14 @@
             }
         },
         {
+            "Key": "66d14836-74c8-4475-a81d-b1516e9614c3",
+            "Value": {
+                "id": "b4ae4a25-cce8-4588-9ec8-ad89e7328548",
+                "resourcePath": "shaders\\shd_WaveLight\\shd_WaveLight.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "682329e6-3267-464e-9da2-4b11145a8d84",
             "Value": {
                 "id": "68cc068a-1efc-40a0-bd93-d73c5e6be73a",
@@ -988,6 +996,14 @@
                 "id": "e3efc57d-d331-4f9f-bd19-04031389badd",
                 "resourcePath": "sounds\\snd_WandSound\\snd_WandSound.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "85d74faa-a147-4479-8432-aed0a1159660",
+            "Value": {
+                "id": "8dd40a9f-64d4-440f-8533-131b55876f1f",
+                "resourcePath": "scripts\\scr_HitBounce\\scr_HitBounce.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1882,6 +1898,7 @@
     "script_order": [
         "2297489e-0ace-40e6-b753-4a791ba343d9",
         "21f29c31-af23-495a-84a5-f35b5e6d40de",
+        "85d74faa-a147-4479-8432-aed0a1159660",
         "1a962cca-cf11-4c98-8599-8976668840f7",
         "4fb65161-7812-4660-a15b-17f7c062ce8f",
         "12508ae8-2cbe-47bb-ac8b-5be79b45504d",

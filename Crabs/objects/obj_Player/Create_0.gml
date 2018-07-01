@@ -23,3 +23,7 @@ collisionSquare = collision_rectangle(x-SquareX+50, y-20, x+SquareX, y+32, o_Wal
 Xline = 0
 Draw_Enter = false
 Yline = 0
+//Fire bullshit
+BeenHit = false
+//Flash
+flash = 0

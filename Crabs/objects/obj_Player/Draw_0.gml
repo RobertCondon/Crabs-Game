@@ -1,7 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self()
-
+if(flash > 0){
+	
+	flash -= 0.03
+	//Makes it neoony
+	//gpu_set_blendmode(bm_add)
+	
+	shader_set(shd_WaveLight)
+	shade_alpha = shader_get_uniform(shd_WaveLight, "_alpha");
+	shader_set_uniform_f(shade_alpha, flash)
+	
+	draw_self()
+	shader_reset()
+	
+	//gpu_set_blendmode(bm_normal)
+}
 
 if(keyboard_key_press(ord("P"))){
 		draw_rectangle(x-32, y-32, x+32, y+32,true)
@@ -11,3 +25,5 @@ if(keyboard_key_press(ord("P"))){
 		draw_line_width(x, y+31, x+Xline, y+31, 1)
 
 }
+
+
