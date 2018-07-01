@@ -1855,6 +1855,14 @@
             }
         },
         {
+            "Key": "fc833ac2-57bc-446c-85ee-aad9c59b92ac",
+            "Value": {
+                "id": "59769d40-8011-4fe5-b266-a02d3f20c255",
+                "resourcePath": "objects\\obj_testfont\\obj_testfont.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fceaad06-680b-455f-9c7f-d857fbc30a4e",
             "Value": {
                 "id": "656eb8dd-c63e-44a7-b83d-b500853b296b",
