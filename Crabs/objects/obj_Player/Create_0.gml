@@ -27,3 +27,5 @@ Yline = 0
 BeenHit = false
 //Flash
 flash = 0
+//Platform moving speed
+MoveBy = 2

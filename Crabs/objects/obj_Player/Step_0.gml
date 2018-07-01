@@ -57,6 +57,9 @@ if global.stop == false{
 		vsp = JumpHight
 	
 	}
+	if(place_meeting(x, y+1, obj_MovingObject)){
+		obj_Player.x += MoveBy 
+	}
 	
 	script_execute(scr_SquishCrab)
 	
