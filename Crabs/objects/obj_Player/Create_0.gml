@@ -29,3 +29,4 @@ BeenHit = false
 flash = 0
 //Platform moving speed
 MoveBy = 2
+HittingWall = false

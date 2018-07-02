@@ -9,7 +9,6 @@ if(place_meeting(obj_Player.x, obj_Player.y, HitByThem)){
 	o_Player.vsp = -6
 	
 }else{
-	show_debug_message(BeenHit)
 	if(BeenHit == true){
 		obj_Player.hp -= 1;
 		obj_Player.alarmActive = true;

@@ -6,6 +6,13 @@
 // Starting veriables
 
 if global.stop == false{
+	//Setting up colision boxes and lines
+	collisionJump = collision_line(x-20, y+32, x+21, y+32, o_Wall, false, false)
+	collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
+	collisionLine = collision_line(x, y+26, x+Xline, y+26, o_Wall, false, false)
+	collisionEllipse_MovingPlatforms = collision_ellipse(x-22, y+31, x+23, y+13, obj_MovingObject, false, false)
+	collisionLine_MovingPlatforms = collision_line(x-20, y+32, x+21, y+32, obj_MovingObject, false, false)
+	
 	if global.Invert = false{
 		key_right = keyboard_check(ord("D"));
 		key_left = keyboard_check(ord("A"));
@@ -21,10 +28,10 @@ if global.stop == false{
 	//wall bullshit
 	//No wall bullshit during squish
 	SquareX = 26
-	collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
+	
 	
 	if(SpuishedOffOn == false){
-		collisionLine = collision_line(x, y+Yline, x+Xline, y+Yline, o_Wall, false, false)
+		
 		if(keyboard_key_press(vk_enter)){
 			Draw_Enter = true
 		}
@@ -50,15 +57,17 @@ if global.stop == false{
 	hsp = hsp_move + bang;
 	
 	
-
-	if (place_meeting(x, y+1, o_Wall)) and (key_up)
+	//Jump
+	
+	if (collisionJump) and (key_up)
 	{
 	
 		vsp = JumpHight
 	
 	}
-	if(place_meeting(x, y+1, obj_MovingObject)){
-		obj_Player.x += MoveBy 
+	//Moving objects movement
+	if(collisionEllipse_MovingPlatforms or collisionLine_MovingPlatforms){
+		x += MoveBy 
 	}
 	
 	script_execute(scr_SquishCrab)
@@ -72,6 +81,7 @@ if global.stop == false{
 		if(collisionLine){
 			if(SpuishedOffOn == false){
 				if vsp > 0{
+					show_debug_message("Yes i am some how getting here")
 					vsp = vsp*0.1
 				}
 			}
@@ -92,22 +102,34 @@ if global.stop == false{
 			//hsp_move = 0;
 		}
 	}
+	
+	if(place_meeting(x+1, y, o_Sand) or place_meeting(x-1, y, o_Sand)){
+		HittingWall = true
+	}else{
+		HittingWall = false
+	}
 	//show_debug_message(point_direction(obj_Player.x, obj_Player.y, o_Turret.x, o_Turret.y))	
 
 	x = x + hsp
 
 	//Y axies Collison 
 	//Meaning if it meets o_Wall on the y axies it will stop the movement
-	if (place_meeting(x, y+vsp, o_Wall))
-	{
+	show_debug_message(32+vsp)
+	collisionLine_EntireBottom = collision_rectangle(x-23, y+33+vsp, x+23, y+20, o_Wall, false, false)
+	if (place_meeting(x, y+vsp, o_Wall)){
+		
+		//Trying: collisionLine_EntireBottom
+		//Used to be:
+		//place_meeting(x, y+vsp, o_Wall)
+		//!place_meeting(x, y+ sign(vsp), o_Wall)
 		//This is always checking if you havn't hit the wall yet
 		while (!place_meeting(x, y+ sign(vsp), o_Wall))
 		{
 			y = y + sign(vsp);
-		}	
+		}
 		vsp = 0;
 	}
-
+	
 	y = y + vsp;
 
 	//Animation

@@ -1,7 +1,7 @@
 //The animation for the crab in crab form.
 hsp = obj_Player.hsp
 
-if (!place_meeting(obj_Player.x, obj_Player.y+1, o_Wall))
+if (!obj_Player.collisionJump)
 		{
 			//On_Wall = 0;
 			obj_Player.sprite_index = spr_NewPlayer_Jump;
