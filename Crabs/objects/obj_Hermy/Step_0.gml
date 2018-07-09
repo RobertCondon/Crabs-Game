@@ -24,11 +24,13 @@ if (distance_player <= los)
 		
 	}
 	if Done == false{
+		obj_Player.Talking = true
 		global.stop = true
 		obj_Camera.follow = self;
 		obj_Camera.PlayerVision = false;
 		
 		if(pass){
+			obj_Player.Talking = false
 			global.stop = false;
 			Done = true;
 			obj_Camera.follow = obj_Player;

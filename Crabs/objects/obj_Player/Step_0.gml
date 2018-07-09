@@ -7,11 +7,11 @@
 
 if global.stop == false{
 	//Setting up colision boxes and lines
-	collisionJump = collision_line(x-20, y+32, x+21, y+32, o_Wall, false, false)
+	collisionJump = collision_rectangle(x-23, y+33, x+23, y+3, o_Wall, false, false)
 	collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
 	collisionLine = collision_line(x, y+26, x+Xline, y+26, o_Wall, false, false)
 	collisionEllipse_MovingPlatforms = collision_ellipse(x-22, y+31, x+23, y+13, obj_MovingObject, false, false)
-	collisionLine_MovingPlatforms = collision_line(x-20, y+32, x+21, y+32, obj_MovingObject, false, false)
+	collisionLine_MovingPlatforms = collision_line(x-20, y+33, x+21, y+33, obj_MovingObject, false, false)
 	
 	if global.Invert = false{
 		key_right = keyboard_check(ord("D"));
@@ -61,7 +61,17 @@ if global.stop == false{
 	
 	if (collisionJump) and (key_up)
 	{
-	
+		if(obj_BelowPlayerLeft.StepColour != noone){
+			part_type_color1(PartStep, obj_BelowPlayerLeft.StepColour)
+			part_emitter_region(partStep_sys, PartStep_emit, Selfx-24, Selfx-20, Selfy+32, Selfy+31, ps_shape_rectangle, ps_distr_gaussian)
+			part_emitter_burst(partStep_sys, PartStep_emit, PartStep, 4);
+		}
+		if(obj_BelowPlayerRight.StepColour != noone){
+			part_type_color1(PartStep, obj_BelowPlayerRight.StepColour)
+			part_emitter_region(partStep_sys, PartStep_emit, Selfx+24, Selfx+20, Selfy+32, Selfy+31, ps_shape_rectangle, ps_distr_gaussian)
+			part_emitter_burst(partStep_sys, PartStep_emit, PartStep, 4);
+		}
+		
 		vsp = JumpHight
 	
 	}
@@ -77,12 +87,23 @@ if global.stop == false{
 	}
 	
 	//Wall bullshit, slowdown
-	if((!place_meeting(x, y+1, o_Wall)) and (collisionSquare)){
-		if(collisionLine){
-			if(SpuishedOffOn == false){
-				if vsp > 0{
-					show_debug_message("Yes i am some how getting here")
-					vsp = vsp*0.1
+	if (stamina_current <= stamina_max){	
+		if((!place_meeting(x, y+1, o_Wall)) and (collisionSquare)){
+			if(collisionLine){
+				if(SpuishedOffOn == false){
+					if vsp > 0{
+						stamina_current += 1
+						vsp = vsp*0.03
+						if(SlidingRight == true){
+							part_type_color1(PartStep, obj_SidePlayerRight.StepColour)
+							part_emitter_region(partStep_sys, PartStep_emit, Selfx+24, Selfx+20, Selfy+32, Selfy+31, ps_shape_rectangle, ps_distr_gaussian)
+							part_emitter_burst(partStep_sys, PartStep_emit, PartStep, 1);
+						}else if (SlidingLeft == true){
+							part_type_color1(PartStep, obj_SidePlayerLeft.StepColour)
+							part_emitter_region(partStep_sys, PartStep_emit, Selfx-24, Selfx-20, Selfy+32, Selfy+31, ps_shape_rectangle, ps_distr_gaussian)
+							part_emitter_burst(partStep_sys, PartStep_emit, PartStep, 1);
+						}
+					}
 				}
 			}
 		}
@@ -114,22 +135,16 @@ if global.stop == false{
 
 	//Y axies Collison 
 	//Meaning if it meets o_Wall on the y axies it will stop the movement
-	show_debug_message(32+vsp)
-	collisionLine_EntireBottom = collision_rectangle(x-23, y+33+vsp, x+23, y+20, o_Wall, false, false)
-	if (place_meeting(x, y+vsp, o_Wall)){
-		
-		//Trying: collisionLine_EntireBottom
-		//Used to be:
-		//place_meeting(x, y+vsp, o_Wall)
-		//!place_meeting(x, y+ sign(vsp), o_Wall)
-		//This is always checking if you havn't hit the wall yet
-		while (!place_meeting(x, y+ sign(vsp), o_Wall))
+	collisionLine_EntireBottom = collision_rectangle(x-23, y+32+vsp, x+23, y-8+vsp, o_Wall, false, false)
+	if(collisionLine_EntireBottom){
+		vsp = 0;
+		stamina_current = 0
+		while (!collisionLine_EntireBottom)
 		{
 			y = y + sign(vsp);
 		}
-		vsp = 0;
+		
 	}
-	
 	y = y + vsp;
 
 	//Animation

@@ -4,7 +4,7 @@
 // You can write your code in this editor
 if global.stop == false{
 	x = o_Player.x - 2;
-	y = o_Player.y + 27;
+	y = o_Player.y - 27;
 	if global.Invert = true{
 		Right_Key = keyboard_check_pressed(ord("D"));
 		Left_Key = keyboard_check_pressed(ord("A"));
