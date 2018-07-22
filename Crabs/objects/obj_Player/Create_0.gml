@@ -72,3 +72,6 @@ obj_BelowPlayerLeft.visible = false
 obj_BelowPlayerRight.visible = false
 obj_SidePlayerLeft.visible = false
 obj_SidePlayerRight.visible = false
+
+//Add hat
+instance_create_layer(obj_Player.x, obj_Player.y - 5, "Player", obj_Hat)

@@ -165,6 +165,15 @@ if global.stop == false{
 	//Damdge from fire
 	script_execute(scr_HitBounce, obj_fire, 2)
 	
+	//hat follow you
+	if(sprite_index != spr_NewPlayer_Jump){
+		obj_Hat.x = x
+		obj_Hat.y = y-12
+	}else{
+		obj_Hat.x = x
+		obj_Hat.y = y-10
+	}
+	
 	
 }else{
 	sprite_index = spr_NewPlayer_idel

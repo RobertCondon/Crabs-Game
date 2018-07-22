@@ -5,7 +5,7 @@ switch(menu_index){
 		room_goto(Tutorial);
 		break
 	case 1:
-		room_goto(Test_Zone);
+		room_goto(rm_Customization);
 		break;
 	case 2:
 		room_goto(Credits);
