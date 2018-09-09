@@ -8,7 +8,7 @@ if global.stop == false{
 	if global.Invert = true{
 		Right_Key = keyboard_check_pressed(ord("D"));
 		Left_Key = keyboard_check_pressed(ord("A"));
-		Down_Key = keyboard_key_press(ord("S"));
+		Down_Key = keyboard_check_pressed(ord("S"));
 		Down_Key_LetGo = keyboard_check_released(ord("S"))
 	
 	}else{

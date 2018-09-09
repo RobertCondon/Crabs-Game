@@ -1,14 +1,1 @@
-if (place_meeting(x, y+vsp, o_Wall)){
-		
-		//Trying: collisionLine_EntireBottom
-		//Used to be:
-		//place_meeting(x, y+vsp, o_Wall)
-		//!place_meeting(x, y+ sign(vsp), o_Wall)
-		//This is always checking if you havn't hit the wall yet
-		while (!place_meeting(x, y+ sign(vsp), o_Wall))
-		{
-			y = y + sign(vsp);
-		}
-		vsp = 0;
-	}
-	
+pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp

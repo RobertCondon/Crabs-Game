@@ -32,7 +32,7 @@ if global.stop == false{
 	
 	if(SpuishedOffOn == false){
 		
-		if(keyboard_key_press(vk_enter)){
+		if(keyboard_check_pressed(vk_enter)){
 			Draw_Enter = true
 		}
 		Yline = 32
@@ -178,6 +178,5 @@ if global.stop == false{
 }else{
 	sprite_index = spr_NewPlayer_idel
 }
-
 
 
