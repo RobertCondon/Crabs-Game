@@ -2,7 +2,7 @@
     "id": "4ee13bc7-954f-4eca-87a6-b3cd85f49f77",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_logo",
+    "name": "obj_TitleCardTimer",
     "eventList": [
         {
             "id": "2dcc5de9-f056-4e6d-8f44-738ee03ab38f",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "ab6f664a-619a-4fb0-bced-03b5771b3b2b",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
