@@ -1071,6 +1071,14 @@
             }
         },
         {
+            "Key": "7dc3b961-3cea-4245-a880-152b8755f049",
+            "Value": {
+                "id": "f57a0969-3ddd-43b3-96b7-cb40ee0a14ca",
+                "resourcePath": "objects\\obj_ElectricEel\\obj_ElectricEel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7de57f9e-477b-48ac-988e-221d11bf57ae",
             "Value": {
                 "id": "0406d99e-0aa9-416f-9486-0b428614c157",
