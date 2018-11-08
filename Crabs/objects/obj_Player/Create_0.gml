@@ -79,3 +79,6 @@ instance_create_layer(obj_Player.x, obj_Player.y - 5, "Player", obj_Hat)
 //Testing
 //draw collision boxes
 DrawBox = false;
+
+//Damage against eel active
+Eel_electric = false;

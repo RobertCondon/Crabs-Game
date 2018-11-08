@@ -17,7 +17,7 @@ if global.stop = false{
 	if(place_meeting(obj_Player.x, obj_Player.y, collisionSquare)){
 		obj_Player.MoveBy = MoveBy
 		if(Shocking == false) {
-			alarm[0] = 20;
+			alarm[0] = 75;
 			Shocking = true;
 		}
 		if(Act_Shocking == true) {
@@ -28,13 +28,15 @@ if global.stop = false{
 		}
 		
 	}
-}
-if(sprite_index == Spr_Eel_Shock) {
-	if(image_index == 1) {
-		sprite_index = Spr_Eel_Moving;
-		Shocking = false;
+	if(sprite_index == Spr_Eel_Shock) {
+		if(image_index == 1) {
+			sprite_index = Spr_Eel_Moving;
+			Shocking = false;
+			obj_Player.Eel_electric = false
+		}
+		if(image_index >= 10 and place_meeting(obj_Player.x, obj_Player.y, collisionSquare)) {
+			obj_Player.Eel_electric = true
+		}
 	}
-	if(image_index >= 10 and place_meeting(obj_Player.x, obj_Player.y, collisionSquare)) {
-		script_execute(scr_HitBounce, obj_ElectricEel, 2)
-	}
 }
+

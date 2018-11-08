@@ -983,6 +983,14 @@
             }
         },
         {
+            "Key": "7135dc83-8b72-4d10-9964-518bac1cbef1",
+            "Value": {
+                "id": "e0a398b6-dcea-4ecc-bdbd-851f9819d79d",
+                "resourcePath": "objects\\obj_ElectricEelDying\\obj_ElectricEelDying.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "72804ea1-8a75-48f3-9869-05163c26e56d",
             "Value": {
                 "id": "90f7bb2d-b354-42e7-a07a-254edcdaf625",

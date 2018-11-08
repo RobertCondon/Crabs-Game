@@ -161,6 +161,9 @@ if global.stop == false{
 	script_execute(scr_DamdgeControl)
 	//Damdge from fire
 	script_execute(scr_HitBounce, obj_fire, 2)
+	if(Eel_electric == true) {
+		script_execute(scr_HitBounce, obj_ElectricEel, 2)
+	}
 	
 	//hat follow you
 	if(sprite_index != spr_NewPlayer_Jump){

@@ -4,7 +4,7 @@ Hitamount = 10
 BeenHit = obj_Player.BeenHit
 
 
-if(place_meeting(obj_Player.x, obj_Player.y, HitByThem)){
+if(place_meeting(obj_Player.x, obj_Player.y +1, HitByThem)){
 	BeenHit = true
 	o_Player.vsp = -6
 	
