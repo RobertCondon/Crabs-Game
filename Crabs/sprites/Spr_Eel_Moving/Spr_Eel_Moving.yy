@@ -6,44 +6,44 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 58,
-    "bbox_left": 3,
-    "bbox_right": 187,
-    "bbox_top": 16,
+    "bbox_bottom": 51,
+    "bbox_left": 5,
+    "bbox_right": 176,
+    "bbox_top": 6,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "c13c80aa-3c8e-4d66-b5de-4d75c7306b8b",
+            "id": "6922d3ee-b388-4079-beab-5a46e55fd5fd",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "d9cf38fc-29f7-4ada-a034-acc1f20a78b8",
             "compositeImage": {
-                "id": "57fbfc28-223a-4218-a1c6-f61768621ec0",
+                "id": "4247bd93-7c9c-409a-b9ea-32aade3f46d5",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "c13c80aa-3c8e-4d66-b5de-4d75c7306b8b",
+                "FrameId": "6922d3ee-b388-4079-beab-5a46e55fd5fd",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "9ca5eedc-621e-4bd2-9084-ad3ba7812573",
+                    "id": "1a3cce41-c1e5-4dcf-a463-96daf42f0446",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "c13c80aa-3c8e-4d66-b5de-4d75c7306b8b",
-                    "LayerId": "b2623943-670d-4720-8dba-453fd4b5822d"
+                    "FrameId": "6922d3ee-b388-4079-beab-5a46e55fd5fd",
+                    "LayerId": "320f1e38-586d-4fe9-80a3-85e50fd1405f"
                 }
             ]
         }
     ],
-    "gridX": 0,
-    "gridY": 0,
+    "gridX": 1,
+    "gridY": 1,
     "height": 64,
     "layers": [
         {
-            "id": "b2623943-670d-4720-8dba-453fd4b5822d",
+            "id": "320f1e38-586d-4fe9-80a3-85e50fd1405f",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "d9cf38fc-29f7-4ada-a034-acc1f20a78b8",
