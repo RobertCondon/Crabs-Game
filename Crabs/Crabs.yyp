@@ -1063,14 +1063,6 @@
             }
         },
         {
-            "Key": "7d8294d3-425e-4cec-92db-ba4612fbf289",
-            "Value": {
-                "id": "0299e218-fa46-4b1c-a065-78a81ec772e0",
-                "resourcePath": "sprites\\Spr_Eel_Shock\\Spr_Eel_Shock.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "7dc3b961-3cea-4245-a880-152b8755f049",
             "Value": {
                 "id": "f57a0969-3ddd-43b3-96b7-cb40ee0a14ca",
@@ -1763,6 +1755,14 @@
             "Value": {
                 "id": "8c6e572c-7f50-4e50-be28-a3e726d4ebd8",
                 "resourcePath": "sprites\\spr_Hermy_Talk_Neutral\\spr_Hermy_Talk_Neutral.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c4db76ef-6c50-43b0-a584-8cf3815f7486",
+            "Value": {
+                "id": "889b330f-0af4-4994-964a-ce8976af2d1b",
+                "resourcePath": "sprites\\Spr_Eel_Shock\\Spr_Eel_Shock.yy",
                 "resourceType": "GMSprite"
             }
         },

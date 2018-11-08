@@ -5,7 +5,7 @@
     "name": "45aa667c-ff74-4959-82ee-f2a27d3276d4",
     "children": [
         "d9cf38fc-29f7-4ada-a034-acc1f20a78b8",
-        "7d8294d3-425e-4cec-92db-ba4612fbf289"
+        "c4db76ef-6c50-43b0-a584-8cf3815f7486"
     ],
     "filterType": "GMSprite",
     "folderName": "Eel",

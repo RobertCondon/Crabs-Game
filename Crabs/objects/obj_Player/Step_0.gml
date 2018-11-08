@@ -32,9 +32,6 @@ if global.stop == false{
 	
 	if(SpuishedOffOn == false){
 		
-		if(keyboard_key_press(vk_enter)){
-			Draw_Enter = true
-		}
 		Yline = 32
 		if(key_right)Xline = 27;
 		if(key_left)Xline = -26;
