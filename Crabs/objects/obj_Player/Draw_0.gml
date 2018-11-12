@@ -41,4 +41,3 @@ if(DrawBox == true){
 		draw_rectangle_color(x-23, y+32+vsp, x+23, y+20, c_orange, c_orange, c_orange, c_maroon, true)
 
 }
-

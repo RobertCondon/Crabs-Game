@@ -8,12 +8,15 @@ if keyboard_check_pressed(vk_space){
 	}else{
 		if(array_length_1d(Text)-1 > page){
 			page += 1;
+			
 			IncrementStringAmount = 0;
 			if InstanceThatMadeIt != noone{
 				InstanceThatMadeIt.ArrayDone = false
+				IconArray[0].Restart = true;
 			}
 		}else{
 			InstanceThatMadeIt.ArrayDone = true
 		}
 	}
 }
+IconArray[0].IncrementStringAmount = IncrementStringAmount;
