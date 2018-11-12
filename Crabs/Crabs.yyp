@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "41d12719-86b9-4431-9409-e0aeaadb9350",
+            "Value": {
+                "id": "67dd2c34-8b1b-416c-8ba0-1cab42139bb2",
+                "resourcePath": "sprites\\spr_FishSkull\\spr_FishSkull.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "41f44049-3e4b-4613-ad35-5683eeec54bc",
             "Value": {
                 "id": "714cd375-1275-44ad-bfee-dd2eeda8248a",
@@ -1143,6 +1151,14 @@
             }
         },
         {
+            "Key": "858af117-1a0e-47cd-9839-9705c61d1568",
+            "Value": {
+                "id": "790722db-a846-4fee-a0d8-e2b82b9b2906",
+                "resourcePath": "sprites\\spr_Mine\\spr_Mine.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "85b15e1e-2274-49a4-b530-9c60d2b5014e",
             "Value": {
                 "id": "e3efc57d-d331-4f9f-bd19-04031389badd",
@@ -1428,6 +1444,14 @@
                 "id": "72347824-bc73-413f-873b-e05c09e47095",
                 "resourcePath": "objects\\obj_Options\\obj_Options.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9eeba7f6-c21e-4223-bbc6-b01164ede1ed",
+            "Value": {
+                "id": "b03505f8-c1ca-4925-a0c3-d31dfc747934",
+                "resourcePath": "sprites\\spr_Harpoon\\spr_Harpoon.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1891,6 +1915,14 @@
             "Value": {
                 "id": "ecd84a1a-cb11-4c81-9a65-6558cdbd899a",
                 "resourcePath": "views\\c9d3a476-7550-4985-838d-719e5649e3e8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ca87c9ef-5050-4cf2-abba-42231bcb426e",
+            "Value": {
+                "id": "df0c6bcb-f0a5-4678-b178-c3715ada75ae",
+                "resourcePath": "views\\ca87c9ef-5050-4cf2-abba-42231bcb426e.yy",
                 "resourceType": "GMFolder"
             }
         },
