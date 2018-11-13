@@ -24,6 +24,7 @@ if (distance_player <= los)
 		
 	}
 	if Done == false{
+		Draw_Fade = true;
 		obj_Player.Talking = true
 		global.stop = true
 		obj_Camera.follow = self;
@@ -33,8 +34,10 @@ if (distance_player <= los)
 			obj_Player.Talking = false
 			global.stop = false;
 			Done = true;
+			Draw_Fade = false;
 			obj_Camera.follow = obj_Player;
 			obj_Camera.PlayerVision = true;
+			shader_reset();
 		}
 	
 	}

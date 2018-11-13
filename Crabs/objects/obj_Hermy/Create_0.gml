@@ -8,3 +8,4 @@ TextBox = noone
 script[0] = "Put somthing"
 ArrayDone = false
 MyName = "Hermy"
+Draw_Fade = false;

@@ -32,9 +32,6 @@ if global.stop == false{
 	
 	if(SpuishedOffOn == false){
 		
-		if(keyboard_check_pressed(vk_enter)){
-			Draw_Enter = true
-		}
 		Yline = 32
 		if(key_right)Xline = 27;
 		if(key_left)Xline = -26;
@@ -164,6 +161,9 @@ if global.stop == false{
 	script_execute(scr_DamdgeControl)
 	//Damdge from fire
 	script_execute(scr_HitBounce, obj_fire, 2)
+	if(Eel_electric == true) {
+		script_execute(scr_HitBounce, obj_ElectricEel, 2)
+	}
 	
 	//hat follow you
 	if(sprite_index != spr_NewPlayer_Jump){
@@ -178,5 +178,6 @@ if global.stop == false{
 }else{
 	sprite_index = spr_NewPlayer_idel
 }
+
 
 

@@ -3,8 +3,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if global.stop == false{
-	x = o_Player.x - 2;
-	y = o_Player.y - 27;
+	x = o_Player.x - 25;
+	y = o_Player.y;
 	if global.Invert = true{
 		Right_Key = keyboard_check_pressed(ord("D"));
 		Left_Key = keyboard_check_pressed(ord("A"));
@@ -115,7 +115,7 @@ if global.stop == false{
 		down = false
 		right = false
 	}
-	if (Left_Key) or (Down_Key) or (Right_Key){
+	if((left) or (down) or (right)){
 		if (Firing_Delay = 60){
 
 			sprite_index = spr_WandCD

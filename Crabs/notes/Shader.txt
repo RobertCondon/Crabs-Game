@@ -1,0 +1,6 @@
+float Avarage = (OriginalColor.r + OriginalColor.g + OriginalColor.b ) / 3.0;
+	float Red = 0.0;
+	float Green = OriginalColor.g;
+	float Blue = 0.0;
+	float Alpha = 1.0;
+	vec4 base_col = vec4(Avarage,Avarage,Avarage,Alpha);

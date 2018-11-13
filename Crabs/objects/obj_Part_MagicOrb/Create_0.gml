@@ -1,6 +1,8 @@
 /// @Just the create event
 // You can write your code in this editor
 
+SpurtMagic = true;
+
 //Partical System
 partMagic_sys = part_system_create()
 part_system_depth(partMagic_sys, 0)
@@ -12,10 +14,10 @@ part_type_scale(PartMagic, 0.1, 0.1);
 part_type_size(PartMagic, 0.3, 0.7, -0.005, 0);
 part_type_color2(PartMagic, c_blue, c_white);
 part_type_alpha2(PartMagic, 1, 0.75);
-part_type_speed(PartMagic, 0.1, 0.5, 0, 0);
+part_type_speed(PartMagic, 0.1, 0.3, 0, 0);
 part_type_direction(PartMagic, 0, 359, 0, 0);
 part_type_gravity(PartMagic, 0.002, -90);
-part_type_life(PartMagic, 0.7,room_speed);
+part_type_life(PartMagic, 0.2,2);
 part_type_blend(PartMagic, true);
 
 
