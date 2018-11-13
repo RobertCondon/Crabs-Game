@@ -4,7 +4,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if global.stop = false{
-	collisionSquare = collision_rectangle(x + x_Width-5, y + y_Height, x - x_Width +5, y - y_Height - 1, obj_Player, false, false)
+	collisionSquare = collision_rectangle(x + x_Width-5, y + y_Height+5, x - x_Width +5, y - y_Height - 1, obj_Player, false, false)
 	if(place_meeting(x+MoveBy, y, o_Wall)){
 		MoveBy = MoveBy*-1
 	}
