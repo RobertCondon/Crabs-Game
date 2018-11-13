@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "25f74462-006b-48c3-8b65-6b344edeccda",
+            "Value": {
+                "id": "d5c91aed-aa63-4748-9db9-915875a63101",
+                "resourcePath": "sprites\\spr_Test\\spr_Test.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "26df1885-b02a-4f16-8411-9775e5d01223",
             "Value": {
                 "id": "3b6c5aaa-511c-4dda-abbb-196c5ba55772",
@@ -663,6 +671,14 @@
             }
         },
         {
+            "Key": "47b89778-49bd-4b43-bf7d-aa2e88cce624",
+            "Value": {
+                "id": "33f8a17b-7ae8-4674-bab7-7baf1a547c8d",
+                "resourcePath": "views\\47b89778-49bd-4b43-bf7d-aa2e88cce624.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "48d1550e-2753-45b5-9b3c-a73012f1e422",
             "Value": {
                 "id": "38804be6-2632-4358-9ce1-a9c7196a5933",
@@ -900,6 +916,14 @@
                 "id": "02be3619-b31d-4088-960f-75cbfcbee5c5",
                 "resourcePath": "views\\5fbe74af-bb22-4d56-9b25-4594647bdf95.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "61a3c47b-72c7-4431-bc43-72645216a467",
+            "Value": {
+                "id": "dad5653f-fd51-4fd2-ad93-7fef3c7a3b4f",
+                "resourcePath": "tilesets\\ts_SandAndStone\\ts_SandAndStone.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -1779,6 +1803,14 @@
             "Value": {
                 "id": "f4fcba49-fa32-4164-b120-5714e36abc3d",
                 "resourcePath": "sprites\\spr_LightSand\\spr_LightSand.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bb3d6dbd-e8ff-4469-bd98-8f3e9cb32ad6",
+            "Value": {
+                "id": "8ba72b6f-44a8-462c-a60a-36875a63823e",
+                "resourcePath": "sprites\\spr_SandAndStone\\spr_SandAndStone.yy",
                 "resourceType": "GMSprite"
             }
         },
