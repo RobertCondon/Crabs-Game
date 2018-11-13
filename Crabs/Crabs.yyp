@@ -383,14 +383,6 @@
             }
         },
         {
-            "Key": "25f74462-006b-48c3-8b65-6b344edeccda",
-            "Value": {
-                "id": "d5c91aed-aa63-4748-9db9-915875a63101",
-                "resourcePath": "sprites\\spr_Test\\spr_Test.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "26df1885-b02a-4f16-8411-9775e5d01223",
             "Value": {
                 "id": "3b6c5aaa-511c-4dda-abbb-196c5ba55772",
@@ -687,14 +679,6 @@
             }
         },
         {
-            "Key": "47b89778-49bd-4b43-bf7d-aa2e88cce624",
-            "Value": {
-                "id": "33f8a17b-7ae8-4674-bab7-7baf1a547c8d",
-                "resourcePath": "views\\47b89778-49bd-4b43-bf7d-aa2e88cce624.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "48d1550e-2753-45b5-9b3c-a73012f1e422",
             "Value": {
                 "id": "38804be6-2632-4358-9ce1-a9c7196a5933",
@@ -935,19 +919,11 @@
             }
         },
         {
-<<<<<<< HEAD
             "Key": "61a3c47b-72c7-4431-bc43-72645216a467",
             "Value": {
                 "id": "dad5653f-fd51-4fd2-ad93-7fef3c7a3b4f",
                 "resourcePath": "tilesets\\ts_SandAndStone\\ts_SandAndStone.yy",
                 "resourceType": "GMTileSet"
-=======
-            "Key": "642c7a8f-c07c-4bfc-95c4-0ec6e2857031",
-            "Value": {
-                "id": "b847effa-1203-4c1d-886d-bf0ec040d79b",
-                "resourcePath": "sprites\\spr_Starfish3\\spr_Starfish3.yy",
-                "resourceType": "GMSprite"
->>>>>>> a6f035358a8aa4066abcb4fdca555ef58222d130
             }
         },
         {
@@ -1060,6 +1036,14 @@
                 "id": "e0a398b6-dcea-4ecc-bdbd-851f9819d79d",
                 "resourcePath": "objects\\obj_ElectricEelDying\\obj_ElectricEelDying.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "73230a53-5f71-4a02-bfe0-2dbd38d1e4d1",
+            "Value": {
+                "id": "038e1d6b-59c1-41f2-a48f-d2b00df8b588",
+                "resourcePath": "views\\73230a53-5f71-4a02-bfe0-2dbd38d1e4d1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1847,14 +1831,6 @@
             }
         },
         {
-            "Key": "bb3d6dbd-e8ff-4469-bd98-8f3e9cb32ad6",
-            "Value": {
-                "id": "8ba72b6f-44a8-462c-a60a-36875a63823e",
-                "resourcePath": "sprites\\spr_SandAndStone\\spr_SandAndStone.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "bcaccd90-f85f-4e32-88aa-4462b4c2f035",
             "Value": {
                 "id": "3456bca8-8232-4a31-a443-d707b92a7941",
@@ -2247,6 +2223,14 @@
             }
         },
         {
+            "Key": "e7291a0c-0e93-49f2-8a40-d4e2c08e0b89",
+            "Value": {
+                "id": "a1b4f70a-29c7-41cb-bfb6-85f925f7fc46",
+                "resourcePath": "sprites\\spr_StoneAndSand\\spr_StoneAndSand.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e8a5c7f1-1b12-4999-b79a-a99b470a1018",
             "Value": {
                 "id": "d18a651b-a03d-49ad-9fc7-1f08a919cad1",
@@ -2268,6 +2252,14 @@
                 "id": "cedb0a30-0e1a-497f-8f8e-54b213bc2ef5",
                 "resourcePath": "rooms\\Tutorial\\Tutorial.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "ecc97e92-53dc-4d8b-9240-43e71cf30b2e",
+            "Value": {
+                "id": "21224fd8-5f19-4a23-8416-fa496b5288c0",
+                "resourcePath": "tilesets\\tl_StoneAndSand\\tl_StoneAndSand.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
