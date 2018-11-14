@@ -247,14 +247,6 @@
             }
         },
         {
-            "Key": "168cc8ac-9675-45d1-97a3-26a2a614accd",
-            "Value": {
-                "id": "e03ed7d9-6b4a-4037-b8c1-01d9faa3b0f0",
-                "resourcePath": "sprites\\spr_CrabsTitle\\spr_CrabsTitle.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "181c8194-f4ce-4ab2-9b6a-c2414afc3e6c",
             "Value": {
                 "id": "25005184-0ca8-41f0-afe3-6a3ec48cc73e",
@@ -1007,14 +999,6 @@
             }
         },
         {
-            "Key": "73b3e196-c579-49e4-ad09-abcfb7624edf",
-            "Value": {
-                "id": "b74f21fa-6aad-4f06-9fc7-78e78639b439",
-                "resourcePath": "sprites\\spr_waves_and_ocean\\spr_waves_and_ocean.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "7501416c-0ceb-4e53-8599-c0954aa84419",
             "Value": {
                 "id": "e12e082f-5b2f-4260-9caa-9165c1612f84",
@@ -1431,14 +1415,6 @@
             }
         },
         {
-            "Key": "9f1d122b-0fad-4dbc-9a45-8d8ef3117b13",
-            "Value": {
-                "id": "d0b4c298-2c6f-4af6-b090-51c50b1ec37d",
-                "resourcePath": "sprites\\spr_sky\\spr_sky.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "9f1fec66-918c-4aa8-9cb8-aa97614ac7e5",
             "Value": {
                 "id": "4426116c-22b3-47c2-b969-876bca65b423",
@@ -1567,27 +1543,11 @@
             }
         },
         {
-            "Key": "a9a24860-a8c2-450c-a491-99baf0211f6a",
-            "Value": {
-                "id": "1aa8574f-7d83-46df-8055-cdc721d9bac8",
-                "resourcePath": "objects\\obj_sky\\obj_sky.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "aa32dcec-db1f-4ff7-b12d-275a9ba98288",
             "Value": {
                 "id": "0f8396b2-f4f3-4325-b089-651911e3d50f",
                 "resourcePath": "objects\\obj_shaderOffEnd\\obj_shaderOffEnd.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "ab6f664a-619a-4fb0-bced-03b5771b3b2b",
-            "Value": {
-                "id": "29361d87-2d99-44e7-bf67-0507dec74dd6",
-                "resourcePath": "sprites\\spr_Staisfying_Itch\\spr_Staisfying_Itch.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1639,14 +1599,6 @@
             }
         },
         {
-            "Key": "b1fc79a2-7e33-491c-9eba-2f0de0134e48",
-            "Value": {
-                "id": "ec2bb54d-6123-4b49-9e25-d977b7228ae7",
-                "resourcePath": "sprites\\sprite0\\sprite0.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "b338b52c-ed49-447b-81bb-2acb9780d1fc",
             "Value": {
                 "id": "b030cf34-912b-44b6-a320-fe996731e2fc",
@@ -1659,14 +1611,6 @@
             "Value": {
                 "id": "b2fe1c63-36d1-4a64-b14a-5e6ee6358bff",
                 "resourcePath": "sprites\\spr_Tunnel\\spr_Tunnel.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "b4080b57-398d-48bd-8585-b2319f33c97d",
-            "Value": {
-                "id": "520e18fd-6557-499a-af5a-6107fee4d660",
-                "resourcePath": "sprites\\spr_shore\\spr_shore.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2039,14 +1983,6 @@
             }
         },
         {
-            "Key": "ddbe1054-a28a-45af-b2be-dc1fe12d1430",
-            "Value": {
-                "id": "dedff657-4b7d-4d5c-b031-d4d9fa468fc6",
-                "resourcePath": "objects\\obj_shore\\obj_shore.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "de2ae308-4d7c-484e-9698-4f7adf9881e8",
             "Value": {
                 "id": "d0b75791-7e91-47c8-96da-668aef6f3244",
@@ -2316,14 +2252,6 @@
                 "id": "aecb0b32-8bf2-47c3-ac18-cb257aa8e3ae",
                 "resourcePath": "sprites\\s_Win\\s_Win.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "fceaad06-680b-455f-9c7f-d857fbc30a4e",
-            "Value": {
-                "id": "656eb8dd-c63e-44a7-b83d-b500853b296b",
-                "resourcePath": "objects\\obj_waves_ocean\\obj_waves_ocean.yy",
-                "resourceType": "GMObject"
             }
         },
         {
