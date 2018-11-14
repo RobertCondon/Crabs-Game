@@ -16,4 +16,5 @@ BoxHeight = sprite_get_height(spr_TextBox)/3
 InstanceThatMadeIt = noone;
 InstanceName = "TEST";
 
-instance_create_layer(x+20, y+30, "TextLayer", IconArray[0]);
+instance_create_layer(x+20, y+30, "Icons", IconArray[0]);
+IconArray[0].BoxWidth = BoxWidth-140+x;
