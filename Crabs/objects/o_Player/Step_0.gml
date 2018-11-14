@@ -146,6 +146,8 @@ else
 			image_speed = 1.5
 		}
 		else
+		
+		
 		{
 			sprite_index = s_player_walk_left
 			image_speed = 1.5

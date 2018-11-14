@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_waves_ocean",
     "eventList": [
-        
+        {
+            "id": "cc857426-c7f3-4a50-9cf9-f8d487cfae0d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "43d1981d-97c9-41ba-8374-88c91204641e",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "fceaad06-680b-455f-9c7f-d857fbc30a4e"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
