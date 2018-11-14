@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+//Keyboard 
+
+
 menu_move = (keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left));
 if(menu_move == 0){
 	menu_move = (keyboard_check_pressed(ord("D")) - keyboard_check_pressed(ord("A")));
@@ -9,27 +12,44 @@ if (menu_index < 0) menu_index = buttons - 1;
 if (menu_index > buttons - 1) menu_index = 0;
 
 
-var i = 0;
-repeat(buttons){
-	if (unfold[i] == 1) i++;
-	
-	if (i < buttons) unfold[i] = min(1, unfold[i] + .009);
-	if (i+1 < buttons) unfold[i+1] = min(1, unfold[i+1] + .0005);
+//Mouse
+
+if point_in_rectangle(mouse_x, mouse_y, menu_x, menu_y + add_y, menu_x + button_width, menu_y + add_y + button_h){ 
+	menu_index = 0;
+}
+if point_in_rectangle(mouse_x, mouse_y, menu_x + (add_x * 1), menu_y + add_y, menu_x + (add_x * 1) + button_width, menu_y + add_y + button_h){
+	menu_index = 1;
+}
+if point_in_rectangle(mouse_x, mouse_y, menu_x + (add_x * 2), menu_y + add_y, menu_x + (add_x * 2) + button_width, menu_y + add_y + button_h){
+	menu_index = 2;
+}
+if point_in_rectangle(mouse_x, mouse_y, menu_x + (add_x * 3), menu_y + add_y, menu_x + (add_x * 3) + button_width, menu_y + add_y + button_h){
+	menu_index = 3;
+}
+if point_in_rectangle(mouse_x, mouse_y, menu_x + (add_x * 4), menu_y + add_y, menu_x + (add_x * 4) + button_width, menu_y + add_y + button_h){
+	menu_index = 4;
 }
 
-if (menu_index != last_selected){
-	if menu_index == 2{
-	part_type_size(part_menu, 1.5, 1.5, -0.02, 0);	
+if (mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_enter)){
+	switch(menu_index){
+	case 0:
+		room_goto(Tutorial);
+		break
+	case 1:
+		room_goto(rm_Customization);
+		break;
+	case 2:
+		room_goto(Credits);
+		break;
+	case 3:
+		instance_create_depth(416, 160, 0, obj_Options);
+		instance_destroy();
+		break;
+	case 4:
+		game_end();
+		break;
 	}
-	else{
-		if menu_index == 3{
-		part_type_size(part_menu, 1, 1, -0.02, 0);
-		}else{
-			part_type_size(part_menu, 2, 2, -0.02, 0);
-		}
-	}
-	part_particles_create(part_menuSys, menu_x + 60 + (90 + button_padding + button_width/2) * menu_index, menu_y + 125, part_menu, 1);
 }
-//if (menu_index != last_selected) auido_play_sound
 
-last_selected = menu_index
+
+
