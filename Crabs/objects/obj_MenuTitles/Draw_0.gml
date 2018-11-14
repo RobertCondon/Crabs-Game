@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_sprite(spr_TitleCard, 0, room_width/2, menu_y);
+draw_sprite(spr_TitleCard, 0, room_width/2, menu_y-100);
 
 
 
