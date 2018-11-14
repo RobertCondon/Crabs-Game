@@ -1,3 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-spin = irandom_range(0.05, 0.3)
+spin = random_range(0.05, 0.12)
+UpDown = false
+alarm[0] = 1

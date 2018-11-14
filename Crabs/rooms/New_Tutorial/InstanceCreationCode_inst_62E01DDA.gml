@@ -1,2 +1,4 @@
-script_say = "to get extra high try using the wand to push ya around"
-draw_text(obj_Hermy.x, obj_Hermy.y, script_say)
+
+var script_say
+script_say[0] = "Use the wand to get around and beat the level"
+script = script_say

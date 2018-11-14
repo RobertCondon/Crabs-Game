@@ -1,5 +1,5 @@
 {
-    "id": "460f5c22-e035-4785-9f3f-2f290e1e0ffb",
+    "id": "9690b281-edce-431c-84e7-1494bcd68d7a",
     "modelName": "GMPath",
     "mvc": "1.0",
     "name": "path1",
