@@ -2,10 +2,10 @@
 // You can write your code in this editor
 if(IncrementStringAmount != IncrementStringAmountOLD and Restart != true and x < x+IncrementStringAmount) {
 	if(x+4.5 >= BoxWidth) {
-		x = oldX+4.5
+		x = oldX
 		y += 20;
 	}
-	x = x+4.5;
+	x = x + 4.5;
 	NewX = false;
 } else {
 	if(NewX = false) {
