@@ -18,3 +18,4 @@ InstanceName = "TEST";
 
 instance_create_layer(x+20, y+30, "Icons", IconArray[0]);
 IconArray[0].BoxWidth = BoxWidth-140+x;
+IconArray[0].TotalSayings = Text;

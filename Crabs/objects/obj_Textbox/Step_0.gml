@@ -20,3 +20,4 @@ if keyboard_check_pressed(vk_space){
 	}
 }
 IconArray[0].IncrementStringAmount = IncrementStringAmount;
+IconArray[0].page = page;

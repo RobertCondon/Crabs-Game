@@ -16,3 +16,9 @@ alarm[0] = 25
 
 //Boxwidth so it goes down a line when it's reached the end of one.
 BoxWidth = noone;
+
+//String count stuff so you can go over the box correct.
+TotalSayings = noone
+TotalFromString = 0;
+Page = 0;
+i = 0;

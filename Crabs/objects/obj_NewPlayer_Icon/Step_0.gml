@@ -1,8 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(IncrementStringAmount != IncrementStringAmountOLD and Restart != true and x < x+IncrementStringAmount) {
+	if(TotalSayings[page][i] != " ") {
+		TotalFromString = 0;
+	} else {
+		TotalFromString += 4.5;
+	}
+	i += 1;
 	if(x+4.5 >= BoxWidth) {
-		x = oldX
+		x = oldX + TotalFromString;
 		y += 20;
 	}
 	x = x + 4.5;
@@ -17,9 +23,10 @@ if(IncrementStringAmount != IncrementStringAmountOLD and Restart != true and x <
 	}else{
 		y = y - Bobble 
 	}
-	
-	
+		
 }
+
+
 
 if(Restart == true) {
 	x = oldX
