@@ -1327,6 +1327,14 @@
             }
         },
         {
+            "Key": "8c686a54-42fa-4c46-ad40-2ea47c0a2800",
+            "Value": {
+                "id": "adb48c9d-bacc-49f2-af32-4dd9eef53ad7",
+                "resourcePath": "sprites\\spr_button\\spr_button.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8cf26a96-2ce4-43d4-a9e0-e019013fe9ef",
             "Value": {
                 "id": "4411d4d0-013c-4da1-aa24-be2a7feb529a",
