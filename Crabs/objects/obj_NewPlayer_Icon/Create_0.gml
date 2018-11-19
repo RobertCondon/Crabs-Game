@@ -10,7 +10,7 @@ oldY = y;
 NewX = false;
 
 //A little bobble while it waits
-Bobble = random_range(0.1, 0.2)
+Bobble = 0.01
 UpDown = false;
 alarm[0] = 25
 
@@ -20,5 +20,17 @@ BoxWidth = noone;
 //String count stuff so you can go over the box correct.
 TotalSayings = noone
 TotalFromString = 0;
+PageOld = noone;
 Page = 0;
-i = 0;
+i = 1;
+
+TotalLetters = 0;
+SpaceArray[0] = 0;
+ArrayCounter = 0;
+SetBack = false;
+
+TotalJumps = 0;
+AmountOfWords = 32
+WidthOfFont = 7;
+draw_set_font(fnt_TextBox);
+LetterSize = string_width("i")*0.75;
