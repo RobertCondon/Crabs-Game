@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "2018eb90-47a2-4ff6-9e11-1480b2784f18",
+            "Value": {
+                "id": "7ac49219-294e-490e-8439-c21f9c26ebbf",
+                "resourcePath": "sprites\\spr_Wheel\\spr_Wheel.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "204f2efb-708b-483a-a821-bb3dbb115664",
             "Value": {
                 "id": "eca9791c-e07c-4bae-82c8-3e4fc2795054",
