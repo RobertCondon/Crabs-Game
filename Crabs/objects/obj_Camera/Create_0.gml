@@ -15,7 +15,8 @@ camera_set_view_mat(camera, vm);
 camera_set_proj_mat(camera, pm);
 
 view_camera[0] = camera
-
+view_wport[0] = display_get_width();
+view_hport[0] = display_get_width();
 follow = obj_Player;
 xTo = x;
 yTo = y;

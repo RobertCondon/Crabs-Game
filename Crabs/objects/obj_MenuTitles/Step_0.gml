@@ -33,7 +33,7 @@ if point_in_rectangle(mouse_x, mouse_y, menu_x + (add_x * 4), menu_y + add_y, me
 if (mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_enter)){
 	switch(menu_index){
 	case 0:
-		room_goto(Tutorial);
+		room_goto(rm_Level1_House);
 		break
 	case 1:
 		room_goto(rm_Customization);

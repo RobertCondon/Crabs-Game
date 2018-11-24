@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "1b14246b-e141-4534-946d-82c152a0ca9f",
+            "Value": {
+                "id": "33e6c46e-65ab-45fd-9908-863097b10a07",
+                "resourcePath": "objects\\obj_Lighting\\obj_Lighting.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1b22825a-a092-4372-ac57-29fdcb1b8854",
             "Value": {
                 "id": "5e2b9a97-040c-4050-82d1-5639d56f4ddb",
@@ -2100,6 +2108,14 @@
                 "id": "21803711-4386-4a2c-997e-eedb2afd20fc",
                 "resourcePath": "sprites\\spr_seaweedAlt\\spr_seaweedAlt.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cd80493c-c572-42ca-a0fc-0b0bffb57708",
+            "Value": {
+                "id": "af2f523f-4ede-4850-8a88-ba5957c1bea0",
+                "resourcePath": "objects\\obj_WindowLight\\obj_WindowLight.yy",
+                "resourceType": "GMObject"
             }
         },
         {
