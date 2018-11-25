@@ -8,13 +8,14 @@ if surface_exists(Surface_Lighting) {
 	
 	draw_clear_alpha(make_color_hsv(0, 0, 240), 1);
 	gpu_set_blendmode(bm_add);
-	draw_circle_color(mouse_x-cx, mouse_y-cy, 32, c_white, c_black, 0);
+	draw_triangle_color(mouse_x-cx-100, mouse_y-cy+100, mouse_x-cx+100, mouse_y-cy+100, mouse_x-cx, mouse_y-cy, 32, c_white, c_black, 0);
 	
 	
-	if(instance_exists(obj_WindowLight)) {
-		with(obj_WindowLight) {
-			draw_circle_color(x-cx, y-cy, 200, c_white, c_white, 0);
-		}
+	with(obj_WindowLight) {
+		draw_circle_color(x-cx, y-cy, 130, c_white, c_white, 0);
+	}
+	with(obj_WindowLightTriangle) {
+		draw_triangle_color(x-cx-Width, y-cy+Height, x-cx+Width,y-cy+Height,x-cx,y-cy, col, col, c_white, 0);
 	}
 	
 	surface_reset_target();
