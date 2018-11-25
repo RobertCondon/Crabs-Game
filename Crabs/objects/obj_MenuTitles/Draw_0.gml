@@ -21,7 +21,8 @@ repeat(buttons){
 	
 	draw_set_color(c_white);
 	if (menu_index == i) draw_set_color(c_blue);
-	draw_sprite(spr_button, 0, xx + button_width/2, yy + button_h/2);
+	
+	draw_sprite(spr_button, 1, xx + button_width/2, yy + button_h/2);
 	draw_text(xx + button_width/2, yy + button_h/2, button[i]);
 	i++;
 }
