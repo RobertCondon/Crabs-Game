@@ -19,3 +19,5 @@ last_selected = 0;
 
 add_x = (150 + button_padding);
 add_y = 100;
+selected = 0;
+
