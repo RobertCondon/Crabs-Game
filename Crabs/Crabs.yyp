@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "575d6a1d-ad4f-43d4-a331-b494aee2488d",
+            "Value": {
+                "id": "103d79b4-9b9d-4516-ac6f-8a19147a3721",
+                "resourcePath": "sprites\\spr_JellyBoi_BlueGreen64\\spr_JellyBoi_BlueGreen64.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5955df13-9b51-4827-84bd-e5eb172abc2b",
             "Value": {
                 "id": "cf8a4152-9389-482f-9715-cafa2ccf2cda",
@@ -1035,6 +1043,14 @@
             "Value": {
                 "id": "7acaf129-ec2f-4044-b563-704c2f29f304",
                 "resourcePath": "views\\64a136c5-f8e8-498d-9106-362ddcf1b132.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6614fea9-ec1b-44dd-81c2-6c3ebff50a6d",
+            "Value": {
+                "id": "110fd211-b5eb-40de-ab0e-8104de278e3b",
+                "resourcePath": "views\\6614fea9-ec1b-44dd-81c2-6c3ebff50a6d.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1999,6 +2015,14 @@
             }
         },
         {
+            "Key": "bdc5ccb9-600f-4e19-afdc-dfaafab337d0",
+            "Value": {
+                "id": "20cc5c81-8d70-42a7-8749-3aeb9e67f473",
+                "resourcePath": "objects\\obj_JellyFish_BlueGreen64\\obj_JellyFish_BlueGreen64.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c0a35aa3-a6ae-43d8-b52a-89775500aa93",
             "Value": {
                 "id": "0aa400f5-f49a-4e54-9577-506199808f89",
@@ -2295,6 +2319,14 @@
             }
         },
         {
+            "Key": "dc7379d8-a402-4be4-9725-32881f5f01e9",
+            "Value": {
+                "id": "26c884de-c9f5-466a-9fde-08feb4fbe4b7",
+                "resourcePath": "sprites\\spr_JellyBoi_BlueGreen_Fall\\spr_JellyBoi_BlueGreen_Fall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ddbe1054-a28a-45af-b2be-dc1fe12d1430",
             "Value": {
                 "id": "dedff657-4b7d-4d5c-b031-d4d9fa468fc6",
@@ -2323,6 +2355,14 @@
             "Value": {
                 "id": "02a94a76-1777-4c94-889e-12bb154fa4bd",
                 "resourcePath": "views\\e06a833b-d100-4a8b-8c28-d7b59abe9bdd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e07dc9be-c73e-44e9-8f20-509a7db2c004",
+            "Value": {
+                "id": "8c028b26-23a3-4b00-bcf0-0237f1a7d900",
+                "resourcePath": "views\\e07dc9be-c73e-44e9-8f20-509a7db2c004.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -2435,6 +2475,14 @@
             "Value": {
                 "id": "cde3cd8c-2530-4d26-bafa-0e21641f13f8",
                 "resourcePath": "sprites\\spr_coral4\\spr_coral4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ed6fe7d9-3233-474b-a710-e71c7a6a31be",
+            "Value": {
+                "id": "7f15c6f7-e2e1-49a5-88bf-8b7fa22dbe60",
+                "resourcePath": "sprites\\spr_JellyBoi_BlueGreen_Swim\\spr_JellyBoi_BlueGreen_Swim.yy",
                 "resourceType": "GMSprite"
             }
         },
