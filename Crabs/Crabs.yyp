@@ -1527,6 +1527,14 @@
             }
         },
         {
+            "Key": "94c927b0-297a-4e0b-8ae4-4cac557e67fb",
+            "Value": {
+                "id": "c17aeafa-2d45-412c-b4b2-0025a3536762",
+                "resourcePath": "sounds\\snd_Music_StartingHouse\\snd_Music_StartingHouse.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "9508fdab-e0a1-49c2-aed4-2e76a3af1a96",
             "Value": {
                 "id": "e951ee35-2c29-4711-b553-fa2725f388ff",
