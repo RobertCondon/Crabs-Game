@@ -6,10 +6,15 @@ partStep_sys = obj_Player.partStep_sys
 PartStep_emit = obj_Player.PartStep_emit
 PartStep = obj_Player.PartStep
 StepColour = obj_BelowPlayerLeft.StepColour
+TurnOffJump = obj_Player.TurnOffJump;
+
+
 if (!obj_Player.collisionJump)
 		{
 			//On_Wall = 0;
-			obj_Player.sprite_index = spr_NewPlayer_Jump;
+			if(TurnOffJump == false) {
+				obj_Player.sprite_index = spr_NewPlayer_Jump;
+			}
 		}
 		else
 		{

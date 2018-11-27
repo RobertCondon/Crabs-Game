@@ -16,24 +16,29 @@ if (menu_index > buttons - 1) menu_index = 0;
 
 if point_in_rectangle(mouse_x, mouse_y, menu_x, menu_y + add_y, menu_x + button_width, menu_y + add_y + button_h){ 
 	menu_index = 0;
+	
 }
 if point_in_rectangle(mouse_x, mouse_y, menu_x + (add_x * 1), menu_y + add_y, menu_x + (add_x * 1) + button_width, menu_y + add_y + button_h){
 	menu_index = 1;
+	
 }
 if point_in_rectangle(mouse_x, mouse_y, menu_x + (add_x * 2), menu_y + add_y, menu_x + (add_x * 2) + button_width, menu_y + add_y + button_h){
 	menu_index = 2;
+	
 }
 if point_in_rectangle(mouse_x, mouse_y, menu_x + (add_x * 3), menu_y + add_y, menu_x + (add_x * 3) + button_width, menu_y + add_y + button_h){
 	menu_index = 3;
+	
 }
 if point_in_rectangle(mouse_x, mouse_y, menu_x + (add_x * 4), menu_y + add_y, menu_x + (add_x * 4) + button_width, menu_y + add_y + button_h){
 	menu_index = 4;
+	
 }
 
 if (mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_enter)){
 	switch(menu_index){
 	case 0:
-		room_goto(Tutorial);
+		room_goto(rm_Level1_House);
 		break
 	case 1:
 		room_goto(rm_Customization);

@@ -33,9 +33,11 @@ BeenHit = false
 //Flash
 flash = 0
 //Platform moving speed
-MoveBy = 2
+MoveBy = 2;
 HittingWall = false
-
+//JellyFish
+MoveByY = 2;
+TurnOffJump = false;
 //Create step partical effect
 
 //Partical System

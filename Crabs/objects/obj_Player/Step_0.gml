@@ -12,6 +12,8 @@ if global.stop == false{
 	collisionLine = collision_line(x, y+26, x+Xline, y+26, o_Wall, false, false)
 	collisionEllipse_MovingPlatforms = collision_ellipse(x-22, y+31, x+23, y+13, obj_MovingObject, false, false)
 	collisionLine_MovingPlatforms = collision_line(x-20, y+33, x+21, y+33, obj_MovingObject, false, false)
+	collisionEllipse_JellyFish = collision_ellipse(x-22, y+31, x+23, y+13, obj_JellyFish_BlueGreen64, false, false)
+	collisionLine_JellyFish = collision_line(x-20, y+33, x+21, y+33, obj_JellyFish_BlueGreen64, false, false)
 	
 	if global.Invert = false{
 		key_right = keyboard_check(ord("D"));
@@ -75,6 +77,14 @@ if global.stop == false{
 	//Moving objects movement
 	if(collisionEllipse_MovingPlatforms or collisionLine_MovingPlatforms){
 		x += MoveBy 
+	}
+	
+	//JellyFish stuff
+	if(collisionEllipse_JellyFish ){
+		y += MoveByY
+		TurnOffJump = true;
+	} else {
+		TurnOffJump = false;
 	}
 	
 	script_execute(scr_SquishCrab)
