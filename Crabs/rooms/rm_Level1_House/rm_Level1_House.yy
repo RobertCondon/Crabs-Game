@@ -2,8 +2,8 @@
 {
     "name": "rm_Level1_House",
     "id": "428c777f-f7f2-41ec-ac75-db5c4c2c9fa0",
-    "creationCodeFile": "",
-    "inheritCode": true,
+    "creationCodeFile": "RoomCreationCode.gml",
+    "inheritCode": false,
     "inheritCreationOrder": true,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
