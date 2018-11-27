@@ -15,6 +15,8 @@ Oldy = y;
 FloatDown = false;
 Switch = false;
 IdealFall = false;
+DrawIt = false;
 
-x_Width = (sprite_get_width(spr_JellyBoi_BlueGreen64)/2 ) * image_xscale +1
-y_Height = (sprite_get_height(spr_JellyBoi_BlueGreen64)/2 ) * image_yscale +1
+x_Width = (22) * image_xscale +1
+y_Height = (15) * image_yscale +1
+StepBack = false;

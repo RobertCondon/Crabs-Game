@@ -55,6 +55,7 @@ if global.stop == false{
 	hsp_move = Approach(hsp_move, (key_right - key_left)*walksp, 0.5);
 	hsp = hsp_move + bang;
 	
+	//JellyFish stuff
 	
 	//Jump
 	
@@ -79,12 +80,8 @@ if global.stop == false{
 		x += MoveBy 
 	}
 	
-	//JellyFish stuff
-	if(collisionEllipse_JellyFish ){
-		y += MoveByY
-		TurnOffJump = true;
-	} else {
-		TurnOffJump = false;
+	if(collisionLine_JellyFish or collisionEllipse_JellyFish) {
+		y += MoveByY;	
 	}
 	
 	script_execute(scr_SquishCrab)
@@ -115,7 +112,9 @@ if global.stop == false{
 			}
 		}
 	}
-	vsp = vsp + grv + Vbang
+	
+	
+	vsp = vsp + grv + Vbang;
 	//X axies Collision
 	//Meaning if it meets o_Wall on hte x axies it will stop the movement
 	if (place_meeting(x+hsp, y, o_Wall))
@@ -153,7 +152,7 @@ if global.stop == false{
 		
 	}
 	y = y + vsp;
-
+	
 	//Animation
 	if(SpuishedOffOn == false){
 		script_execute(scr_AnimationCrab)
