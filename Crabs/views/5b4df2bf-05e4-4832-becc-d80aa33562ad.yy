@@ -9,7 +9,8 @@
         "6a62faf0-2104-45a7-8f59-8a4d94eb2f38",
         "9a4450c7-9ae2-4b08-8ae8-6f74140db24d",
         "a3b88375-341c-4762-b775-81b160217309",
-        "ee949762-875b-4daa-a36b-3e64f41e0031"
+        "ee949762-875b-4daa-a36b-3e64f41e0031",
+        "30ea598d-9cbc-4f19-b225-ea8a535a4fd6"
     ],
     "filterType": "GMSprite",
     "folderName": "Main Crab",

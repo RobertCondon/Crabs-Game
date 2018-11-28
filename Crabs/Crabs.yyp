@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "0fc111ab-37c0-421c-98a0-1392dc5c28b9",
+            "Value": {
+                "id": "cc4a4e4c-3511-419a-bd15-2b115672178a",
+                "resourcePath": "objects\\obj_Claw\\obj_Claw.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0fcafba5-53e9-4474-9301-a25a5dbf3e46",
             "Value": {
                 "id": "5e840735-f735-4f69-89ca-ad5fa776de36",
@@ -607,6 +615,14 @@
             }
         },
         {
+            "Key": "30ea598d-9cbc-4f19-b225-ea8a535a4fd6",
+            "Value": {
+                "id": "210a5ed0-0e75-49bf-a02f-dd8b3112b1a7",
+                "resourcePath": "views\\30ea598d-9cbc-4f19-b225-ea8a535a4fd6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3161b934-f4e2-42e8-ac05-c8cd6e43f488",
             "Value": {
                 "id": "b02236a9-a7d6-46c9-94d2-ed36401ec2ad",
@@ -907,6 +923,14 @@
             "Value": {
                 "id": "a8709c24-5e03-48c5-b873-e9b51e157422",
                 "resourcePath": "sprites\\spr_TempHat1\\spr_TempHat1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4d23c211-98e9-4199-a49c-824feaf87b48",
+            "Value": {
+                "id": "27517ae7-0d0a-4e4a-bb97-a6d9694bbe28",
+                "resourcePath": "sprites\\spr_Claw_BasicAttack\\spr_Claw_BasicAttack.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1423,6 +1447,14 @@
             }
         },
         {
+            "Key": "7f70f1f4-94b5-4d06-8f88-39acb3374f15",
+            "Value": {
+                "id": "2b77700f-ffbd-4181-b9d8-982a0462a478",
+                "resourcePath": "sprites\\spr_Claw_BasicComboAttack\\spr_Claw_BasicComboAttack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "80c72ece-d336-43c3-83be-42f0c6982a3f",
             "Value": {
                 "id": "5e1f4a5f-0099-41f7-9d24-b1f7cbeef3ae",
@@ -1780,6 +1812,14 @@
                 "id": "72347824-bc73-413f-873b-e05c09e47095",
                 "resourcePath": "objects\\obj_Options\\obj_Options.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9ee2feda-fc10-46bc-8e31-3044c3cca82c",
+            "Value": {
+                "id": "f3b68afe-50d1-4fca-8ab3-14e825ef8fef",
+                "resourcePath": "sprites\\spr_Claw_Idel\\spr_Claw_Idel.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

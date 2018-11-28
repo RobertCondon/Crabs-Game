@@ -135,6 +135,12 @@ if global.stop == false{
 	}else{
 		HittingWall = false
 	}
+	
+	if(place_meeting(x,y+1, o_Wall)) {
+		OnFloor = true;	
+	} else {
+		OnFloor = false;	
+	}
 	//show_debug_message(point_direction(obj_Player.x, obj_Player.y, o_Turret.x, o_Turret.y))	
 
 	x = x + hsp
@@ -189,4 +195,31 @@ if global.stop == false{
 }
 
 
+//Claw stuff
+//Claw attack with E animations
+if(keyboard_check_pressed(ord("E"))) {
+	if(Claw_State != spr_Claw_BasicAttack) {
+		Claw_State = spr_Claw_BasicAttack;
+	} else {
+		if(Claw.image_index	>= 7) {
+			Claw_State = spr_Claw_BasicComboAttack;
+		}
+	}
+}
 
+
+with(Claw) {
+	y = other.y + other.Claw_Y;
+	x = other.x + other.Claw_X;
+	sprite_index = other.Claw_State;
+}
+
+if(Claw_State = spr_Claw_BasicAttack) {
+	if(Claw.image_index	>= 10) {
+		Claw_State = spr_Claw_Idel;	
+	}
+} else if(Claw_State = spr_Claw_BasicComboAttack) {
+	if(Claw.image_index	>= 5) {
+		Claw_State = spr_Claw_Idel;	
+	}
+}

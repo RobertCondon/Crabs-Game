@@ -6,7 +6,7 @@
 /// @param By  y2
 /// @param Lx  Light x
 /// @param Ly  Light Y
-
+/*
 var _vb = argument0;
 var _Ax = argument1;
 var _Ay = argument2;

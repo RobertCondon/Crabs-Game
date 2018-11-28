@@ -9,5 +9,7 @@ if(keyboard_check_pressed(ord("P"))) {
 	}
 }
 if(DrawIt == true) {
-	draw_rectangle(x + x_Width , y + y_Height -14, x - x_Width , y - y_Height - 14, true);	
+	//draw_rectangle(x + x_Width , y + y_Height -14, x - x_Width , y - y_Height - 14, true);	
+	draw_line(x + x_Width, y - y_Height - 14, x - x_Width, y - y_Height - 14);
+	draw_rectangle(x + x_Width , y + y_Height -14, x - x_Width, y + y_Height + 14, true);
 }

@@ -7,9 +7,10 @@ MyMate.rad = 100;
 
 
 collisionSquare = collision_rectangle(x + x_Width , y + y_Height -14, x - x_Width, y - y_Height - 14, obj_Player, false, false)
+collisionLine = collision_line(x + x_Width, y - y_Height - 14, x - x_Width, y - y_Height - 14, obj_Player, false, false);
+collisionSquareTenticals = collision_rectangle(x + x_Width , y + y_Height -14, x - x_Width, y + y_Height + 14, obj_Player, false, false)
 
-
-if(distance_to_object(obj_Player) < 50 and y >= Oldy) {
+if((collisionLine or collisionSquareTenticals) and y >= Oldy) {
 	StartMovement = true;
 	FloatDown = false;
 } else if(y < Oldy and StartMovement == false and Switch == false and FloatDown == false) {
@@ -20,6 +21,14 @@ if(distance_to_object(obj_Player) < 50 and y >= Oldy) {
 } else if(y < Oldy and StartMovement == false and image_index >= 12) {
 	image_speed = 0;
 }
+
+//Moving so player doesn't get stuck.
+if(collisionSquareTenticals and obj_Player.OnFloor == true) {
+	StartMovement = true;
+	Switch = false;
+	FloatDown = false;
+}
+
 if(y < Oldy and FloatDown == true) {
 	Switch = false;
 	Movement = 1;

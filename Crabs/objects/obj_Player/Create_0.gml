@@ -38,6 +38,7 @@ HittingWall = false
 //JellyFish
 MoveByY = 2;
 TurnOffJump = false;
+OnFloor = false;
 //Create step partical effect
 
 //Partical System
@@ -84,3 +85,14 @@ DrawBox = false;
 
 //Damage against eel active
 Eel_electric = false;
+
+//Claw
+Claw = noone;
+Claw_Y = 8;
+Claw_X = 17;
+Claw_State = spr_Claw_Idel;
+with(instance_create_layer(x+17, y+8, "Player", obj_Claw)) {
+	other.Claw = self.id;
+}
+
+
