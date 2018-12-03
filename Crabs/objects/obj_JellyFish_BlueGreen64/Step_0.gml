@@ -73,12 +73,13 @@ if(StartMovement == true) {
 
 
 if(StartMovement == true) {
+	y -= Movement;
 	if(collisionSquare) {
 		with(obj_Player) {
 			y -= other.Movement;	
 		}
 	}
-	y -= Movement;
+	
 } else {
 	y += Movement;	
 	if(collisionSquare) {

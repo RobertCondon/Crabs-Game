@@ -6,6 +6,9 @@ HeightRoom = 540;
 HermyWidth = 480
 HermyHeight = 270;
 
+PlayerOffSet = 250;
+
+
 PlayerVision = true;
 camera = camera_create();
 

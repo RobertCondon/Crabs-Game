@@ -7,7 +7,8 @@
         "21f29c31-af23-495a-84a5-f35b5e6d40de",
         "85d74faa-a147-4479-8432-aed0a1159660",
         "0e5ea55b-9dbd-44af-827b-d285cae0bbad",
-        "b4a1d663-bfc1-4e98-ace5-271be9d6db30"
+        "b4a1d663-bfc1-4e98-ace5-271be9d6db30",
+        "66488dd1-9958-4778-bb73-dcfac8157e62"
     ],
     "filterType": "GMScript",
     "folderName": "Functions",

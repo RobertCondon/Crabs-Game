@@ -26,3 +26,4 @@ WandEffectMinX = -5
 WandEffectMaxY = 13
 WandEffectMinY = 9
 
+instance_create_depth(x,y, "Ground", obj_Part_MagicOrb);

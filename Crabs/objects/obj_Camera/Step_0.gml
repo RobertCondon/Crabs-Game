@@ -41,7 +41,7 @@ if((yTo - y)/15 >= 1) or ((yTo - y)/15 <= -1){
 
 
 if(follow == obj_Player){
-	xTo = follow.x + 250;
+	xTo = follow.x + PlayerOffSet;
 	yTo = follow.y;
 }else{
 	xTo = follow.x + 150

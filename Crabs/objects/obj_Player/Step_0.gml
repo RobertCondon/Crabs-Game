@@ -197,7 +197,14 @@ if global.stop == false{
 
 //Claw stuff
 //Claw attack with E animations
-if(keyboard_check_pressed(ord("E"))) {
+
+
+with(Claw) {
+	y = other.y + other.Claw_Y;
+	x = other.x + other.Claw_X;
+}
+
+/*if(keyboard_check_pressed(ord("E"))) {
 	if(Claw_State != spr_Claw_BasicAttack) {
 		Claw_State = spr_Claw_BasicAttack;
 	} else {
@@ -205,13 +212,6 @@ if(keyboard_check_pressed(ord("E"))) {
 			Claw_State = spr_Claw_BasicComboAttack;
 		}
 	}
-}
-
-
-with(Claw) {
-	y = other.y + other.Claw_Y;
-	x = other.x + other.Claw_X;
-	sprite_index = other.Claw_State;
 }
 
 if(Claw_State = spr_Claw_BasicAttack) {
@@ -222,4 +222,4 @@ if(Claw_State = spr_Claw_BasicAttack) {
 	if(Claw.image_index	>= 5) {
 		Claw_State = spr_Claw_Idel;	
 	}
-}
+} */
