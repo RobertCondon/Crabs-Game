@@ -26,15 +26,21 @@ if (PlayerVision == true){
 xTo = max(xTo, 10);
 
 
-if( x - 494 <= 0){
-	if(xTo > x){
-		x += (round(xTo) - x)/15;
+	if( x - 494 <= 0){
+		if(xTo > x){
+			x += (round(xTo) - x)/15;
+		}
+	}else{
+		if((xTo - x)/15 >= 1 and x < ToWideForward) {
+			x += (xTo - x)/15;
+		}
+		
+		if((xTo - x)/15 <= -1 and x > ToWideBack){
+			x += (xTo - x)/15;
+		}
 	}
-}else{
-	if((xTo - x)/15 >= 1) or ((xTo - x)/15 <= -1){
-		x += (xTo - x)/15;
-	}
-}
+
+
 if((yTo - y)/15 >= 1) or ((yTo - y)/15 <= -1){
 		y += ((yTo) - y)/15;
 }
@@ -42,7 +48,7 @@ if((yTo - y)/15 >= 1) or ((yTo - y)/15 <= -1){
 
 if(follow == obj_Player){
 	xTo = follow.x + PlayerOffSet;
-	yTo = follow.y;
+	yTo = follow.y + PlayerOffSetY;
 }else{
 	xTo = follow.x + 150
 	yTo = follow.y + 100

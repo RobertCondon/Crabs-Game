@@ -7,6 +7,7 @@ HermyWidth = 480
 HermyHeight = 270;
 
 PlayerOffSet = 250;
+PlayerOffSetY = 0;
 
 
 PlayerVision = true;
@@ -24,4 +25,6 @@ follow = obj_Player;
 xTo = x;
 yTo = y;
 
+ToWideBack = -99999;
+ToWideForward = 99999999;
 Hermy = noone
