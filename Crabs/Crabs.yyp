@@ -1839,6 +1839,14 @@
             }
         },
         {
+            "Key": "98a34e87-5a7c-4961-89ce-8d69f6dd85d1",
+            "Value": {
+                "id": "8751025c-98d7-4da5-95ac-86b7022b623d",
+                "resourcePath": "sounds\\snd_Music_PauseMusic\\snd_Music_PauseMusic.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "99c695de-f7c9-4e21-bb97-0475e9ad858d",
             "Value": {
                 "id": "e870e3db-d516-4d27-a39e-ec87422adc09",

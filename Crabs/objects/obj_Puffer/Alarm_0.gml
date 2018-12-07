@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+audio_play_sound(snd_Effect_Puffer_Boom,2,false);
 distance_player = distance_to_object(o_Player);
 image_index = 10
 image_speed = 0

@@ -28,3 +28,6 @@ yTo = y;
 ToWideBack = -99999;
 ToWideForward = 99999999;
 Hermy = noone
+
+//Fade
+FadeIn = false;

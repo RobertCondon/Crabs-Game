@@ -29,6 +29,7 @@ if (!obj_Player.collisionJump)
 					part_type_color1(PartStep, StepColour);
 					part_emitter_region(partStep_sys, PartStep_emit, Selfx-24, Selfx-20, Selfy+32, Selfy+31, ps_shape_rectangle, ps_distr_gaussian)
 					part_emitter_burst(partStep_sys, PartStep_emit, PartStep, 4);
+					audio_play_sound(snd_Effect_Step,2,false);
 				}
 				if (hsp > 1)
 				{

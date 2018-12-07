@@ -49,12 +49,16 @@ if(StartMovement == true) {
 	sprite_index = 	spr_JellyBoi_BlueGreen_Swim;
 	image_speed = 2;
 	if(image_index > 0 and image_index <= 2) {
+		audio_stop_recording(snd_Effect_JellyFishFloatDown);
+		audio_play_sound(snd_Effect_JellyFishSmallFlutter, 2, false);
 		Movement = 6;
 	}
 	if(image_index > 12 and image_index <= 14) {
+		audio_play_sound(snd_Effect_JellyFishBigPush, 2, false);
 		Movement = 11;
 	}
 	if(image_index >= 21) {
+		audio_play_sound(snd_Effect_JellyFishFloatDown, 2, false);
 		StartMovement = false;
 		sprite_index = spr_JellyBoi_BlueGreen64;
 	}
