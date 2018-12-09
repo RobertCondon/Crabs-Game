@@ -7,6 +7,7 @@ HermyWidth = 480
 HermyHeight = 270;
 
 PlayerOffSet = 250;
+PlayerOffSetY = 0;
 
 
 PlayerVision = true;
@@ -24,4 +25,12 @@ follow = obj_Player;
 xTo = x;
 yTo = y;
 
+ToWideBack = -99999;
+ToWideForward = 99999999;
 Hermy = noone
+
+//Fade
+FadeIn = false;
+Alpha = 1.2;
+Surface_Fade = -1;
+Brightness = 240;

@@ -3,6 +3,7 @@
 hp = obj_Player.hp
 alarmActive = obj_Player.alarmActive
 visableness = obj_Player.visableness
+audio_play_sound(snd_Effect_TookDamdge, 2, true);
 if(hp == 1){
 		if alarmActive == true{
 			obj_Player.alarm[1] = 2

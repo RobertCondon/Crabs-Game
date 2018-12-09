@@ -6,6 +6,7 @@ draw_sprite(spr_TextBox, 1, self.x,self.y);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_font(fnt_TextBox);
+draw_set_color(c_black);
 //Setting up the array
 //How much of the string should be revield. 
 if(IncrementStringAmount <= string_length(Text[page])){

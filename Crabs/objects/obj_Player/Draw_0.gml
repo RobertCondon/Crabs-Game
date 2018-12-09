@@ -4,6 +4,7 @@ draw_self()
 with(Claw){
 	draw_self();	
 }
+draw_set_font(fnt_TextBox);
 if(flash > 0){
 	
 	flash -= 0.03

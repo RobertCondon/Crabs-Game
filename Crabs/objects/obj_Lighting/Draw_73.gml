@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if surface_exists(Surface_Lighting) {
-	var cx = round(camera_get_view_x(view_camera[0]) - Buffer/2);
-	var cy = round(camera_get_view_y(view_camera[0]) - Buffer/2);
+	var cx = round(camera_get_view_x(obj_Camera.camera) - Buffer/2);
+	var cy = round(camera_get_view_y(obj_Camera.camera) - Buffer/2);
 	
 	surface_set_target(Surface_Lighting);
 	
@@ -30,7 +30,7 @@ if surface_exists(Surface_Lighting) {
 	gpu_set_blendmode(bm_normal)
 	
 } else {
-	Surface_Lighting = surface_create(camera_get_view_width(view_camera[0])+Buffer, camera_get_view_height(view_camera[0])+Buffer);
+	Surface_Lighting = surface_create(camera_get_view_width(obj_Camera.camera)+Buffer, camera_get_view_height(obj_Camera.camera)+Buffer);
 	
 }
 	

@@ -1,5 +1,7 @@
 /// @description Textbox and Pause
-
+if(Unseen == true) {
+	object_set_visible(self,false);	
+}
 distance_player = distance_to_object(obj_Player);
 if(ArrayDone == true){
 	//Seeing if the total number of texts are done on the

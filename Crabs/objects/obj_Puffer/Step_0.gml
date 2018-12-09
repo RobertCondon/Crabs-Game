@@ -37,6 +37,7 @@ if(global.stop == false){
 	//Has hit bullet
 	if (place_meeting(x+hsp, y, o_Wand_bullet))
 	{
+		audio_play_sound(snd_Effect_Puffer_ChargeUpBoom,2,false);
 		alarm[0] = 12
 		alarm[1] = 11
 		BigBang = true

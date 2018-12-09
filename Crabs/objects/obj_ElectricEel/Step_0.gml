@@ -19,6 +19,7 @@ if global.stop = false{
 		if(Shocking == false) {
 			alarm[0] = 75;
 			Shocking = true;
+			audio_play_sound(snd_Effect_Eel_ChargeUpShock,2,false);
 		}
 		if(Act_Shocking == true) {
 			sprite_index = Spr_Eel_Shock;

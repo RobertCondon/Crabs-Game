@@ -31,10 +31,16 @@ if( x - 494 <= 0){
 		x += (round(xTo) - x)/15;
 	}
 }else{
-	if((xTo - x)/15 >= 1) or ((xTo - x)/15 <= -1){
+	if((xTo - x)/15 >= 1 and (x < ToWideForward or follow != obj_Player)) {
+		x += (xTo - x)/15;
+	}
+		
+	if((xTo - x)/15 <= -1 and (x > ToWideBack or follow != obj_Player)){
 		x += (xTo - x)/15;
 	}
 }
+
+
 if((yTo - y)/15 >= 1) or ((yTo - y)/15 <= -1){
 		y += ((yTo) - y)/15;
 }
@@ -42,7 +48,7 @@ if((yTo - y)/15 >= 1) or ((yTo - y)/15 <= -1){
 
 if(follow == obj_Player){
 	xTo = follow.x + PlayerOffSet;
-	yTo = follow.y;
+	yTo = follow.y + PlayerOffSetY;
 }else{
 	xTo = follow.x + 150
 	yTo = follow.y + 100
@@ -50,3 +56,8 @@ if(follow == obj_Player){
 
 var vm = matrix_build_lookat(x , y, -10, x, y, 0, 0, 1, 0);
 camera_set_view_mat(camera, vm)
+
+
+if(Alpha <= -0.5) {
+	FadeIn = false;	
+}
