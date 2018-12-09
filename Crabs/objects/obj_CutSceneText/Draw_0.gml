@@ -1,5 +1,5 @@
 /// @Draw
-
+draw_set_colour(c_white);
 //Setting up the text for the box
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);

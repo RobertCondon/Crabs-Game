@@ -1,38 +1,28 @@
 {
-    "id": "a32955f2-5df9-4682-bd0c-bc54498b83ee",
+    "id": "f91fd91e-9e97-4576-b024-706b32d23eff",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Chest_RottenWood",
+    "name": "obj_HermyOutside",
     "eventList": [
         {
-            "id": "fed17a87-ba93-410a-9de8-9d92cf754bde",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "a32955f2-5df9-4682-bd0c-bc54498b83ee"
-        },
-        {
-            "id": "bf10ff57-6377-4ebd-a76d-f31ace5636bf",
+            "id": "674752b6-d15a-477d-aae8-21b14f9d5358",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "a32955f2-5df9-4682-bd0c-bc54498b83ee"
+            "m_owner": "f91fd91e-9e97-4576-b024-706b32d23eff"
         },
         {
-            "id": "6e8d163c-fa58-4003-a373-713bbdaa8537",
+            "id": "695d452d-9c8a-40d9-b35d-808c5826d3d3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "a32955f2-5df9-4682-bd0c-bc54498b83ee"
+            "eventtype": 0,
+            "m_owner": "f91fd91e-9e97-4576-b024-706b32d23eff"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "21ce4317-2140-4d12-9088-a49cf4e592e2",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

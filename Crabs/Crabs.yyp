@@ -1263,6 +1263,14 @@
             }
         },
         {
+            "Key": "665c15c1-025e-449b-a1c2-9cb069f3ebb3",
+            "Value": {
+                "id": "c2025f18-73fd-4e5d-a262-15089b00d21a",
+                "resourcePath": "sprites\\spr_FadeTransition\\spr_FadeTransition.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "66b13a1a-cd7a-47c6-a3ed-a8ff85ec40ae",
             "Value": {
                 "id": "d8057609-523b-4929-a1f2-06fb997d58b7",
@@ -3020,6 +3028,14 @@
                 "id": "75bf294a-d30e-4fd1-b34f-7aaf08fd2172",
                 "resourcePath": "fonts\\fnt_TextBox\\fnt_TextBox.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "f91fd91e-9e97-4576-b024-706b32d23eff",
+            "Value": {
+                "id": "b1afa37c-0869-4dc5-8dd7-19fbabc0b5e4",
+                "resourcePath": "objects\\obj_HermyOutside\\obj_HermyOutside.yy",
+                "resourceType": "GMObject"
             }
         },
         {

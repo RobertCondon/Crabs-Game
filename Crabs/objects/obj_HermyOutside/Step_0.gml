@@ -17,8 +17,7 @@ if(pass){
 }
 if (distance_player <= los)
 {
-	sprite_index = spr_Hermy_Talk_Neutral
-	if TextBox == noone{
+	if(TextBox == noone and Done == false){
 		TextBox = instance_create_layer(self.x - 150, self.y-150, "Textlayer", obj_Textbox)
 		TextBox.InstanceThatMadeIt = self
 		TextBox.InstanceName = MyName
@@ -44,7 +43,6 @@ if (distance_player <= los)
 	
 	}
 }else{
-	sprite_index = spr_Hermy_Idle_1
 	if TextBox != noone{
 		instance_destroy(TextBox)
 		TextBox = noone

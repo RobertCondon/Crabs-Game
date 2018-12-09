@@ -31,3 +31,6 @@ Hermy = noone
 
 //Fade
 FadeIn = false;
+Alpha = 1.2;
+Surface_Fade = -1;
+Brightness = 240;
