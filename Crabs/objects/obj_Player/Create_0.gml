@@ -96,3 +96,5 @@ with(instance_create_layer(x+17, y+8, "Player", obj_Claw)) {
 }
 
 
+//Pause
+PauseLock = false;
