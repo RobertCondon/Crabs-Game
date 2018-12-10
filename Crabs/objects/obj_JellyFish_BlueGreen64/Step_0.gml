@@ -6,7 +6,7 @@ MyMate.ly = y
 MyMate.rad = 100;
 
 
-collisionSquare = collision_rectangle(x + x_Width , y + y_Height -14, x - x_Width, y - y_Height - 14, obj_Player, false, false)
+collisionSquare = collision_rectangle(x + x_Width , y + y_Height -14, x - x_Width, y - y_Height - 17, obj_Player, false, false)
 collisionLine = collision_line(x + x_Width, y - y_Height - 14, x - x_Width, y - y_Height - 14, obj_Player, false, false);
 collisionSquareTenticals = collision_rectangle(x + x_Width , y + y_Height -14, x - x_Width, y + y_Height + 14, obj_Player, false, false)
 

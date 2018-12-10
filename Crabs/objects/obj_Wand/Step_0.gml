@@ -6,16 +6,19 @@ if global.stop == false{
 	x = o_Player.x - 25;
 	y = o_Player.y;
 	if global.Invert = true{
-		Right_Key = keyboard_check_pressed(ord("D"));
-		Left_Key = keyboard_check_pressed(ord("A"));
-		Down_Key = keyboard_check_pressed(ord("S"));
+		Right_Key = keyboard_check(ord("D"));
+		Left_Key = keyboard_check(ord("A"));
+		Down_Key = keyboard_check(ord("S"));
 		Down_Key_LetGo = keyboard_check_released(ord("S"))
-	
+		Right_Key_LetGo = keyboard_check_released(ord("D"))
+		Left_Key_LetGo = keyboard_check_released(ord("A"))
 	}else{
-		Left_Key = keyboard_check_pressed(vk_left)
-		Right_Key = keyboard_check_pressed(vk_right)
+		Left_Key = keyboard_check(vk_left)
+		Right_Key = keyboard_check(vk_right)
 		Down_Key = keyboard_check(vk_down)
 		Down_Key_LetGo = keyboard_check_released(vk_down)
+		Right_Key_LetGo = keyboard_check_released(vk_right)
+		Left_Key_LetGo = keyboard_check_released(vk_left)
 	}
 
 	image_speed= 0.8
@@ -26,6 +29,7 @@ if global.stop == false{
 	if Firing_Delay < 0{
 		sprite_index = spr_WandNormal
 		image_angle = 90
+		Fired = false;
 		if particalAction == true{
 		
 			part_type_color2(obj_Part_MagicOrb.PartMagic, c_blue, c_white);
@@ -55,24 +59,31 @@ if global.stop == false{
 		right = true
 	
 	}
+	//If able to shoot.
 	if (Firing_Delay < 0){
-		if(Down_Key){
-			image_angle = -90
+		//The charging side of things
+		if(Down_Key or Right_Key or Left_Key) {
+			down = Down_Key;
+			right = Right_Key;
+			left = Left_Key;
+			ChargeState = 1
 			if(BangCharge  <= MaxWandCharge){
 				BangCharge += 0.02;
 			}
-			if(BangCharge  >= MaxWandCharge){
-					ChargeState = 3
-					sprite_index = spr_WandLarge
-				}else if((BangCharge  >= MediumWandCharge) and (BangCharge  < MaxWandCharge)){
-					sprite_index = spr_WandMedium
-					ChargeState = 2
-				}else{
-					sprite_index = spr_WandNormal
-					ChargeState = 1
-				}
 			
-		}if(Down_Key_LetGo){
+			if(BangCharge  >= MaxWandCharge){
+				ChargeState = 3
+				sprite_index = spr_WandLarge
+					
+			}else if((BangCharge  >= MediumWandCharge) and (BangCharge  < MaxWandCharge)){
+				sprite_index = spr_WandMedium
+				ChargeState = 2
+			}else{
+				sprite_index = spr_WandNormal
+				ChargeState = 1
+			}
+		}
+		if(Down_Key_LetGo or Right_Key_LetGo or Left_Key_LetGo) {
 			if(ChargeState == 1){
 				Vbang = MinWandCharge
 				Firing_Delay = 60
@@ -84,7 +95,13 @@ if global.stop == false{
 				obj_Player.alarmActive = true
 				Vbang = MaxWandCharge
 				Firing_Delay = 150
-			}
+			}	
+		}
+		//Down key
+		if(Down_Key) {
+			image_angle = -90
+		}
+		if(Down_Key_LetGo) {
 			obj_Player.Vbang -= Vbang
 			obj_Player.vsp = -1
 			image_angle = -90
@@ -93,66 +110,67 @@ if global.stop == false{
 			right = false
 			BangCharge = 2.5;
 			DownForce = false
-			
 		}
 		
+		// Right key
+		if (Right_Key) {
+			image_angle = 0
+		}
+		if(Right_Key_LetGo) {
+			image_angle = 0
+			o_Player.bang -= Vbang*1.5
+			o_Player.vsp = -1
+			left = false
+			down = false
+			right = true
+			BangCharge = 2.5;
+		}
+		
+		// Left Key
+		if (Left_Key){
+			image_angle = 180
+		}
+		if(Left_Key_LetGo) {
+			image_angle = 180
+			o_Player.bang += Vbang*1.5
+			left = true
+			down = false
+			right = false	
+			BangCharge = 2.5;
+		}
 	}
 
-	if ((Right_Key) and (Firing_Delay < 0)){
-		Firing_Delay = 60;
-		image_angle = 0
-		o_Player.bang -= 4
-		o_Player.vsp = -1
-		left = false
-		down = false
-		right = true
-	}
-	if ((Left_Key) and (Firing_Delay < 0)){
-		Firing_Delay = 60;
-		image_angle = 180
-		o_Player.bang += 4
-		left = true
-		down = false
-		right = false
-	}
+
+	
+	
+	
 	if((left) or (down) or (right)){
-		if (Firing_Delay = 60){
-
+		if (Firing_Delay >= 1 and Fired == false){
+			if(ChargeState <= 1) {
+				BulletType = obj_Wand_bullet_Small
+			} else if(ChargeState == 2) {
+				BulletType = obj_Wand_bullet_Med
+			} else {
+				BulletType = obj_Wand_bullet_Large
+			}
 			sprite_index = spr_WandCD
 			if global.MusicPlay == true{
 				audio_play_sound(snd_WandSound, 4, false)
 			}
-			with (instance_create_layer(x, y, "Bullets", o_Wand_bullet))
+			with (instance_create_layer(x, y, "Bullets", BulletType))
 			{
 				speed = 4;
 				direction = other.image_angle;
 				image_angle = direction  ;
 			}
+			Fired = true;
 		
 		}
 	}
 
 	//Emiter pratcial effect stuff
-	if particalAction == true {
-		if (Firing_Delay > 0){
-			part_type_color2(obj_Part_MagicOrb.PartMagic, c_red, c_white);
-			part_type_life(obj_Part_MagicOrb.PartMagic, 0.2,room_speed/3);
-			if left = true and down = false and right = false{
-				part_emitter_region(obj_Part_MagicOrb.partMagic_sys, obj_Part_MagicOrb.PartMagic_emit, obj_Wand.x-13, obj_Wand.x-9, obj_Wand.y-5, obj_Wand.y+5, ps_shape_ellipse, ps_distr_gaussian)
-			}
-			if left = false and down = false and right = true{
-				part_emitter_region(obj_Part_MagicOrb.partMagic_sys, obj_Part_MagicOrb.PartMagic_emit, obj_Wand.x+9, obj_Wand.x+13, obj_Wand.y-5, obj_Wand.y+5, ps_shape_ellipse, ps_distr_gaussian)
-			}	
-			if left = false and down = true and right = false{
-				part_emitter_region(obj_Part_MagicOrb.partMagic_sys, obj_Part_MagicOrb.PartMagic_emit, obj_Wand.x-5, obj_Wand.x+5, obj_Wand.y+9, obj_Wand.y+13, ps_shape_ellipse, ps_distr_gaussian)
-			}
-			if left = true and down = true and right = false{
-				part_emitter_region(obj_Part_MagicOrb.partMagic_sys, obj_Part_MagicOrb.PartMagic_emit, obj_Wand.x-9, obj_Wand.x-5, obj_Wand.y+7, obj_Wand.y+11, ps_shape_ellipse, ps_distr_gaussian)
-			}
-			if left = false and down = true and right = true{
-				part_emitter_region(obj_Part_MagicOrb.partMagic_sys, obj_Part_MagicOrb.PartMagic_emit, obj_Wand.x+5, obj_Wand.x+9, obj_Wand.y+7, obj_Wand.y+11, ps_shape_ellipse, ps_distr_gaussian)
-			}	
-		}
+	if (particalAction == true and (Down_Key or Right_Key or Left_Key)) {
+		scr_WandParticals(left,right,down)
 	}
 
 	recoil = 4;

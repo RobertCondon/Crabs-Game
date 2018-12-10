@@ -20,6 +20,11 @@ if keyboard_check_pressed(vk_space){
 			}
 		}else{
 			InstanceThatMadeIt.ArrayDone = true
+			if(DestoryMe == true) {
+				instance_destroy();	
+			}
+			DestoryMe = true;
+			alarm[0] = 120;
 		}
 	}
 }

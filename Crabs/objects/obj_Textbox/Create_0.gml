@@ -30,7 +30,7 @@ TotalSeps = 0;
 //Instance who made it stuff
 InstanceThatMadeIt = noone;
 InstanceName = "TEST";
-
+DestoryMe = false;
 /*instance_create_layer(x+35, y+30, "Icons", IconArray[0]);
 IconArray[0].BoxWidth = BoxWidth-140+x;
 IconArray[0].TotalSayings = Text; */

@@ -10,3 +10,4 @@ ArrayDone = false
 MyName = "Hermy"
 Draw_Fade = false;
 Unseen = false;
+DisableVision = false;

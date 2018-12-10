@@ -19,6 +19,8 @@ MediumWandCharge = 3.25
 MinWandCharge = 2.4
 MaxWandChargeBo = false
 ChargeState = 0
+BulletType = noone;
+Fired = false;
 
 //WandEffects
 WandEffectMaxX = 5

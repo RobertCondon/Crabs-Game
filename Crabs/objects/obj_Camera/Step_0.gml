@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (PlayerVision == true){
-	follow = obj_Player
 	if(WidthRoom < 960)	{
 		WidthRoom += 19.2;	
 	}
@@ -33,11 +32,19 @@ if( x - 494 <= 0){
 }else{
 	if((xTo - x)/15 >= 1 and (x < ToWideForward or follow != obj_Player)) {
 		x += (xTo - x)/15;
+	} 
+	if(follow == obj_Player) {
+		if(x > ToWideForward+2) {
+			x -= (x-ToWideForward)/50;	
+		}
+		if(x < ToWideBack+2) {
+			x += (ToWideBack-x)/50;	
+		}
 	}
-		
+	
 	if((xTo - x)/15 <= -1 and (x > ToWideBack or follow != obj_Player)){
 		x += (xTo - x)/15;
-	}
+	} 
 }
 
 

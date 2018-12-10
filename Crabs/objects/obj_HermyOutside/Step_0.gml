@@ -29,7 +29,10 @@ if (distance_player <= los)
 		obj_Player.Talking = true
 		global.stop = true
 		obj_Camera.follow = self;
-		obj_Camera.PlayerVision = false;
+		if(DisableVision == false) {
+			obj_Camera.PlayerVision = false;
+		}
+		
 		
 		if(pass){
 			obj_Player.Talking = false
