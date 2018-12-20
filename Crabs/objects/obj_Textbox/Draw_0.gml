@@ -41,7 +41,7 @@ if (i < string_length(textPart)) {
 
 
 
-draw_sprite(spr_Hermy_Icon, 0, CurrentX, CurrentY)
+draw_sprite(IconArray[0], 0, CurrentX, CurrentY)
 
 
 //Draw Name. I.E "Hermy"

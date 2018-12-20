@@ -12,7 +12,8 @@
         "c2fbfb26-1c74-44de-a23c-fa33bc97847a",
         "b70a86f1-4405-4555-ba0a-a7bc827dfdfb",
         "1890bc40-99b6-4edf-9a1f-a2ba73827ff9",
-        "53ff2b46-3553-4afe-9acd-cc45e7bca317"
+        "53ff2b46-3553-4afe-9acd-cc45e7bca317",
+        "2aec878d-8d34-404c-9150-030b2f84a26a"
     ],
     "filterType": "GMSprite",
     "folderName": "Rocks",

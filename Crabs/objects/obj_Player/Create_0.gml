@@ -15,6 +15,9 @@ alarmActive = false;
 RoomGo = New_Tutorial;
 TestSpeed = false;
 JumpHight = -5
+JumpWindUp = 0;
+Jumping = false;
+StopMovement = false;
 //Spuished from
 SpuishedOffOn = false
 //wall bullshit
@@ -65,10 +68,10 @@ part_emitter_region(partStep_sys, PartStep_emit, self.x-20, self.x+20, self.y-20
 part_emitter_burst(partStep_sys, PartStep_emit, PartStep, 1);
 
 //Make bottom leg boxes
-instance_create_layer(0,0,"Ground",obj_BelowPlayerLeft)
-instance_create_layer(0,0, "Ground",obj_BelowPlayerRight)
-instance_create_layer(0,0, "Ground",obj_SidePlayerRight)
-instance_create_layer(0,0,"Ground",obj_SidePlayerLeft)
+instance_create_layer(0,0,"Icons",obj_BelowPlayerLeft)
+instance_create_layer(0,0, "Icons",obj_BelowPlayerRight)
+instance_create_layer(0,0, "Icons",obj_SidePlayerRight)
+instance_create_layer(0,0,"Icons",obj_SidePlayerLeft)
 SlidingRight = false
 SlidingLeft = false
 obj_BelowPlayerLeft.visible = false

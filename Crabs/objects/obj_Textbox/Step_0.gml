@@ -22,8 +22,8 @@ if keyboard_check_pressed(vk_space){
 			InstanceThatMadeIt.ArrayDone = true
 			if(DestoryMe == true) {
 				instance_destroy();	
+				obj_Camera.follow = obj_Player;
 			}
-			DestoryMe = true;
 			alarm[0] = 120;
 		}
 	}
