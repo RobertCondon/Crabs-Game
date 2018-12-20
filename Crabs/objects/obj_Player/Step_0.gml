@@ -63,9 +63,10 @@ if global.stop == false and StopMovement = false{
 	
 	if((collisionJump and key_up) or Jumping = true)
 	{
-		audio_play_sound(snd_Effect_Jump, 2, false);
+		
 		Jumping = true
 		if(JumpWindUp >= 5) {
+			audio_play_sound(snd_Effect_Jump, 2, false);
 			if(obj_BelowPlayerLeft.StepColour != noone){
 				part_type_color1(PartStep, obj_BelowPlayerLeft.StepColour)
 				part_emitter_region(partStep_sys, PartStep_emit, Selfx-24, Selfx-20, Selfy+32, Selfy+31, ps_shape_rectangle, ps_distr_gaussian)
