@@ -24,13 +24,17 @@ view_hport[0] = display_get_width();
 follow = obj_Player;
 xTo = x;
 yTo = y;
+xToPos = false;
+xToNeg = false;
 
-ToWideBack = -99999;
+
+ToWideBack = 494;
 ToWideForward = 99999999;
 Hermy = noone
-
+DiviedBy = 50;
 //Fade
 FadeIn = false;
 Alpha = 1.2;
 Surface_Fade = -1;
 Brightness = 240;
+FadeOut = false;

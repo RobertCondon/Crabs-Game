@@ -3,3 +3,4 @@
 walksp = 0.5;
 Has_Hit = 1;
 BigBang = false
+ForwardORBack = 30;

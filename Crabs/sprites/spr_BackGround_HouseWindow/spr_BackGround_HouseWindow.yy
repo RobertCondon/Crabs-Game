@@ -9,7 +9,7 @@
     "bbox_bottom": 413,
     "bbox_left": 0,
     "bbox_right": 619,
-    "bbox_top": 13,
+    "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
@@ -57,32 +57,25 @@
                     "LayerId": "48a061e3-4317-47b1-b9be-e265d6db36fd"
                 },
                 {
-                    "id": "03e77cee-03f5-4fd8-8d90-4dd05384ff3e",
+                    "id": "02ffba7b-50c3-4710-b7d2-54f108183c1d",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "cef9c62e-a2f8-4af0-9c6c-029cee1bfbaf"
+                    "LayerId": "8607754e-9fd5-46c5-b9e1-75bb31aac1c9"
                 },
                 {
-                    "id": "67c97037-3b82-43d6-a56a-cba2825aee5e",
+                    "id": "84c448b3-38a6-4578-9e94-6315d3464034",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "36a4162e-0823-4c6d-abcf-93e1291bb852"
+                    "LayerId": "04086d8d-288c-4120-869e-d8d7d33fbd70"
                 },
                 {
-                    "id": "905d018a-a3c9-485b-93bc-31e47d688cc9",
+                    "id": "731ce0d4-0140-4043-bd4d-b5e7e70ad2d4",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "d18f03a8-35bc-4e44-9343-1d5701acff94"
-                },
-                {
-                    "id": "48f2aa7d-1f0f-43ec-8378-f25f9d787f85",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "e5d50380-99fb-4d6f-9d28-527ad9b2672e"
+                    "LayerId": "d551bba5-4f57-4311-86fe-c71c45c3ebe2"
                 }
             ]
         }
@@ -103,6 +96,17 @@
             "visible": false
         },
         {
+            "id": "d551bba5-4f57-4311-86fe-c71c45c3ebe2",
+            "modelName": "GMImageLayer",
+            "mvc": "1.0",
+            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
+            "blendMode": 0,
+            "isLocked": false,
+            "name": "Layer 5",
+            "opacity": 100,
+            "visible": true
+        },
+        {
             "id": "48a061e3-4317-47b1-b9be-e265d6db36fd",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
@@ -110,6 +114,17 @@
             "blendMode": 0,
             "isLocked": false,
             "name": "Layer 4",
+            "opacity": 100,
+            "visible": true
+        },
+        {
+            "id": "04086d8d-288c-4120-869e-d8d7d33fbd70",
+            "modelName": "GMImageLayer",
+            "mvc": "1.0",
+            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
+            "blendMode": 0,
+            "isLocked": false,
+            "name": "DarkMist",
             "opacity": 100,
             "visible": true
         },
@@ -125,50 +140,6 @@
             "visible": true
         },
         {
-            "id": "cef9c62e-a2f8-4af0-9c6c-029cee1bfbaf",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "Algee Forest",
-            "opacity": 100,
-            "visible": true
-        },
-        {
-            "id": "36a4162e-0823-4c6d-abcf-93e1291bb852",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "Algee Forest deep",
-            "opacity": 100,
-            "visible": true
-        },
-        {
-            "id": "d18f03a8-35bc-4e44-9343-1d5701acff94",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "Algee Forest Real Deep",
-            "opacity": 100,
-            "visible": true
-        },
-        {
-            "id": "e5d50380-99fb-4d6f-9d28-527ad9b2672e",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "Atmosphare",
-            "opacity": 100,
-            "visible": true
-        },
-        {
             "id": "513dc52b-8c61-4f86-a646-45dd54843f0e",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
@@ -178,11 +149,22 @@
             "name": "Layer 3",
             "opacity": 100,
             "visible": true
+        },
+        {
+            "id": "8607754e-9fd5-46c5-b9e1-75bb31aac1c9",
+            "modelName": "GMImageLayer",
+            "mvc": "1.0",
+            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
+            "blendMode": 0,
+            "isLocked": true,
+            "name": "Algee Forest",
+            "opacity": 100,
+            "visible": true
         }
     ],
     "origin": 0,
     "originLocked": false,
-    "playbackSpeed": 15,
+    "playbackSpeed": 8,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,

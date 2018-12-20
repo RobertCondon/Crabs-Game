@@ -4,9 +4,11 @@ if(place_meeting(x, y+1, o_Sand)) {
 
 if(place_meeting(x,y, obj_Player)) {
 	if(ItemType != obj_Wand) {
-		instance_create_depth(x,y,"Ground",ItemType);
+		instance_create_layer(x,y,"Ground",ItemType);
+		
 	} else {
-		instance_create_depth(x,y,"Player",ItemType);	
+		instance_create_layer(x,y,"Player",ItemType);	
+		instance_create_layer(x,y, "Player", obj_Claw_instructions)
 	}
 	instance_destroy();
 }

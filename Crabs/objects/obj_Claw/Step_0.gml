@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-AttackKey = keyboard_check_pressed(ord("E"))
-if(AttackKey) {
-	if(state == CLAWSTATE.IDEL) {
-		state = CLAWSTATE.BASIC_ATTACK;	
+if(global.stop == false) {
+	AttackKey = keyboard_check_pressed(ord("E"))
+	if(AttackKey) {
+		if(state == CLAWSTATE.IDEL) {
+			state = CLAWSTATE.BASIC_ATTACK;	
+		}
 	}
 }
 

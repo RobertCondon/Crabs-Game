@@ -2,16 +2,16 @@
 // You can write your code in this editor
 if(global.stop == false){
 	hsp = walksp;
-	if (place_meeting(x+hsp, y, o_Wall))
+	GroundLine = collision_line(x+ForwardORBack+hsp, y,x+ForwardORBack+hsp, y+34, o_Wall, false, false);
+
+	if (place_meeting(x+hsp, y, o_Wall) or !GroundLine)
 	{
-		//This is always checking if you havn't hit the wall yet
-		while (!place_meeting(x + sign(hsp), y, o_Wall))
-		{
-			x = x + sign(hsp);	
-		}	
+		
 		if Has_Hit = 1{
+			ForwardORBack = -30
 			Has_Hit = 2
 		}else{
+			ForwardORBack = 30
 			Has_Hit = 1
 		}
 	}
@@ -19,15 +19,15 @@ if(global.stop == false){
 		if (Has_Hit = 1)
 		{
 			image_xscale = -1
-			if walksp == -0.5{
+			/**if walksp == -0.5{
 				x = self.x + 35
-			}
+			}**/
 			walksp = 0.5
 		}else{
 			image_xscale = 1
-			if walksp == 0.5{
+			/**if walksp == 0.5{
 				x = self.x - 35
-			}
+			}**/
 			walksp = -0.5
 		}
 	}else{

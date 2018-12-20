@@ -9,11 +9,18 @@ StepColour = obj_BelowPlayerLeft.StepColour
 TurnOffJump = obj_Player.TurnOffJump;
 
 
-if (!obj_Player.collisionJump)
+if (!obj_Player.collisionJump or obj_Player.Jumping == true)
 		{
-			//On_Wall = 0;
-			if(TurnOffJump == false) {
-				obj_Player.sprite_index = spr_NewPlayer_Jump;
+			obj_Player.sprite_index = spr_NewPlayer_Jump
+			image_speed = 0;
+				
+			if(Jumping == true) {
+				image_index = 3;
+			}
+			else if(obj_Player.vsp >= 0) {
+				image_index = 2;
+			} else { 
+				image_index = 1;	
 			}
 		}
 		else
