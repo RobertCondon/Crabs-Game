@@ -29,53 +29,11 @@
             },
             "images": [
                 {
-                    "id": "7a9f3f3f-73b1-437a-851e-c9499b11b0bb",
+                    "id": "a02290f4-a910-4874-8998-c29d9713db85",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "89f62465-9edf-4957-b12b-773e8bb1c8cc"
-                },
-                {
-                    "id": "a23d04d5-8f05-4a7f-bd9f-8763daee89e9",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "a71f2bc3-56f2-43ba-8997-3ce85437810b"
-                },
-                {
-                    "id": "eb9403d9-cdcb-4e88-ac5a-84c791bf7643",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "513dc52b-8c61-4f86-a646-45dd54843f0e"
-                },
-                {
-                    "id": "cf6860a4-b5b2-4478-9e61-1e2da4978c50",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "48a061e3-4317-47b1-b9be-e265d6db36fd"
-                },
-                {
-                    "id": "02ffba7b-50c3-4710-b7d2-54f108183c1d",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "8607754e-9fd5-46c5-b9e1-75bb31aac1c9"
-                },
-                {
-                    "id": "84c448b3-38a6-4578-9e94-6315d3464034",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "04086d8d-288c-4120-869e-d8d7d33fbd70"
-                },
-                {
-                    "id": "731ce0d4-0140-4043-bd4d-b5e7e70ad2d4",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1ef83761-76dd-4844-a690-9d4853feb365",
-                    "LayerId": "d551bba5-4f57-4311-86fe-c71c45c3ebe2"
+                    "LayerId": "32535ef1-9794-4b41-aac5-dcd6766e0cb2"
                 }
             ]
         }
@@ -85,79 +43,13 @@
     "height": 414,
     "layers": [
         {
-            "id": "89f62465-9edf-4957-b12b-773e8bb1c8cc",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": false
-        },
-        {
-            "id": "d551bba5-4f57-4311-86fe-c71c45c3ebe2",
+            "id": "32535ef1-9794-4b41-aac5-dcd6766e0cb2",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
             "blendMode": 0,
             "isLocked": false,
             "name": "Layer 5",
-            "opacity": 100,
-            "visible": true
-        },
-        {
-            "id": "48a061e3-4317-47b1-b9be-e265d6db36fd",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "Layer 4",
-            "opacity": 100,
-            "visible": true
-        },
-        {
-            "id": "04086d8d-288c-4120-869e-d8d7d33fbd70",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "DarkMist",
-            "opacity": 100,
-            "visible": true
-        },
-        {
-            "id": "a71f2bc3-56f2-43ba-8997-3ce85437810b",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "Layer 1",
-            "opacity": 100,
-            "visible": true
-        },
-        {
-            "id": "513dc52b-8c61-4f86-a646-45dd54843f0e",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "Layer 3",
-            "opacity": 100,
-            "visible": true
-        },
-        {
-            "id": "8607754e-9fd5-46c5-b9e1-75bb31aac1c9",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "0923aea7-c7b2-468c-bf6a-d300152ef139",
-            "blendMode": 0,
-            "isLocked": true,
-            "name": "Algee Forest",
             "opacity": 100,
             "visible": true
         }
