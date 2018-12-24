@@ -20,7 +20,8 @@
         "6e9f3e09-507d-46ef-ac9b-6d87b885c489",
         "931a6164-24f2-44ca-82a3-2620fc68ad91",
         "0af7ab31-05e4-474a-a73f-5e3982991bd1",
-        "384bb4b3-ef08-4fe2-808f-e7fd7da9ff9f"
+        "384bb4b3-ef08-4fe2-808f-e7fd7da9ff9f",
+        "1c34fde4-4cc1-4723-803d-f5bd3dea5e14"
     ],
     "filterType": "GMSprite",
     "folderName": "CrabHouse",

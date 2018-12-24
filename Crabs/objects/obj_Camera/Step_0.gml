@@ -65,9 +65,6 @@ if(follow == obj_Player) {
 if((yTo - y)/15 >= 1) or ((yTo - y)/15 <= -1){
 		y += ((yTo) - y)/15;
 }
-show_debug_message(string(follow))
-show_debug_message("Follow x = "+ string(follow.x));
-show_debug_message("Self x = " + string(self.x))
 
 if(follow == obj_Player){
 	xTo = follow.x + PlayerOffSet;

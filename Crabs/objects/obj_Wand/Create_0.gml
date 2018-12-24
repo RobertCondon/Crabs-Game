@@ -14,18 +14,20 @@ DownForce = false
 WasDown = false
 //Wand Blust changes
 BangCharge = 2
-MaxWandCharge = 4.1
-MediumWandCharge = 3.25
-MinWandCharge = 2.4
+
+
 MaxWandChargeBo = false
 ChargeState = 0
 BulletType = noone;
 Fired = false;
 
 //WandEffects
-WandEffectMaxX = 5
-WandEffectMinX = -5
+WandEffectMaxX = 15
+WandEffectMinX = 5
 WandEffectMaxY = 13
 WandEffectMinY = 9
-
+CurrentMaxX = 0;
+CurrentMaxY = 0;
+CurrentMinX = 0;
+CurrentMinY = 0;
 instance_create_layer(x,y, "Ground", obj_Part_MagicOrb);

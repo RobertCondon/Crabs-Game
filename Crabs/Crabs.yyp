@@ -354,7 +354,7 @@
             "Key": "1c34fde4-4cc1-4723-803d-f5bd3dea5e14",
             "Value": {
                 "id": "ed3c7a4e-7c53-48d1-871e-25c1ad6ee47a",
-                "resourcePath": "sprites\\spr_Claw_instructions\\spr_Claw_instructions.yy",
+                "resourcePath": "sprites\\spr_Wand_instructions\\spr_Wand_instructions.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -620,6 +620,14 @@
                 "id": "8f2380c7-c0e3-45d6-a358-3ad42067186f",
                 "resourcePath": "sprites\\spr_MovingNormal\\spr_MovingNormal.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2f526c4c-82a5-4f5c-b413-945a6f2e5b5d",
+            "Value": {
+                "id": "91f548f4-94a2-4c18-ac65-ba352a9dfe28",
+                "resourcePath": "views\\2f526c4c-82a5-4f5c-b413-945a6f2e5b5d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1023,6 +1031,14 @@
             }
         },
         {
+            "Key": "4fde50c3-3d28-4823-bc3c-753f011a0758",
+            "Value": {
+                "id": "052e68f7-1f08-476a-8fe6-d96660377a91",
+                "resourcePath": "notes\\OldWand.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "513c5dae-388c-47f0-8a66-7c87a1db7e6c",
             "Value": {
                 "id": "fa171902-c97c-4780-ad26-4d461c094faf",
@@ -1180,6 +1196,14 @@
                 "id": "8505e4d7-50f3-4ff5-83a9-6987ad88db15",
                 "resourcePath": "views\\5d501dd6-3543-401f-a6ab-299c3d277779.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5d65bd6b-df13-430c-853e-f50237f9944e",
+            "Value": {
+                "id": "7885ab6f-34a8-4c87-820b-6c7010ffd1e5",
+                "resourcePath": "scripts\\scr_WandStates\\scr_WandStates.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3096,6 +3120,7 @@
         "ee147ff8-e021-4b25-b2ce-40d51cddeca9",
         "f7af5cf4-df7c-4a76-af19-c54808729513",
         "a459fee2-3790-4dcc-b1ba-cd345af0fcba",
+        "5d65bd6b-df13-430c-853e-f50237f9944e",
         "8fda86a4-9a12-42ec-a52d-1c977c87d0dc"
     ],
     "tutorial": ""
