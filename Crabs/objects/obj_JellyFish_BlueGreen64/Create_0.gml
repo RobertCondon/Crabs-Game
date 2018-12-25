@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 MyMate = noone
-with(instance_create_layer(x,y,"Ground", obj_Light2)) {
+with(instance_create_layer(x,y,"Ground_Vis", obj_Light2)) {
 	other.MyMate = id;
 	draw_set_color(make_color_rgb(64,186,253));
 	image_blend = make_color_rgb(64,186,253);

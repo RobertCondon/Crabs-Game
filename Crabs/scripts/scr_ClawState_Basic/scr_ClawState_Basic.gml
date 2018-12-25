@@ -23,7 +23,6 @@ if(Hits > 0) {
 	}
 }
 ds_list_destroy(HitByAttack);
-
 var HitByAttack = ds_list_create();
 var Hits = instance_place_list(x,y,obj_HouseDoor, HitByAttack, false);
 if(Hits > 0) {
@@ -40,6 +39,7 @@ if(Hits > 0) {
 	}
 }
 ds_list_destroy(HitByAttack);
+
 mask_index = spr_Claw_BasicAttack;
 if(scr_AnimationEnd()) {
 	sprite_index = spr_Claw_Idel;
