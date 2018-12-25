@@ -671,14 +671,6 @@
             }
         },
         {
-            "Key": "34b364e6-7e71-485a-9de3-0f9d3ca63b0b",
-            "Value": {
-                "id": "c9c56be8-925e-495a-8e94-577e0db6d956",
-                "resourcePath": "rooms\\Test_Zone\\Test_Zone.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "366d82ab-76ba-4215-802f-01aa7aad0b59",
             "Value": {
                 "id": "7b5537ac-1f0d-4bc9-8871-7a2ac683841d",
@@ -1263,14 +1255,6 @@
             }
         },
         {
-            "Key": "61a3c47b-72c7-4431-bc43-72645216a467",
-            "Value": {
-                "id": "dad5653f-fd51-4fd2-ad93-7fef3c7a3b4f",
-                "resourcePath": "tilesets\\ts_SandAndStone\\ts_SandAndStone.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "622a59f0-0ad7-44a4-a177-fe6979631a5e",
             "Value": {
                 "id": "78a215e7-980d-4790-a694-760e7a07953d",
@@ -1524,14 +1508,6 @@
                 "id": "f57a0969-3ddd-43b3-96b7-cb40ee0a14ca",
                 "resourcePath": "objects\\obj_ElectricEel\\obj_ElectricEel.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "7de57f9e-477b-48ac-988e-221d11bf57ae",
-            "Value": {
-                "id": "0406d99e-0aa9-416f-9486-0b428614c157",
-                "resourcePath": "rooms\\New_Tutorial\\New_Tutorial.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -2567,6 +2543,14 @@
             }
         },
         {
+            "Key": "ce84b393-8d42-44cb-8cb7-3364fef75c50",
+            "Value": {
+                "id": "3e1662e7-c6d1-46b1-9407-6863c4e49c14",
+                "resourcePath": "sprites\\sprite119\\sprite119.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cf8e63e3-4cb2-4ebd-a428-a8a3b72af0da",
             "Value": {
                 "id": "47d2871f-8b4c-4a34-b928-62feceae1692",
@@ -2836,14 +2820,6 @@
                 "id": "b78349ec-ed56-47c1-a6c7-88ca502b46bb",
                 "resourcePath": "objects\\o_bullet1\\o_bullet1.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "eba3211e-05fb-4838-8dd4-af818fe87339",
-            "Value": {
-                "id": "cedb0a30-0e1a-497f-8f8e-54b213bc2ef5",
-                "resourcePath": "rooms\\Tutorial\\Tutorial.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
