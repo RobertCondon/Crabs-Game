@@ -1255,14 +1255,6 @@
             }
         },
         {
-            "Key": "61a3c47b-72c7-4431-bc43-72645216a467",
-            "Value": {
-                "id": "dad5653f-fd51-4fd2-ad93-7fef3c7a3b4f",
-                "resourcePath": "tilesets\\ts_SandAndStone\\ts_SandAndStone.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "622a59f0-0ad7-44a4-a177-fe6979631a5e",
             "Value": {
                 "id": "78a215e7-980d-4790-a694-760e7a07953d",
