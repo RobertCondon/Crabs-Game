@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(global.stop == false){
+if(global.stop == false and stun == false){
 	hsp = walksp;
 	GroundLine = collision_line(x+ForwardORBack+hsp, y,x+ForwardORBack+hsp, y+34, o_Wall, false, false);
 
@@ -34,15 +34,29 @@ if(global.stop == false){
 		walksp = 0
 	}
 	x = x + hsp
-	//Has hit bullet
-	if (place_meeting(x+hsp, y, o_Wand_bullet))
-	{
-		audio_play_sound(snd_Effect_Puffer_ChargeUpBoom,2,false);
-		alarm[0] = 12
-		alarm[1] = 11
-		BigBang = true
-		sprite_index = spr_PufferBang
-		image_speed = 1.2
+	stuned = false;
+	image_speed = 1;
+} else {
+	if(stun == true and stuned == false) {
+		alarm[2] = 120;	
+		stuned = true;
+		image_speed = 0;
+	}
+}
 
+if (hp <= 0 and Killed == false)
+{
+	audio_play_sound(snd_Effect_Puffer_ChargeUpBoom,2,false);
+	alarm[0] = 12
+	alarm[1] = 11
+	BigBang = true
+	sprite_index = spr_PufferBang
+	image_speed = 1.2
+	Killed = true;
+}
+if(place_meeting(x,y-14, obj_Player) and Killed == false) {
+	hp -= 5;
+	with(obj_Player) {
+		vsp -= 1;	
 	}
 }

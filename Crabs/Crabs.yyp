@@ -599,6 +599,14 @@
             }
         },
         {
+            "Key": "2d03e80f-4ec8-43e2-bfbd-648d999518c5",
+            "Value": {
+                "id": "72c5bcde-5282-4332-94e7-9c53bdbc02b8",
+                "resourcePath": "shaders\\shd_StunLock\\shd_StunLock.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "2e190ae2-ae76-4a90-a33a-4cd295a238c7",
             "Value": {
                 "id": "424a96fe-31bb-4365-a600-1f9c36eefc61",
@@ -916,6 +924,14 @@
                 "id": "0e524784-6b75-4a88-80ba-e6e0119db806",
                 "resourcePath": "views\\47b831d2-db68-4224-87ad-ad08372b21d6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "485e79ac-8865-45f8-af84-9db8b9471c76",
+            "Value": {
+                "id": "6e7b7cdc-6c0d-40c6-905a-3ec4f7fc18a3",
+                "resourcePath": "objects\\obj_LivingObject\\obj_LivingObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
