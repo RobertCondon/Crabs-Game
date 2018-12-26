@@ -354,7 +354,7 @@
             "Key": "1c34fde4-4cc1-4723-803d-f5bd3dea5e14",
             "Value": {
                 "id": "ed3c7a4e-7c53-48d1-871e-25c1ad6ee47a",
-                "resourcePath": "sprites\\spr_Claw_instructions\\spr_Claw_instructions.yy",
+                "resourcePath": "sprites\\spr_Wand_instructions\\spr_Wand_instructions.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -623,6 +623,14 @@
             }
         },
         {
+            "Key": "2f526c4c-82a5-4f5c-b413-945a6f2e5b5d",
+            "Value": {
+                "id": "91f548f4-94a2-4c18-ac65-ba352a9dfe28",
+                "resourcePath": "views\\2f526c4c-82a5-4f5c-b413-945a6f2e5b5d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "302e0bcb-1e62-4ed3-b25e-c83d3640da56",
             "Value": {
                 "id": "49f3389d-9168-40b4-9721-3f68d40a1231",
@@ -660,14 +668,6 @@
                 "id": "460d06bd-6475-4264-9d3c-dda7febc23eb",
                 "resourcePath": "objects\\obj_Part_MagicOrb\\obj_Part_MagicOrb.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "34b364e6-7e71-485a-9de3-0f9d3ca63b0b",
-            "Value": {
-                "id": "c9c56be8-925e-495a-8e94-577e0db6d956",
-                "resourcePath": "rooms\\Test_Zone\\Test_Zone.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -1023,6 +1023,14 @@
             }
         },
         {
+            "Key": "4fde50c3-3d28-4823-bc3c-753f011a0758",
+            "Value": {
+                "id": "052e68f7-1f08-476a-8fe6-d96660377a91",
+                "resourcePath": "notes\\OldWand.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "513c5dae-388c-47f0-8a66-7c87a1db7e6c",
             "Value": {
                 "id": "fa171902-c97c-4780-ad26-4d461c094faf",
@@ -1183,6 +1191,14 @@
             }
         },
         {
+            "Key": "5d65bd6b-df13-430c-853e-f50237f9944e",
+            "Value": {
+                "id": "7885ab6f-34a8-4c87-820b-6c7010ffd1e5",
+                "resourcePath": "scripts\\scr_WandStates\\scr_WandStates.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5e119556-9a28-4846-b388-6b5512f4dda2",
             "Value": {
                 "id": "6b1e9d5d-8393-4b04-aceb-a82474170147",
@@ -1236,14 +1252,6 @@
                 "id": "68a9cccd-7905-4589-b0dc-b10e3f00c727",
                 "resourcePath": "scripts\\scr_light_project_shadow\\scr_light_project_shadow.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "61a3c47b-72c7-4431-bc43-72645216a467",
-            "Value": {
-                "id": "dad5653f-fd51-4fd2-ad93-7fef3c7a3b4f",
-                "resourcePath": "tilesets\\ts_SandAndStone\\ts_SandAndStone.yy",
-                "resourceType": "GMTileSet"
             }
         },
         {
@@ -1500,14 +1508,6 @@
                 "id": "f57a0969-3ddd-43b3-96b7-cb40ee0a14ca",
                 "resourcePath": "objects\\obj_ElectricEel\\obj_ElectricEel.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "7de57f9e-477b-48ac-988e-221d11bf57ae",
-            "Value": {
-                "id": "0406d99e-0aa9-416f-9486-0b428614c157",
-                "resourcePath": "rooms\\New_Tutorial\\New_Tutorial.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -2543,6 +2543,14 @@
             }
         },
         {
+            "Key": "ce84b393-8d42-44cb-8cb7-3364fef75c50",
+            "Value": {
+                "id": "3e1662e7-c6d1-46b1-9407-6863c4e49c14",
+                "resourcePath": "sprites\\sprite119\\sprite119.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cf8e63e3-4cb2-4ebd-a428-a8a3b72af0da",
             "Value": {
                 "id": "47d2871f-8b4c-4a34-b928-62feceae1692",
@@ -2812,14 +2820,6 @@
                 "id": "b78349ec-ed56-47c1-a6c7-88ca502b46bb",
                 "resourcePath": "objects\\o_bullet1\\o_bullet1.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "eba3211e-05fb-4838-8dd4-af818fe87339",
-            "Value": {
-                "id": "cedb0a30-0e1a-497f-8f8e-54b213bc2ef5",
-                "resourcePath": "rooms\\Tutorial\\Tutorial.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -3096,6 +3096,7 @@
         "ee147ff8-e021-4b25-b2ce-40d51cddeca9",
         "f7af5cf4-df7c-4a76-af19-c54808729513",
         "a459fee2-3790-4dcc-b1ba-cd345af0fcba",
+        "5d65bd6b-df13-430c-853e-f50237f9944e",
         "8fda86a4-9a12-42ec-a52d-1c977c87d0dc"
     ],
     "tutorial": ""

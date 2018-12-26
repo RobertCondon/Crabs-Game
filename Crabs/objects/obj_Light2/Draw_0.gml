@@ -5,7 +5,13 @@
 if(surface_exists(surf)){	
 	shader_set(sh_dyn_lighting);
 	shader_set_uniform_f( LightPosRadius, lx,ly,rad,Raidus );
-	draw_surface_ext(surf,0,0,1,1,0,image_blend,Raidus);
+	var cx = round(obj_Camera.x-obj_Camera.WidthRoom/2);
+	var cy = round(obj_Camera.y-obj_Camera.HeightRoom/2);
+	
+	draw_surface_ext(surf,cx,cy,1,1,0,image_blend,Raidus);
 	shader_reset();
 }
+show_debug_message(obj_Camera.x)
+show_debug_message(obj_Camera.y)
+
 
