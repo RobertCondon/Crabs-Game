@@ -30,7 +30,7 @@ if global.stop == false{
 				bang -= lengthdir_x(other.Vbang*1.1, other.image_angle);
 				vsp -= 1	
 			}
-			with (instance_create_layer(x, y, "Bullets", BulletType))
+			with (instance_create_layer(x + CurrentMinX, y +CurrentMinY, "Bullets", BulletType))
 			{
 				speed = 4;
 				direction = other.image_angle;
