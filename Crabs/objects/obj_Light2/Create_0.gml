@@ -6,6 +6,8 @@ Buffer = 4;
 tilemap = layer_tilemap_get_id("GroundTileFlavour");
 surf = -1;
 LightPosRadius = shader_get_uniform(sh_dyn_lighting,"u_fLightPositionRadius");
+WasWideAngle = false;
+WideSurface = -1;
 
 if( !surface_exists(surf) ){
 	surf = surface_create(obj_Camera.WidthRoom+Buffer, obj_Camera.HeightRoom+Buffer);

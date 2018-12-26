@@ -2,9 +2,9 @@ BangCharge = obj_Wand.BangCharge;
 Firing_Delay = obj_Wand.Firing_Delay;
 click = obj_Wand.click;
 Vbang = obj_Wand.Vbang;
-MaxWandCharge = 4.2
-MediumWandCharge = 3.5
-MinWandCharge = 2.5
+MaxWandCharge = 3.6
+MediumWandCharge = 3
+MinWandCharge = 2.4
 //WandCharge Time
 MediumChargeTime = 2.5;
 MaxWandChargeTime = 7.5;

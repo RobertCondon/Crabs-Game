@@ -50,8 +50,6 @@ if global.stop == false{
 	CurrentMaxX = lengthdir_x(WandEffectMaxX, image_angle);
 	CurrentMinY = lengthdir_y(WandEffectMinY, image_angle);
 	CurrentMinX = lengthdir_x(WandEffectMinX, image_angle);
-	show_debug_message(CurrentMaxX);
-	show_debug_message(CurrentMinX);
 	part_emitter_region(obj_Part_MagicOrb.partMagic_sys, obj_Part_MagicOrb.PartMagic_emit, obj_Wand.x+CurrentMaxX, obj_Wand.x+CurrentMinX , obj_Wand.y+CurrentMinY, obj_Wand.y+CurrentMaxY, ps_shape_ellipse, ps_distr_gaussian)
 	
 	

@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "27e399c4-0749-418c-b2fa-8d0c34ac2b37",
+            "Value": {
+                "id": "63ce68a6-9c83-4226-8f54-0d15ca98b07f",
+                "resourcePath": "views\\27e399c4-0749-418c-b2fa-8d0c34ac2b37.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2846b89d-0f6e-4719-9a2a-1124df2b8bcf",
             "Value": {
                 "id": "0c7acca2-db28-4d16-a8dd-49ff842e0d01",
@@ -1084,6 +1092,14 @@
                 "id": "023fffc7-fd44-4ab8-9754-55839b1bd817",
                 "resourcePath": "sprites\\spr_paleSeaweed\\spr_paleSeaweed.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5308bf7e-ea1f-41e8-809d-e443e82e6208",
+            "Value": {
+                "id": "186fd68b-33b0-4f03-8b6a-152f76bae87d",
+                "resourcePath": "objects\\obj_WideAngleTextBox\\obj_WideAngleTextBox.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2575,6 +2591,14 @@
             }
         },
         {
+            "Key": "cf97c870-9297-45a7-bcae-7fc1b454be15",
+            "Value": {
+                "id": "408507a7-ddd6-4d61-a236-55c6da144a5c",
+                "resourcePath": "views\\cf97c870-9297-45a7-bcae-7fc1b454be15.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cfa6cc70-cee5-4924-ab29-0b82619212e2",
             "Value": {
                 "id": "cb92ec06-506f-4950-aca0-d6f71ad644e8",
@@ -2587,6 +2611,14 @@
             "Value": {
                 "id": "98a21f75-8326-46a6-9cab-f8403ed30db6",
                 "resourcePath": "objects\\obj_RoomTranisiton\\obj_RoomTranisiton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d1583ddb-1ece-49de-9bcc-8ee7cf0a6d4f",
+            "Value": {
+                "id": "8c87ec0c-bd50-4235-8389-ea5acea20000",
+                "resourcePath": "objects\\obj_WideShot\\obj_WideShot.yy",
                 "resourceType": "GMObject"
             }
         },

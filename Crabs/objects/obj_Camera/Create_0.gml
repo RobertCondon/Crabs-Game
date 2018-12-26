@@ -38,3 +38,15 @@ Alpha = 1.2;
 Surface_Fade = -1;
 Brightness = 240;
 FadeOut = false;
+
+//Changing Character Angle
+Left = true;
+keyRight = keyboard_check_pressed(ord("D"));
+keyLeft = keyboard_check_pressed(ord("A"));
+keyCount = 0;
+
+//WideShot style
+WideShotWidth = 1000;
+WideShotHeight = 1000;
+WideShot = false
+CameFromWide = false;

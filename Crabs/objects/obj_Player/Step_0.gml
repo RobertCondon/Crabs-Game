@@ -107,7 +107,7 @@ if global.stop == false and StopMovement = false{
 				if(SpuishedOffOn == false){
 					if vsp > 0{
 						stamina_current += 1
-						vsp = vsp*0.03
+						vsp = vsp*0.05
 						if(SlidingRight == true){
 							part_type_color1(PartStep, obj_SidePlayerRight.StepColour)
 							part_emitter_region(partStep_sys, PartStep_emit, Selfx+24, Selfx+20, Selfy+32, Selfy+31, ps_shape_rectangle, ps_distr_gaussian)
