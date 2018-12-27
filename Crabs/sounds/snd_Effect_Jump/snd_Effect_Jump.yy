@@ -1,5 +1,5 @@
 {
-    "id": "302e0bcb-1e62-4ed3-b25e-c83d3640da56",
+    "id": "642a4799-0658-4ea8-8fcd-cb6df5ae2456",
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "snd_Effect_Jump",
@@ -10,5 +10,5 @@
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 1
+    "volume": 0.77
 }
