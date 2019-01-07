@@ -6,10 +6,10 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 510,
+    "bbox_bottom": 511,
     "bbox_left": 0,
-    "bbox_right": 727,
-    "bbox_top": 1,
+    "bbox_right": 703,
+    "bbox_top": 6,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
@@ -29,21 +29,28 @@
             },
             "images": [
                 {
-                    "id": "2b5f339a-e28c-44ff-9ade-cb27e51cf4ad",
+                    "id": "2c6f5bd4-5192-467a-91d1-7b23ef85e519",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "fe22b5e5-6fe5-4011-b090-1296bd5b5ff2",
-                    "LayerId": "4db98919-f15e-4a69-9268-ff9d99213a14"
+                    "LayerId": "4b6a35f5-e42a-4648-80ac-344f6ba8937c"
+                },
+                {
+                    "id": "f3fa11f4-a4e9-4c3a-aaa6-7756c75e8f44",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "fe22b5e5-6fe5-4011-b090-1296bd5b5ff2",
+                    "LayerId": "b3afa094-5d45-4fe9-b7ea-8a871d723c3b"
                 }
             ]
         }
     ],
-    "gridX": 16,
-    "gridY": 16,
+    "gridX": 32,
+    "gridY": 32,
     "height": 512,
     "layers": [
         {
-            "id": "4db98919-f15e-4a69-9268-ff9d99213a14",
+            "id": "b3afa094-5d45-4fe9-b7ea-8a871d723c3b",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "789c7f2c-c2dc-4f78-a002-1b68d640c5c2",
@@ -52,6 +59,17 @@
             "name": "Layer 3",
             "opacity": 100,
             "visible": true
+        },
+        {
+            "id": "4b6a35f5-e42a-4648-80ac-344f6ba8937c",
+            "modelName": "GMImageLayer",
+            "mvc": "1.0",
+            "SpriteId": "789c7f2c-c2dc-4f78-a002-1b68d640c5c2",
+            "blendMode": 0,
+            "isLocked": false,
+            "name": "Layer 2",
+            "opacity": 100,
+            "visible": false
         }
     ],
     "origin": 0,
