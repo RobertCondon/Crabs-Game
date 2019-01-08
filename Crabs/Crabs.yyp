@@ -1727,6 +1727,14 @@
             }
         },
         {
+            "Key": "8bf48abe-56e6-4c03-998d-3907e94fb4c7",
+            "Value": {
+                "id": "567f7a5e-4a7f-4910-93dd-6709079f529c",
+                "resourcePath": "sprites\\MushRoom\\MushRoom.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8c32fc5f-7f7c-46e1-bc04-a256d3c19e11",
             "Value": {
                 "id": "77ddda8b-8af1-455d-8578-da8af6958367",
@@ -2571,14 +2579,6 @@
             "Value": {
                 "id": "479758c8-2c36-42fd-87b9-dc953762174e",
                 "resourcePath": "sprites\\spr_PufferBang\\spr_PufferBang.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "ce84b393-8d42-44cb-8cb7-3364fef75c50",
-            "Value": {
-                "id": "3e1662e7-c6d1-46b1-9407-6863c4e49c14",
-                "resourcePath": "sprites\\sprite119\\sprite119.yy",
                 "resourceType": "GMSprite"
             }
         },
