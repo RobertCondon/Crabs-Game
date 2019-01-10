@@ -41,7 +41,7 @@ if (mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_enter)){
 		room_goto(rm_Level1_Opening);
 		break
 	case 1:
-		room_goto(rm_Level1_Training);
+		room_goto(rm_Level1_TEST);
 		break;
 	case 2:
 		room_goto(Credits);

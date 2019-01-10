@@ -5,7 +5,7 @@ case 0:
 	room_goto(rm_Level1_Opening);
 	break
 case 1:
-    room_goto(rm_Level1_Training);
+    room_goto(rm_Level1_TEST);
 	break;
 case 2:
 	room_goto(Credits);
