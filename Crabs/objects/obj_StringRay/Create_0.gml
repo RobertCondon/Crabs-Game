@@ -18,3 +18,18 @@ Looked = false;
 //New shit
 planner = instance_create_layer(x, y, "ShaderBeforeStart_1", obj_StingRayPlanner);
 planner.follower = id;
+
+//triangle things
+TriMinX = -26
+TriMinY = 8
+TriLeftX = -126
+TriLeftY = 108
+TriRightX = 74
+TriRightY = 108
+CurrentMinX = 8
+CurrentMinY = 8
+CurrentLeftX = -126
+CurrentLeftY = 108
+CurrentRightX = 74
+CurrentRightY = 0;
+coneOfSightLength = 384

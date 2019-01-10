@@ -5,7 +5,7 @@
 	Looked = true;
 }*/
 
-image_angle = direction
+image_angle = round(direction)
 if(direction > 165 and direction < 345) {
 	image_yscale = -1;	
 } else {
