@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "0f494c26-c053-4a8a-aa23-b51ad241b714",
+            "Value": {
+                "id": "5cf5e29a-21ba-4f9e-8046-51aa05146157",
+                "resourcePath": "sprites\\tmp\\tmp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0fc111ab-37c0-421c-98a0-1392dc5c28b9",
             "Value": {
                 "id": "cc4a4e4c-3511-419a-bd15-2b115672178a",
@@ -935,6 +943,14 @@
             }
         },
         {
+            "Key": "44f7274d-f9f6-479d-bac7-3cd0f1a99e18",
+            "Value": {
+                "id": "e1025b45-cf91-40a6-9e78-af38ebe2e599",
+                "resourcePath": "sprites\\spr_StringRayMovement\\spr_StringRayMovement.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "45aa667c-ff74-4959-82ee-f2a27d3276d4",
             "Value": {
                 "id": "56b5582a-17db-49fb-99af-d40ab85b5570",
@@ -1295,10 +1311,26 @@
             }
         },
         {
+            "Key": "5e2d6d33-19e2-4ef5-8127-5a7b6469c118",
+            "Value": {
+                "id": "101cd359-5e6b-4ab2-ad5f-d87c0c501c45",
+                "resourcePath": "sprites\\spr_StringRayAttack\\spr_StringRayAttack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5f76965a-f0c5-4d10-9549-661df65092a3",
             "Value": {
                 "id": "4af32e92-0560-4420-be4b-2fe2cd3b685c",
                 "resourcePath": "objects\\obj_Tunnel\\obj_Tunnel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5f83870b-c99c-4fc7-8d7c-411b3dfd0411",
+            "Value": {
+                "id": "29188ff3-09e3-4726-8c90-4ae1d6521315",
+                "resourcePath": "objects\\object105\\object105.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2343,6 +2375,14 @@
             }
         },
         {
+            "Key": "b1bf6bd5-d5bb-4860-b4ea-e736141f4677",
+            "Value": {
+                "id": "0ed98b21-c114-4a45-a665-fe865fc0ded7",
+                "resourcePath": "views\\b1bf6bd5-d5bb-4860-b4ea-e736141f4677.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b338b52c-ed49-447b-81bb-2acb9780d1fc",
             "Value": {
                 "id": "b030cf34-912b-44b6-a320-fe996731e2fc",
@@ -2436,6 +2476,14 @@
                 "id": "2f80e519-5690-4f0a-93ef-79da60398613",
                 "resourcePath": "objects\\obj_Lobster\\obj_Lobster.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b9761b48-5736-4847-8d03-6c1d3e15a948",
+            "Value": {
+                "id": "3ac291ec-3e28-4d27-9964-83f85c18c219",
+                "resourcePath": "scripts\\scr_Ray_attack\\scr_Ray_attack.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2695,6 +2743,14 @@
             }
         },
         {
+            "Key": "cfb3136b-db01-4fc2-8376-66d3b67c5a86",
+            "Value": {
+                "id": "878a637b-1465-4a17-a86b-3f7f64f14c9f",
+                "resourcePath": "scripts\\scr_StingRayAttack\\scr_StingRayAttack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d0140f46-1f83-4d36-b173-cf4ae1ba229a",
             "Value": {
                 "id": "98a21f75-8326-46a6-9cab-f8403ed30db6",
@@ -2907,6 +2963,14 @@
             "Value": {
                 "id": "4e9ffac0-ee02-4efb-8c92-fa1b0bbdae79",
                 "resourcePath": "sprites\\spr_NemoFishes\\spr_NemoFishes.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e38d0bac-c0aa-4bbd-97f3-811e83698d3d",
+            "Value": {
+                "id": "26c2cd61-c1ba-4b45-a12c-ff359be2342d",
+                "resourcePath": "sprites\\spr_StringRayAttackHitBox\\spr_StringRayAttackHitBox.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3274,7 +3338,9 @@
         "f7af5cf4-df7c-4a76-af19-c54808729513",
         "a459fee2-3790-4dcc-b1ba-cd345af0fcba",
         "5d65bd6b-df13-430c-853e-f50237f9944e",
-        "8fda86a4-9a12-42ec-a52d-1c977c87d0dc"
+        "8fda86a4-9a12-42ec-a52d-1c977c87d0dc",
+        "b9761b48-5736-4847-8d03-6c1d3e15a948",
+        "cfb3136b-db01-4fc2-8376-66d3b67c5a86"
     ],
     "tutorial": ""
 }

@@ -185,9 +185,9 @@ if global.stop == false and StopMovement = false{
 	//Damdge management
 	script_execute(scr_DamdgeControl)
 	//Damdge from fire
-	script_execute(scr_HitBounce, obj_fire, 2)
+	script_execute(scr_HitBounce, obj_fire, -6, false)
 	if(Eel_electric == true) {
-		script_execute(scr_HitBounce, obj_ElectricEel, 2)
+		script_execute(scr_HitBounce, obj_ElectricEel, -6, false)
 	}
 	
 	//hat follow you

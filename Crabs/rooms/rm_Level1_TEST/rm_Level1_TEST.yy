@@ -44,7 +44,9 @@
         "e12f257d-2af5-4586-90c3-e8a6914d953e",
         "722d8dd9-f1f0-4d2e-a063-58ea50058343",
         "2127274a-ed75-4fcc-bbbf-dbb5c4611ca0",
-        "87073ce3-53ae-49d4-aee0-fa8b2311a174"
+        "87073ce3-53ae-49d4-aee0-fa8b2311a174",
+        "680cd2ec-ed28-4b5d-8f23-c77d3c96483c",
+        "97f6a03e-1dd7-4312-8ef8-0c8fca0b9878"
     ],
     "IsDnD": false,
     "layers": [
@@ -232,7 +234,8 @@
                     "inheritSubLayers": false,
                     "inheritVisibility": false,
                     "instances": [
-
+{"name": "inst_213F97E","id": "680cd2ec-ed28-4b5d-8f23-c77d3c96483c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_213F97E","objId": "366d82ab-76ba-4215-802f-01aa7aad0b59","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 2016,"y": 480},
+{"name": "inst_43893265","id": "97f6a03e-1dd7-4312-8ef8-0c8fca0b9878","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_43893265","objId": "366d82ab-76ba-4215-802f-01aa7aad0b59","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1696,"y": 320}
                     ],
                     "layers": [
 
@@ -388,8 +391,8 @@
                     "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRTileLayer",
-                    "prev_tileheight": 0,
-                    "prev_tilewidth": 0,
+                    "prev_tileheight": 32,
+                    "prev_tilewidth": 32,
                     "mvc": "1.0",
                     "tiles": {
                         "SerialiseData": null,
@@ -495,8 +498,8 @@
                     "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRTileLayer",
-                    "prev_tileheight": 0,
-                    "prev_tilewidth": 0,
+                    "prev_tileheight": 32,
+                    "prev_tilewidth": 32,
                     "mvc": "1.0",
                     "tiles": {
                         "SerialiseData": null,
@@ -591,7 +594,7 @@
                     "grid_x": 32,
                     "grid_y": 32,
                     "hierarchyFrozen": false,
-                    "hierarchyVisible": true,
+                    "hierarchyVisible": false,
                     "inheritLayerDepth": false,
                     "inheritLayerSettings": false,
                     "inheritSubLayers": false,
@@ -602,8 +605,8 @@
                     "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRTileLayer",
-                    "prev_tileheight": 0,
-                    "prev_tilewidth": 0,
+                    "prev_tileheight": 32,
+                    "prev_tilewidth": 32,
                     "mvc": "1.0",
                     "tiles": {
                         "SerialiseData": null,
@@ -686,7 +689,7 @@
                     },
                     "tilesetId": "ecc97e92-53dc-4d8b-9240-43e71cf30b2e",
                     "userdefined_depth": false,
-                    "visible": true,
+                    "visible": false,
                     "x": 0,
                     "y": 0
                 },
@@ -879,7 +882,7 @@
                     "grid_x": 32,
                     "grid_y": 32,
                     "hierarchyFrozen": false,
-                    "hierarchyVisible": true,
+                    "hierarchyVisible": false,
                     "inheritLayerDepth": false,
                     "inheritLayerSettings": false,
                     "inheritSubLayers": false,
@@ -890,8 +893,8 @@
                     "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRTileLayer",
-                    "prev_tileheight": 0,
-                    "prev_tilewidth": 0,
+                    "prev_tileheight": 32,
+                    "prev_tilewidth": 32,
                     "mvc": "1.0",
                     "tiles": {
                         "SerialiseData": null,
@@ -974,7 +977,7 @@
                     },
                     "tilesetId": "96280054-8c40-4e20-8229-f0c7068fc041",
                     "userdefined_depth": false,
-                    "visible": true,
+                    "visible": false,
                     "x": 0,
                     "y": 0
                 },
@@ -986,7 +989,7 @@
                     "grid_x": 32,
                     "grid_y": 32,
                     "hierarchyFrozen": false,
-                    "hierarchyVisible": true,
+                    "hierarchyVisible": false,
                     "inheritLayerDepth": false,
                     "inheritLayerSettings": false,
                     "inheritSubLayers": false,
@@ -997,8 +1000,8 @@
                     "m_parentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "modelName": "GMRTileLayer",
-                    "prev_tileheight": 0,
-                    "prev_tilewidth": 0,
+                    "prev_tileheight": 32,
+                    "prev_tilewidth": 32,
                     "mvc": "1.0",
                     "tiles": {
                         "SerialiseData": null,
@@ -1081,7 +1084,7 @@
                     },
                     "tilesetId": "ecc97e92-53dc-4d8b-9240-43e71cf30b2e",
                     "userdefined_depth": false,
-                    "visible": true,
+                    "visible": false,
                     "x": 0,
                     "y": 0
                 },

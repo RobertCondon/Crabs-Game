@@ -28,3 +28,9 @@ CordsList[1] = SecondValues;
 CordsList[2] = ThridValues;
 CordsList[3] = FourthValues;
 CurrentList = noone;
+
+//Player follow stuff
+follow = false;
+ChangeOver = false;
+PreFollowX = 0;
+PreFollowY = 0;

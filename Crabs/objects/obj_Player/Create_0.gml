@@ -89,6 +89,10 @@ DrawBox = false;
 //Damage against eel active
 Eel_electric = false;
 
+//Damdge against StingRay hit
+StingRayHit = false;
+StingRayId = noone;
+
 //Claw
 Claw = noone;
 Claw_Y = 8;
