@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "01db2741-e8d3-48a6-b297-58f981e80c1c",
+            "Value": {
+                "id": "fff2045f-e80c-4bf6-8ae3-925f152a7b37",
+                "resourcePath": "objects\\obj_StingRayTail\\obj_StingRayTail.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "01f2ac00-85b5-4dae-ae40-5a06aa0c96cb",
             "Value": {
                 "id": "44238451-2e93-45ee-9474-1ed6408b9f46",
@@ -335,6 +343,14 @@
             }
         },
         {
+            "Key": "16cd53f9-bae5-4d07-a1a9-0d0c18788793",
+            "Value": {
+                "id": "8c4ed9b1-5aa9-487f-939c-77553d8f6445",
+                "resourcePath": "sprites\\spr_StingRaytail_Ideal\\spr_StingRaytail_Ideal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "16efd7ed-9a24-4f4e-a159-e227af9dd265",
             "Value": {
                 "id": "ad721450-a9e3-453c-83de-04eebff472a2",
@@ -580,6 +596,14 @@
                 "id": "984fdfd1-602b-42ea-b8c3-e1798f2198c5",
                 "resourcePath": "sounds\\snd_Effect_Eel_ChargeUpShock\\snd_Effect_Eel_ChargeUpShock.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "28745c3d-dfb2-4a72-a270-f3653cc19714",
+            "Value": {
+                "id": "f2481d5b-4080-40a8-81eb-5cc893e8040c",
+                "resourcePath": "sprites\\spr_StringRayMovement\\spr_StringRayMovement.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -946,7 +970,7 @@
             "Key": "44f7274d-f9f6-479d-bac7-3cd0f1a99e18",
             "Value": {
                 "id": "e1025b45-cf91-40a6-9e78-af38ebe2e599",
-                "resourcePath": "sprites\\spr_StringRayMovement\\spr_StringRayMovement.yy",
+                "resourcePath": "sprites\\spr_StringRayMovementOLD\\spr_StringRayMovementOLD.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1775,6 +1799,14 @@
             }
         },
         {
+            "Key": "87b46730-c26d-4bb9-8e31-dbdeb09ccd8c",
+            "Value": {
+                "id": "822e298f-3d81-413a-b704-05ee2fc3caa7",
+                "resourcePath": "sprites\\spr_StingRaytail_Attack\\spr_StingRaytail_Attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "885c3617-6b6e-46ef-8e54-233c4591a43d",
             "Value": {
                 "id": "c30e15e5-9346-4935-965e-5864c7f5b79d",
@@ -2315,6 +2347,14 @@
             "Value": {
                 "id": "a06cf695-5cc4-4586-95f4-f77371f6cb3f",
                 "resourcePath": "sprites\\spr_coral3\\spr_coral3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "abe65927-e4c3-4151-956b-ea531c0b006a",
+            "Value": {
+                "id": "338c430a-604e-438e-92a9-beb14dc3ec81",
+                "resourcePath": "sprites\\spr_StingRaytail_AttackHitBox\\spr_StingRaytail_AttackHitBox.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2963,14 +3003,6 @@
             "Value": {
                 "id": "4e9ffac0-ee02-4efb-8c92-fa1b0bbdae79",
                 "resourcePath": "sprites\\spr_NemoFishes\\spr_NemoFishes.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "e38d0bac-c0aa-4bbd-97f3-811e83698d3d",
-            "Value": {
-                "id": "26c2cd61-c1ba-4b45-a12c-ff359be2342d",
-                "resourcePath": "sprites\\spr_StringRayAttackHitBox\\spr_StringRayAttackHitBox.yy",
                 "resourceType": "GMSprite"
             }
         },

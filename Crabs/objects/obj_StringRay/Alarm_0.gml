@@ -1,3 +1,3 @@
-/// @description Insert description here
+/// @description GotPlayer
 // You can write your code in this editor
 GotPlayer = false;

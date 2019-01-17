@@ -11,33 +11,55 @@ if(global.stop == false and stun == false) {
 	}
 	if(GotPlayer = false) {
 		if(direction < 30 and direction > -30) {
+			//Right
+			image_angle = 0
+			image_xscale = -1;
+			image_yscale = 1;
+		} else if(direction > 170 and direction < 190) {
+			//Left
+			image_angle = 180
+			image_xscale = -1;
+			image_yscale = -1;
+		} else if(direction > 70 and direction < 110) {
+			//Up
+			image_angle = 90;
+			image_xscale = -1;
+			image_yscale = -1;
+		} else if(direction > 250 and direction < 290) {
+			//down
+			image_angle = 270;
+			image_xscale = -1;
+			image_yscale = -1;
+		}
+		show_debug_message(direction);
+		/*if(direction < 30 and direction > -30) {
 			image_angle = 0;	
-			image_yscale = 1;	
+			image_xscale = 1;
 		} else if(direction > 50 and direction < 70) {
 			image_angle = 60;	
-			image_yscale = 1;	
+			image_xscale = 1;
 		} else if(direction > 90 and direction < 110) {
 			image_angle = 100;	
-			image_yscale = 1;	
+			image_xscale = 1;	
 		} else if(direction > 130 and direction < 150) {
 			image_angle = 140;	
-			image_yscale = 1;	
+			image_xscale = 1;
 		} else if(direction > 170 and direction < 190) {
-			image_angle = 180;	
-			image_yscale = -1;	
+			image_angle = 0;	
+			image_xscale = -1;
 		} else if(direction > 210 and direction < 230) {
-			image_angle = 220;	
-			image_yscale = -1;	
+			image_angle = 60;	
+			image_xscale = -1;
 		} else if(direction > 250 and direction < 270) {
-			image_angle = 260;	
-			image_yscale = -1;	
+			image_angle = 140;
+			image_xscale = -1;
 		} else if(direction > 290 and direction < 310) {
 			image_angle = 300;	
-			image_yscale = -1;	
+			image_xscale = -1;
 		} else if(direction > 330 and direction < 350) {
 			image_angle = 340;	
-			image_yscale = 1;	
-		} 
+			image_xscale = -1;
+		} */
 	} else {
 		image_angle = point_direction(x, y, obj_Player.x, obj_Player.y)
 	}
@@ -54,47 +76,20 @@ if(global.stop == false and stun == false) {
 			//show_message("got em");
 			if(!collisionLine) {
 				GotPlayer = true;
+				image_xscale = -1;
+				image_yscale = 1;
 				alarm[0] = 30
 			} 
 		
 	}
 
 	//Attack
-	if(other.GotPlayer == false or distance_to_object(obj_Player) > 3) {
+	if(other.GotPlayer == false or distance_to_object(MyTarget) > 2) {
 		AttackInRange = false;	
 	} else {
 		AttackInRange = true	
 	}
-	id.x = x;
-	if(AttackInRange == true) {
-		if(Attacked == false) {
-			sprite_index = spr_StringRayAttack;
-			mask_index = spr_StringRayAttackHitBox;
-			if(place_meeting(x, y, obj_Player) and HitThem == false) {
-				with(obj_Player) {
-					script_execute(scr_HitBounce, obj_StringRay, -3, true, other);
-				}
-			
-				HitThem = true;
-			}
-			if(scr_AnimationEnd()) {
-				sprite_index = spr_StringRayMovement;
-				mask_index = spr_StringRayMovement;
-				Attacked = true;	
-				HitThem = false
-				alarm[1] = 90
-			}
-		
-		}
-	} else if(sprite_index == spr_StringRayAttack) {
-		if(scr_AnimationEnd()) {
-				sprite_index = spr_StringRayMovement;
-				mask_index = spr_StringRayMovement;
-				Attacked = true;	
-				HitThem = false
-				alarm[1] = 30
-			}
-	}
+	
 } else {
 	image_speed = 0;
 	if(stun == true and stuned == false) {
@@ -102,4 +97,11 @@ if(global.stop == false and stun == false) {
 		stuned = true;
 	}
 	
+//hp system
+if(hp <= 0) {
+	instance_destroy()
+	instance_destroy(planner);	
+	instance_destroy(MyTail);	
+	instance_destroy(MyTarget);
+}
 }

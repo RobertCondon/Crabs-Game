@@ -5,10 +5,10 @@ case 0:
 	room_goto(rm_Level1_Opening);
 	break
 case 1:
-    room_goto(rm_Level1_TEST);
+    room_goto(rm_Level1_Training);
 	break;
 case 2:
-	room_goto(Credits);
+	room_goto(rm_Level1_TEST);
 	break;
 case 3:
 	instance_create_depth(416, 160, 0, obj_Options);
