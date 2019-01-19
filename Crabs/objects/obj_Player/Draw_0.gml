@@ -28,7 +28,7 @@ if(keyboard_check_pressed(ord("P"))) {
 	}
 }
 
-
+//draw_rectangle(x-(SquareX-15), y+2, x+(SquareX-15), y+20, true);
 if(DrawBox == true){
 		draw_rectangle(x-32, y-32, x+32, y+32,true)
 		draw_rectangle(x-SquareX, y-20, x+SquareX+1, y+32,true)

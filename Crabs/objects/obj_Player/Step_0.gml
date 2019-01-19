@@ -11,6 +11,7 @@ if global.stop == false and StopMovement = false{
 	//Setting up colision boxes and lines
 	collisionJump = collision_rectangle(x-23, y+33, x+23, y+3, o_Wall, false, false)
 	collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
+	collisionSquarePearl = collision_rectangle(x-(SquareX-15), y+2, x+(SquareX-15), y+20, obj_WhiteCoin, false, false)
 	collisionLine = collision_line(x, y+26, x+Xline, y+26, o_Wall, false, false)
 	collisionEllipse_MovingPlatforms = collision_ellipse(x-22, y+31, x+23, y+13, obj_MovingObject, false, false)
 	collisionLine_MovingPlatforms = collision_line(x-20, y+33, x+21, y+33, obj_MovingObject, false, false)

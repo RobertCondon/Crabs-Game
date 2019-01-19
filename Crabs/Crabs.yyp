@@ -967,6 +967,14 @@
             }
         },
         {
+            "Key": "43d60c3b-d929-49be-abd6-07144e329231",
+            "Value": {
+                "id": "f7c454e8-3ad4-4b0c-965d-070daa11c8de",
+                "resourcePath": "sprites\\spr_Pearl_CoinEffect\\spr_Pearl_CoinEffect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "44f7274d-f9f6-479d-bac7-3cd0f1a99e18",
             "Value": {
                 "id": "e1025b45-cf91-40a6-9e78-af38ebe2e599",
@@ -1820,6 +1828,14 @@
                 "id": "b46d2882-e7a9-4c6f-a47f-879fe26fe003",
                 "resourcePath": "objects\\o_wand\\o_wand.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8a7a0ee1-d928-404e-9844-f5cfe118e1c4",
+            "Value": {
+                "id": "12569872-6cca-4da2-a987-cd9b2c0de973",
+                "resourcePath": "views\\8a7a0ee1-d928-404e-9844-f5cfe118e1c4.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3324,6 +3340,14 @@
                 "id": "61e019e4-475a-4eb0-89ea-4f8f76f25488",
                 "resourcePath": "sprites\\spr_SandDune_Tut1\\spr_SandDune_Tut1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fe3a90df-ed14-4721-9507-58a77b9fd19d",
+            "Value": {
+                "id": "6d716a69-e31a-4edf-b245-c2c066ba8d51",
+                "resourcePath": "objects\\obj_CoinPointText\\obj_CoinPointText.yy",
+                "resourceType": "GMObject"
             }
         },
         {
