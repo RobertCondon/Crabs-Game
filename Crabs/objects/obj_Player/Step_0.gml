@@ -124,8 +124,12 @@ if global.stop == false and StopMovement = false{
 		}
 	}
 	
+	if(vsp + grv + Vbang < 8) {
+		vsp = vsp + grv + Vbang;
+	}
 	
-	vsp = vsp + grv + Vbang;
+	show_debug_message("VSP: " + string(vsp));
+	show_debug_message("grv: " + string(grv));
 	//X axies Collision
 	//Meaning if it meets o_Wall on hte x axies it will stop the movement
 	if (place_meeting(x+hsp, y, o_Wall))

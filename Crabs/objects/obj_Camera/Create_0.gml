@@ -8,7 +8,7 @@ HermyHeight = 270;
 
 PlayerOffSet = 250;
 PlayerOffSetY = 0;
-
+Falling = false;
 
 PlayerVision = true;
 camera = camera_create();

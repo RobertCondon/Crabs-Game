@@ -6,9 +6,6 @@
 }*/
 if(global.stop == false and stun == false) {
 	image_speed = 1;
-	if(mask_index == spr_StringRayBase) {
-		show_debug_message("Ye");
-	}
 	if(GotPlayer = false) {
 		if(direction < 30 and direction > -30) {
 			//Right
@@ -31,7 +28,6 @@ if(global.stop == false and stun == false) {
 			image_xscale = -1;
 			image_yscale = -1;
 		}
-		show_debug_message(direction);
 		/*if(direction < 30 and direction > -30) {
 			image_angle = 0;	
 			image_xscale = 1;
@@ -69,7 +65,6 @@ if(global.stop == false and stun == false) {
 	} else {
 
 	}
-	show_debug_message( direction)
 	//The or within there is just that if your so fuckin close to the ray it'll notice you even if you're behind it
 	if((point_in_triangle(obj_Player.x, obj_Player.y, x, y, x+lengthdir_x(coneOfSightLength,image_angle-25), y+lengthdir_y(coneOfSightLength,image_angle-25), x+lengthdir_x(coneOfSightLength,image_angle+25), y+lengthdir_y(coneOfSightLength,image_angle+25))) or distance_to_object(obj_Player) < 25) {
 			collisionLine = collision_line(obj_Player.x, obj_Player.y, x, y, o_Sand, false, true);

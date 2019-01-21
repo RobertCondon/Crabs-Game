@@ -113,6 +113,16 @@ if((yTo - y)/15 >= 1) or ((yTo - y)/15 <= -1){
 if(follow == obj_Player){
 	xTo = follow.x + PlayerOffSet;
 	yTo = follow.y + PlayerOffSetY;
+	
+	if(follow.vsp < 7) {
+		PlayerOffSetY = 0;
+		alarm[1] = 30;
+		Falling = true;
+	} else {
+		if(Falling == true and PlayerOffSetY < 200) {
+			PlayerOffSetY += 3;	
+		}
+	}
 }else if(follow == obj_Textbox){
 	xTo = follow.x + 150;
 	yTo = follow.y + 100;
