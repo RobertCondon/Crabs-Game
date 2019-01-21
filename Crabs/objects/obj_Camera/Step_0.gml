@@ -115,7 +115,7 @@ if(follow == obj_Player){
 	yTo = follow.y + PlayerOffSetY;
 	
 	if(follow.vsp < 7) {
-		PlayerOffSetY = 0;
+		PlayerOffSetY = -70;
 		alarm[1] = 30;
 		Falling = true;
 	} else {
