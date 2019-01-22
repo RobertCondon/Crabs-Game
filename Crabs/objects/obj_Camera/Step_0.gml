@@ -111,8 +111,8 @@ if((yTo - y)/15 >= 1) or ((yTo - y)/15 <= -1){
 }
 
 if(follow == obj_Player){
-	xTo = follow.x + PlayerOffSet;
-	yTo = follow.y + PlayerOffSetY;
+	xTo = follow.x + PlayerOffSet - XRecoil;
+	yTo = follow.y + PlayerOffSetY - YRecoil;
 	
 	if(follow.vsp < 7) {
 		PlayerOffSetY = -70;
@@ -168,4 +168,25 @@ if(Left == false) {
 	if(keyRight) {
 		keyCount = 0;
 	}
+}
+//Recoil things
+if(ShuntBack == true) {
+	if(XRecoil > 0) {
+		XRecoil -= 1;	
+	} else if(XRecoil > 0){
+		XRecoil += 1;
+	} else {
+		XRecoil = 0	
+	}
+
+	if(YRecoil > 0) {
+		YRecoil -= 1;	
+	} else if(YRecoil > 0){
+		YRecoil += 1;
+	} else {
+		YRecoil = 0	
+	}
+} else {
+	XRecoil += XRecoil*0.4;
+	YRecoil += YRecoil*0.4;
 }

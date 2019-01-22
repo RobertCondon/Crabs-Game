@@ -26,8 +26,37 @@ if global.stop == false{
 				Firing_Delay = 240;	
 			}
 			with(obj_Player) {
+				if(!collisionJump) {
+					if(vsp >= 0) {
+						if(vsp < 2) {
+							other.Vbang = other.Vbang;
+						} else if(other.Vbang - ((vsp-1)/3) < 1) {
+							other.Vbang = 1;	
+						} else {
+							other.Vbang = other.Vbang - (vsp/3);	
+						}
+					} else {
+						if(vsp > -2) {
+							other.Vbang = other.Vbang;
+						} else if(other.Vbang + ((vsp+1)/3) < 1) {
+							other.Vbang = 1;	
+						} else {
+							other.Vbang = other.Vbang + (vsp/3);	
+						}
+					}
+				} else {
+					other.Vbang = other.Vbang/10
+				}
+				/*show_debug_message("-------------------");
+				show_debug_message("vsp = "+ string(vsp));
+				show_debug_message("Vbang = " + string(other.Vbang));
+				show_debug_message("-------------------");*/
 				Vbang -= lengthdir_y(other.Vbang, other.image_angle);
-				bang -= lengthdir_x(other.Vbang*1.1, other.image_angle);
+				bang -= lengthdir_x((other.Vbang*1.1), other.image_angle);
+				obj_Camera.XRecoil = (bang*17);
+				obj_Camera.YRecoil = (Vbang*17);
+				obj_Camera.alarm[2] = 60;
+				obj_Camera.ShuntBack = true;
 				vsp -= 1	
 			}
 			with (instance_create_layer(x + CurrentMinX, y +CurrentMinY, "Bullets", BulletType))

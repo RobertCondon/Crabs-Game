@@ -50,3 +50,8 @@ WideShotWidth = 1000;
 WideShotHeight = 1000;
 WideShot = false
 CameFromWide = false;
+
+//Recoil
+XRecoil = 0;
+YRecoil = 0;
+ShuntBack = false;
