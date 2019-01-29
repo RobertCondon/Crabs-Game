@@ -1,0 +1,1 @@
+RoomGoTo = rm_Level1_Training;

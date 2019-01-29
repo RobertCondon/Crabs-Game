@@ -78,11 +78,14 @@ if (PlayerVision == true){
 
 xTo = max(xTo, 10);
 
-
+if(x > ToWideForward) {
+		show_debug_message("Forward!");
+}
 
 if(follow == obj_Player) {
-	if(x > ToWideForward+2) {
-		x -= (x-ToWideForward)/DiviedBy;	
+	if(x > ToWideForward) {
+		show_debug_message("Forward! AHHHH");
+		x -= (x-ToWideForward)/DiviedBy
 		if(xToNeg){
 			x += (xTo - x)/15;	
 		}

@@ -23,6 +23,6 @@ part_type_blend(PartMagic, true);
 
 //Partical Emitter
 PartMagic_emit = part_emitter_create(partMagic_sys);
-part_emitter_region(partMagic_sys, PartMagic_emit, self.x-20, self.x+20, self.y-20, self.y+20, ps_shape_ellipse, ps_distr_gaussian)
-part_emitter_burst(partMagic_sys, PartMagic_emit, PartMagic, 1);
+//part_emitter_region(partMagic_sys, PartMagic_emit, self.x-20, self.x+20, self.y-20, self.y+20, ps_shape_ellipse, ps_distr_gaussian)
+//part_emitter_burst(partMagic_sys, PartMagic_emit, PartMagic, 1);
 

@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "06fe2ebf-e51c-4214-ad86-06b61fc55cfd",
+            "Value": {
+                "id": "8cae61b3-61bd-4c23-9615-8b743af03566",
+                "resourcePath": "views\\06fe2ebf-e51c-4214-ad86-06b61fc55cfd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "07090baa-ec64-408e-a210-6d9991277e8c",
             "Value": {
                 "id": "593257dc-a464-4f6b-902b-8588334ad183",
@@ -607,6 +615,14 @@
             }
         },
         {
+            "Key": "29481b3d-454c-40a3-8d88-3812b35e2088",
+            "Value": {
+                "id": "3614066e-60ee-4804-869a-126d67ca840a",
+                "resourcePath": "views\\29481b3d-454c-40a3-8d88-3812b35e2088.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2969f488-c2c3-424f-83d7-ad5d118db805",
             "Value": {
                 "id": "ccafea9c-b827-40d9-b206-ede59a8d0f42",
@@ -771,6 +787,14 @@
             "Value": {
                 "id": "ebeb46d4-eb63-4577-90e4-408a0bf6f40c",
                 "resourcePath": "views\\372dd023-76a1-44f8-91eb-5084ee5945ad.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "37b364c5-1280-448e-ba25-4a245900eee0",
+            "Value": {
+                "id": "8fe51813-b0df-41a2-89cd-4cd2ae6360eb",
+                "resourcePath": "views\\37b364c5-1280-448e-ba25-4a245900eee0.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1567,6 +1591,14 @@
             }
         },
         {
+            "Key": "74e69c13-9b24-4ca9-8162-95f66f014f6d",
+            "Value": {
+                "id": "498cdf6d-147c-499d-b930-7893749e456c",
+                "resourcePath": "sprites\\spr_Leaf_Standard\\spr_Leaf_Standard.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7501416c-0ceb-4e53-8599-c0954aa84419",
             "Value": {
                 "id": "e12e082f-5b2f-4260-9caa-9165c1612f84",
@@ -1911,6 +1943,14 @@
             }
         },
         {
+            "Key": "8e0473ce-deef-42aa-806f-9b82a41f6b9f",
+            "Value": {
+                "id": "8dc134c9-0715-4196-9124-dfbaeb2df447",
+                "resourcePath": "objects\\obj_RoomSlide\\obj_RoomSlide.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8fda86a4-9a12-42ec-a52d-1c977c87d0dc",
             "Value": {
                 "id": "b5788589-1a68-401e-96a0-e44a07c1de1f",
@@ -1940,6 +1980,14 @@
                 "id": "6fbd1fb7-5380-4480-9e46-2d8b4a778b7a",
                 "resourcePath": "views\\913b432a-c01b-4649-86ab-46e66275cb62.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "91626e2f-dd08-459c-829f-e0d00f047380",
+            "Value": {
+                "id": "64504c44-5c7a-4301-a2f7-3bb9f9d42135",
+                "resourcePath": "sprites\\spr_KelpStalk\\spr_KelpStalk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2623,6 +2671,14 @@
             }
         },
         {
+            "Key": "c3f884f0-57ec-44ce-bf20-4b791f014cdb",
+            "Value": {
+                "id": "445c9ae3-07d5-4e1d-9a66-ccdd837dfd9f",
+                "resourcePath": "rooms\\rm_Level1_KelpFeild\\rm_Level1_KelpFeild.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "c4811a07-c5c7-47c8-bda5-c86a449c906e",
             "Value": {
                 "id": "8c6e572c-7f50-4e50-be28-a3e726d4ebd8",
@@ -2676,6 +2732,14 @@
                 "id": "c2d5d93c-e4f2-4127-86d4-8ab04818f2e9",
                 "resourcePath": "shaders\\shd_Normal\\shd_Normal.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "c6d88ddb-f560-4e3d-a391-ffa6635e2a74",
+            "Value": {
+                "id": "5aee4cc6-1167-40dd-ba27-e3096919d1ae",
+                "resourcePath": "scripts\\EaseOutQuad\\EaseOutQuad.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3375,6 +3439,7 @@
         "b4a1d663-bfc1-4e98-ace5-271be9d6db30",
         "66488dd1-9958-4778-bb73-dcfac8157e62",
         "a7b489d6-c19d-4c3b-89d5-02a6fd62781b",
+        "c6d88ddb-f560-4e3d-a391-ffa6635e2a74",
         "1a962cca-cf11-4c98-8599-8976668840f7",
         "4fb65161-7812-4660-a15b-17f7c062ce8f",
         "12508ae8-2cbe-47bb-ac8b-5be79b45504d",

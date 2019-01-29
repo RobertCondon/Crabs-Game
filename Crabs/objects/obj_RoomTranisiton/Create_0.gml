@@ -7,4 +7,4 @@ Width = 960;
 Height = 540;
 ParticalDensity = 0;
 ReachedPeak = false;
-
+RoomGoTo = noone;

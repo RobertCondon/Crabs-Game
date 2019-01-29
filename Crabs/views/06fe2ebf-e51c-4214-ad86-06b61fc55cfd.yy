@@ -1,0 +1,32 @@
+{
+    "id": "06fe2ebf-e51c-4214-ad86-06b61fc55cfd",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "06fe2ebf-e51c-4214-ad86-06b61fc55cfd",
+    "children": [
+        "b338b52c-ed49-447b-81bb-2acb9780d1fc",
+        "3161b934-f4e2-42e8-ac05-c8cd6e43f488",
+        "b9d6c1fe-a94f-433b-9630-0d675488ae31",
+        "b19d87f5-d2c8-46b5-8c9b-0909e81ace61",
+        "22f317b9-7fd4-4418-8b69-b177280a7fca",
+        "52f63afd-28c3-4c78-992e-41ba4d6f6a36",
+        "8c32fc5f-7f7c-46e1-bc04-a256d3c19e11",
+        "0e2587e3-43e7-441a-9de3-0b8170142556",
+        "cd430689-a879-495c-98b9-31ce2153e866",
+        "bcaccd90-f85f-4e32-88aa-4462b4c2f035",
+        "48e407c9-842b-423c-8865-97f0a104d826",
+        "7a6831de-740e-4c7d-9ec2-31e73f8c1a62",
+        "45f1d4d7-0d7d-4743-a321-5c3079f707aa",
+        "06b1f8d4-eac8-4fa1-9d30-e0552d0dd95c",
+        "c2905d2d-55e9-4853-b2b1-b72ecf2f6954",
+        "a3e1f368-a2a3-4606-8073-7ad810b34819",
+        "3da9ac96-94f6-4f8a-a052-901667f200f7",
+        "ed005a3c-74a5-4b0a-be28-1895670e9858",
+        "5f9e6024-1416-4f81-99b9-7654278600d3",
+        "ab923320-5e43-4c27-856a-07f88f3042c3"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "StolenReefThings",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
