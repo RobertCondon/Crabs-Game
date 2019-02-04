@@ -5,6 +5,9 @@ with(Claw){
 	draw_self();	
 }
 draw_set_font(fnt_TextBox);
+
+draw_rectangle(x-23, y+32+vsp, x+23, y-8+vsp, true);
+
 if(flash > 0){
 	
 	flash -= 0.03
@@ -43,5 +46,22 @@ if(DrawBox == true){
 		draw_ellipse_color(x-26, y+32, x+27, y+13, c_fuchsia, c_fuchsia, true)
 		//The bottom collision line
 		draw_rectangle_color(x-23, y+32+vsp, x+23, y+20, c_orange, c_orange, c_orange, c_maroon, true)
+		
+		//Draw jumping stats
+		draw_text(x,y+32, "My VSP = "+string(vsp));
+		//draw_text(x,y+50, "Grav = " + string(grv) + " Vbang = " + string(HighBang));
+		draw_text(x,y+50, "Hit at = " + string(HitVsp) + " Vbang = " + string(HighBang));
+		draw_text(x,y+70, "Highest Y = " + string(HighestY));
+		if(y < HighestY) {
+			HighestY = y;	
+			//show_message("got it");
+		}
+		if(Vbang < HighBang) {
+			HighBang = Vbang;
+			HitVsp = vsp;
+		} else if(collisionJump and key_up) {
+			HighBang = 0;	
+			HitVsp = 0;
+		}
 
 }

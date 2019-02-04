@@ -8,7 +8,7 @@ case 1:
     room_goto(rm_Level1_Training);
 	break;
 case 2:
-	room_goto(rm_Level1_TEST);
+	room_goto(rm_Level1_KelpFeild);
 	break;
 case 3:
 	instance_create_depth(416, 160, 0, obj_Options);

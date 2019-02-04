@@ -14,7 +14,8 @@ DownForce = false
 WasDown = false
 //Wand Blust changes
 BangCharge = 2
-
+Shot = false;
+PerfectShot = false;
 
 MaxWandChargeBo = false
 ChargeState = 0

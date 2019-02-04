@@ -42,8 +42,13 @@ HittingWall = false
 MoveByY = 2;
 TurnOffJump = false;
 OnFloor = false;
-//Create step partical effect
+//Diagonal movement
+Yplus = 0;
 
+
+
+
+//Create step partical effect
 //Partical System
 partStep_sys = part_system_create()
 part_system_depth(partStep_sys, 0)
@@ -64,8 +69,6 @@ part_type_life(PartStep, 0.4,room_speed);
 
 //Partical Emitter
 PartStep_emit = part_emitter_create(partStep_sys);
-part_emitter_region(partStep_sys, PartStep_emit, self.x-20, self.x+20, self.y-20, self.y+20, ps_shape_ellipse, ps_distr_gaussian)
-part_emitter_burst(partStep_sys, PartStep_emit, PartStep, 1);
 
 //Make bottom leg boxes
 instance_create_layer(0,0,"Icons",obj_BelowPlayerLeft)
@@ -85,6 +88,10 @@ instance_create_layer(obj_Player.x, obj_Player.y - 5, "Player", obj_Hat)
 //Testing
 //draw collision boxes
 DrawBox = false;
+HighestY = 999999;
+PerfectPoint = false;
+HighBang = 0;
+HitVsp = 0;
 
 //Damage against eel active
 Eel_electric = false;
@@ -105,3 +112,30 @@ with(instance_create_layer(x+17, y+8, "Player", obj_Claw)) {
 
 //Pause
 PauseLock = false;
+
+//Flything through air partical effects
+//Partical System
+WandShotsys = part_system_create()
+part_system_depth(WandShotsys, 0)
+
+//Partical
+WandShake = 1;
+WandGravity = 0;
+WandShotPartical = part_type_create();
+part_type_sprite(WandShotPartical, spr_Chest_OpenPartical, false, true, false);
+part_type_scale(WandShotPartical, 0.2, 0.2);
+part_type_size(WandShotPartical, 0.1, 1, -0.0005, 0);
+part_type_color1(WandShotPartical, c_white);
+part_type_alpha2(WandShotPartical, 0.9, 0.6);
+part_type_speed(WandShotPartical, 1, 1.5, 0, WandShake);
+part_type_direction(WandShotPartical, -90,-90, 0, 10);
+part_type_gravity(WandShotPartical, WandGravity, 90);
+part_type_life(WandShotPartical, 60,180);
+part_type_blend(WandShotPartical, true);
+
+
+//Partical Emitter
+WandShotPartical_emit = part_emitter_create(WandShotsys);
+
+//part_emitter_region(WandShotsys, WandShotPartical_emit, self.x+17, self.x+30, self.y+15, self.y+15, spr_Chest_OpenPartical, ps_distr_gaussian)
+//part_emitter_burst(WandShotsys, WandShotPartical_emit, WandShotPartical, 1);

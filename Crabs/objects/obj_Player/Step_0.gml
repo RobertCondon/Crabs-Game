@@ -10,7 +10,7 @@ if global.stop == false and StopMovement = false{
 	Selfy = y
 	//Setting up colision boxes and lines
 	collisionJump = collision_rectangle(x-23, y+33, x+23, y+3, o_Wall, false, false)
-	collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, false, false)
+	collisionSquare = collision_rectangle(x-SquareX, y-20, x+SquareX+1, y+32, o_Wall, true, false)
 	collisionSquarePearl = collision_rectangle(x-(SquareX-15), y+2, x+(SquareX-15), y+20, obj_WhiteCoin, false, false)
 	collisionLine = collision_line(x, y+26, x+Xline, y+26, o_Wall, false, false)
 	collisionEllipse_MovingPlatforms = collision_ellipse(x-22, y+31, x+23, y+13, obj_MovingObject, false, false)
@@ -124,26 +124,59 @@ if global.stop == false and StopMovement = false{
 		}
 	}
 	
+	//Cool bubble base thing 
+	/*if(vsp < -0.3) {
+		grv = -1*((vsp/20)+0.1);	
+	} else if(vsp < 0.5){
+		grv = 0.1
+	} else {
+		grv = 0.2;	
+	}*/
+	if(WandShake > 0) {
+		WandShake -= 0.01;
+		part_type_speed(WandShotPartical, 1, 1.5, 0, WandShake);
+	}
+	if(WandGravity < 0.05) {
+		WandGravity += 0.001;
+		part_type_gravity(WandShotPartical, WandGravity, 90);
+	}
+	//Grav Based things
+	PerfectPoint = false;
+	if(vsp < -2) {
+		grv = -1*((vsp/20)-0.1);	
+	} else if(vsp < 3){
+		grv = 0.1
+		PerfectPoint = true;
+	} else {
+		grv = 0.2;	
+	}
+	//grv = -1*(vsp/10);	
 	if(vsp + grv + Vbang < 8) {
-		vsp = vsp + grv + Vbang;
+		vsp += grv + Vbang;
 	}
 	
 	//show_debug_message("VSP: " + string(vsp));
 	//show_debug_message("grv: " + string(grv));
 	//X axies Collision
 	//Meaning if it meets o_Wall on hte x axies it will stop the movement
+	
 	if (place_meeting(x+hsp, y, o_Wall))
 	{
 		//This is always checking if you havn't hit the wall yet
-		while (!place_meeting(x + sign(hsp), y, o_Wall))
-		{
-			x = x + sign(hsp);	
+		Yplus = 0;
+		
+		while(place_meeting(x+hsp, y-Yplus, o_Wall) && Yplus <= abs(1*hsp)) Yplus += 1;
+		if(place_meeting(x+hsp, y-Yplus, o_Wall)) {
+			while (!place_meeting(x + sign(hsp), y, o_Wall))
+			{
+				x = x + sign(hsp);	
+			}
+			hsp = 0;
+		} else {
+			y -= Yplus;	
 		}
-		hsp = 0;
-		if(TestSpeed = true){
-			//hsp_move = 0;
-		}
-	}
+		
+	} 
 	
 	if(place_meeting(x+1, y, o_Sand) or place_meeting(x-1, y, o_Sand)){
 		HittingWall = true
@@ -153,8 +186,10 @@ if global.stop == false and StopMovement = false{
 	
 	if(place_meeting(x,y+1, o_Wall)) {
 		OnFloor = true;	
+		
 	} else {
 		OnFloor = false;	
+		
 	}
 	//show_debug_message(point_direction(obj_Player.x, obj_Player.y, o_Turret.x, o_Turret.y))	
 
@@ -162,15 +197,18 @@ if global.stop == false and StopMovement = false{
 
 	//Y axies Collison 
 	//Meaning if it meets o_Wall on the y axies it will stop the movement
-	collisionLine_EntireBottom = collision_rectangle(x-23, y+32+vsp, x+23, y-8+vsp, o_Wall, false, false)
+	collisionLine_EntireBottom = collision_rectangle(x-23, y+32+vsp, x+23, y-8+vsp, o_Wall, true, false)
 	if(collisionLine_EntireBottom){
 		vsp = 0;
+		show_debug_message("Touching leaf!");
 		stamina_current = 0
 		while (!collisionLine_EntireBottom)
 		{
 			y = y + sign(vsp);
 		}
 		
+	} else {
+		show_debug_message("nah");	
 	}
 	y = y + vsp;
 	

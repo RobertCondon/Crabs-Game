@@ -6,6 +6,13 @@ grv = obj_Player.grv
 Vbang = obj_Player.Vbang
 
 
+if(obj_Player.PerfectPoint and Vbang > 0) {
+	VbangLarge = 0.05;	
+} 
+if(collisionJump){
+	VbangLarge = 0.9;
+}
+
 if (bang > -0.2) and (bang < 0.2){
 
 	bang = 0
@@ -42,11 +49,11 @@ if stop < 0{
 		{
 			if (Vbang > 0)
 			{
-				Vbang -= 0.9;
+				Vbang -= VbangLarge;
 			}
 			if (Vbang < 0)
 			{
-				Vbang += 0.9;
+				Vbang += VbangLarge;
 			}
 		}else{
 			if (Vbang > 0)
