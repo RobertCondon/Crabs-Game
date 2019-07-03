@@ -200,7 +200,7 @@ if global.stop == false and StopMovement = false{
 	collisionLine_EntireBottom = collision_rectangle(x-23, y+32+vsp, x+23, y-8+vsp, o_Wall, true, false)
 	if(collisionLine_EntireBottom){
 		vsp = 0;
-		show_debug_message("Touching leaf!");
+		//show_debug_message("Touching leaf!");
 		stamina_current = 0
 		while (!collisionLine_EntireBottom)
 		{
@@ -208,7 +208,7 @@ if global.stop == false and StopMovement = false{
 		}
 		
 	} else {
-		show_debug_message("nah");	
+		//show_debug_message("nah");	
 	}
 	y = y + vsp;
 	

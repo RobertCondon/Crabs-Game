@@ -6,9 +6,9 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 63,
-    "bbox_left": 64,
-    "bbox_right": 191,
+    "bbox_bottom": 503,
+    "bbox_left": 0,
+    "bbox_right": 319,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
@@ -16,40 +16,40 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "e8b1bf5d-08c8-47e3-ac65-7b50c60da287",
+            "id": "a9f01b74-c483-4f30-980c-63f149f806e2",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "23d8a75f-26b7-4d0d-b6eb-aa173750a178",
             "compositeImage": {
-                "id": "d8c7a3eb-dfee-4f31-91d7-90fe269050ea",
+                "id": "9e4a8504-c5e5-4d76-8757-88e2999221eb",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "e8b1bf5d-08c8-47e3-ac65-7b50c60da287",
+                "FrameId": "a9f01b74-c483-4f30-980c-63f149f806e2",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "b5035060-88d6-4099-8bc3-f328d6d8737d",
+                    "id": "53ddce82-5038-4955-9675-b8f9695b9acc",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "e8b1bf5d-08c8-47e3-ac65-7b50c60da287",
-                    "LayerId": "24ed53d3-8b48-4a8f-98fb-548902c6e77f"
+                    "FrameId": "a9f01b74-c483-4f30-980c-63f149f806e2",
+                    "LayerId": "d77cd5d5-f65c-4c86-8d65-48be1a3a5836"
                 }
             ]
         }
     ],
-    "gridX": 64,
-    "gridY": 64,
+    "gridX": 16,
+    "gridY": 16,
     "height": 512,
     "layers": [
         {
-            "id": "24ed53d3-8b48-4a8f-98fb-548902c6e77f",
+            "id": "d77cd5d5-f65c-4c86-8d65-48be1a3a5836",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "23d8a75f-26b7-4d0d-b6eb-aa173750a178",
             "blendMode": 0,
             "isLocked": false,
-            "name": "Layer 1",
+            "name": "default",
             "opacity": 100,
             "visible": true
         }

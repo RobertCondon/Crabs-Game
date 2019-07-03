@@ -1671,6 +1671,14 @@
             }
         },
         {
+            "Key": "7c8dbd92-5640-485e-851f-38a3a7ba71ed",
+            "Value": {
+                "id": "2a7eb677-d8a8-4ebe-85a4-56f13ec396f1",
+                "resourcePath": "views\\7c8dbd92-5640-485e-851f-38a3a7ba71ed.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7ce21266-f13f-4400-ad72-33713c8dfd71",
             "Value": {
                 "id": "c9b2a351-4cb6-489f-847a-734248d10c4f",
@@ -2519,6 +2527,14 @@
             }
         },
         {
+            "Key": "b1e0d668-13a8-422b-aea8-6590e69bc31f",
+            "Value": {
+                "id": "a1e8d6be-3253-4f00-82fb-f4e6824e4c3e",
+                "resourcePath": "objects\\obj_KeithWeakHand\\obj_KeithWeakHand.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b338b52c-ed49-447b-81bb-2acb9780d1fc",
             "Value": {
                 "id": "b030cf34-912b-44b6-a320-fe996731e2fc",
@@ -2604,6 +2620,14 @@
                 "id": "85211df0-c571-409c-b207-2e409ec06e7e",
                 "resourcePath": "sprites\\spr_testfont\\spr_testfont.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b88067cc-8224-40a6-ac1b-c7c030c12880",
+            "Value": {
+                "id": "0b055f51-4ef1-49eb-8fc8-3d21913f5bea",
+                "resourcePath": "views\\b88067cc-8224-40a6-ac1b-c7c030c12880.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3028,6 +3052,14 @@
                 "id": "31556cc3-c494-4100-a433-fcd74c88acc1",
                 "resourcePath": "objects\\obj_Textbox\\obj_Textbox.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dc1ee27c-d119-492f-bd96-cacfb875e568",
+            "Value": {
+                "id": "a4346c64-45a3-4f4f-a07a-f20e9c834730",
+                "resourcePath": "views\\dc1ee27c-d119-492f-bd96-cacfb875e568.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3459,6 +3491,14 @@
             "Value": {
                 "id": "61e019e4-475a-4eb0-89ea-4f8f76f25488",
                 "resourcePath": "sprites\\spr_SandDune_Tut1\\spr_SandDune_Tut1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fe362292-ecbd-4f7e-847e-31fedb675dd9",
+            "Value": {
+                "id": "82b6a317-f280-4ca9-8d32-b35925f310e0",
+                "resourcePath": "sprites\\spr_KeithComboTest\\spr_KeithComboTest.yy",
                 "resourceType": "GMSprite"
             }
         },
