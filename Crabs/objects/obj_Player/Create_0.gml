@@ -139,3 +139,6 @@ WandShotPartical_emit = part_emitter_create(WandShotsys);
 
 //part_emitter_region(WandShotsys, WandShotPartical_emit, self.x+17, self.x+30, self.y+15, self.y+15, spr_Chest_OpenPartical, ps_distr_gaussian)
 //part_emitter_burst(WandShotsys, WandShotPartical_emit, WandShotPartical, 1);
+
+//Flat things
+AmFlat = false;

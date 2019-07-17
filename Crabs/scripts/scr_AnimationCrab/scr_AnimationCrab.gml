@@ -8,8 +8,28 @@ PartStep = obj_Player.PartStep
 StepColour = obj_BelowPlayerLeft.StepColour
 TurnOffJump = obj_Player.TurnOffJump;
 
-
-if (!obj_Player.collisionJump or obj_Player.Jumping == true)
+if(AmFlat) {
+	if (!obj_Player.collisionJump or obj_Player.Jumping == true){
+			obj_Player.sprite_index = spr_NewPlayer_JumpFlat
+			if(image_index <= 3) {
+				image_speed = 1;
+			} else {
+				image_speed = 0;
+			}
+	} else {
+		if(obj_Player.sprite_index == spr_NewPlayer_JumpFlat) {
+			obj_Player.sprite_index = spr_NewPlayer_Flat;
+			image_index = 6;
+		} else {
+			obj_Player.sprite_index = spr_NewPlayer_Flat;
+		}
+		image_speed = 1;
+		if(image_index >= 8) {
+			image_speed = 0;
+		}
+	}
+} else {
+	if (!obj_Player.collisionJump or obj_Player.Jumping == true)
 		{
 			obj_Player.sprite_index = spr_NewPlayer_Jump
 			image_speed = 0;
@@ -50,3 +70,4 @@ if (!obj_Player.collisionJump or obj_Player.Jumping == true)
 				}
 			}
 		}
+}

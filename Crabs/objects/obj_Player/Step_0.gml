@@ -33,7 +33,9 @@ if global.stop == false and StopMovement = false{
 	//wall bullshit
 	//No wall bullshit during squish
 	SquareX = 26
-	
+	if(keyboard_check_released(vk_space)) {
+		AmFlat = !AmFlat;	
+	}
 	
 	if(SpuishedOffOn == false){
 		
