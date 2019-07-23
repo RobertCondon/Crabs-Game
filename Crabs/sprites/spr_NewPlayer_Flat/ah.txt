@@ -1,0 +1,17 @@
+Things to do:
+
+Art:
+Redo as many spears and props as possible.
+The final ending for gold weapons.
+Titel screen for the game.
+sci fi zone.
+
+Sound:
+Put in abenice once done
+
+Programing:
+...
+Fix spawn rate for monkeys.
+Add in tool tree
+
+Upload it!
