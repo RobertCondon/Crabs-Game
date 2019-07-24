@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "02831ead-64b2-4eae-aa53-e0fc7bbee817",
+            "Value": {
+                "id": "185e9d9f-b1db-4ca5-94a1-bc79aa5c256a",
+                "resourcePath": "sprites\\spr_NewPlayer_JumpBall\\spr_NewPlayer_JumpBall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "034daf32-eadd-46b9-8308-b6567d6c60d8",
             "Value": {
                 "id": "b8fb2f30-0c20-431d-8c27-1e18cda78d30",

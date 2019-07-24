@@ -9,7 +9,8 @@
         "4e1a95a4-49e8-46b7-8dd0-57addac666e5",
         "9dba931f-4e95-4ca7-8eda-c5afe2090916",
         "23ef6360-239e-45af-9157-9386e4312238",
-        "e6dcd0d3-a7b7-47b4-9628-58bbc5e42d89"
+        "e6dcd0d3-a7b7-47b4-9628-58bbc5e42d89",
+        "02831ead-64b2-4eae-aa53-e0fc7bbee817"
     ],
     "filterType": "GMSprite",
     "folderName": "NormalCrab",
